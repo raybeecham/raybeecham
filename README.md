@@ -1,7 +1,7 @@
 # Ray Beecham
 
 > [raybeecham2009@gmail.com@gmail.com](mailto:raybeecham2009@gmail.com) <br>
-> [GitHub @raybeecham :octocat:](https://github.com/raybeecham) <br>
+> [GitHub @raybeecham 🐉](https://github.com/raybeecham) <br>
 > [LinkedIn @Ray](https://linkedin.com/in/RaymondBeecham)  
 
 ---

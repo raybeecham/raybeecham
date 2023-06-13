@@ -1,5 +1,24 @@
-### Hi there 👋
+# Ray Beecham
 
+> [raybeecham2009@gmail.com@gmail.com](mailto:raybeecham2009@gmail.com) <br>
+> [GitHub @raybeecham :octocat:](https://github.com/raybeecham) <br>
+> [LinkedIn @Ray](https://linkedin.com/in/RaymondBeecham)  
+
+---
+
+## Work Experience
+
+## Education
+
+## Certifications
+
+## Technical Skills
+
+## Projects
+
+## Extra-Curriculars
+
+## Awards & Honors
 <!--
 **raybeecham/raybeecham** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 

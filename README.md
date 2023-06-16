@@ -43,7 +43,7 @@ Texas A&M University - Central Texas 🛡️
 
 **Information Systems,** Master of Science
 
-_Micro-Certification: Data Analytics_
+_Micro-Credential: Data Analytics_
 
 **GPA 4.0**
 

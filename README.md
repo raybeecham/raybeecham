@@ -24,17 +24,31 @@ Accenture Federal Services
 
 _August 2021 - November 2022_
 
+- Devised strategic placement of stories within sprints based on successors, predecessors, dependencies, and team member velocity and capacity.
+- Led and coordinated a diverse team of 10, including developers, business analysts, product owners, automated testers, a UX designer, and a solution architect.
+- Resolved conflicts, communicated blocking issues, removed impediments, and predicted future complications through scrum of scrums, release planning, and inter-team communication.
+- Delivered over 50+ key system features for a brand new completely reimagined contact center application that successfully went live on 6/1/22.
+
 **System Developer Analyst**
 
 Accenture Federal Services
 
 _August 2020 - August 2021_
 
+- Developed coding and testing solutions that would automatically trigger events such as email reminders within flows and process builder in Salesforce, using HTML, CSS, Java, JavaScript, and Lightning Web Components.
+- Created mobile test plans including test scripts and scenarios involving iOS and Android.
+- Collaborated with cross-functional teams such as Human Resources and Finance to create, update, or delete acceptance criteria for upcoming stories in sprints.
+
 **Test Engineer Associate**
 
 Accenture Federal Services
 
 _September 2020 - August 2020_
+
+- Updated the traceability matrix to include 40+ stories associated with business processes and rules.
+- Created test cases to include test case ID, description, dependencies, and requirements
+- Assisted military team members with test scenarios that included allowances such as basic allowance for housing (BAH), special and incentive pays, and reenlistment pays.
+
 
 ## Education
 
@@ -104,11 +118,6 @@ Texas State University ⭐
 | :------------------------------------- | ---------------------------------------- | ----------------------------- | ---------------------------------------- |
 | Python, C#, Java, JavaScript, APEX | HTML, CSS, jQuery, SQL, SOQL | Git, Linux | numpy, tensorflow, scikit-learn, jupyter, Agile, Scrum
 
-## Projects
-
-## Extra-Curriculars
-
-## Awards & Honors
 <!--
 **raybeecham/raybeecham** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 

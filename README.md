@@ -100,6 +100,16 @@ Texas State University ⭐
 
 ---
 
+Temple College 📊
+
+**General Studies,** Associate of Arts
+
+**Fall 2009 - Spring 2011**
+
+**GPA 3.8**
+
+---
+
 ## Certifications
 
 - Chainalysis Cryptocurrency Fundamentals Certification (CCFC)

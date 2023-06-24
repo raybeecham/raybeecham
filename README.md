@@ -55,7 +55,7 @@ _September 2020 - August 2020_
 
 Texas A&M University - Central Texas 🛡️
 
-**Information Systems,** Master of Science
+**Information Systems (Cybersecurity),** Master of Science
 
 _Micro-Credential: Data Analytics_
 

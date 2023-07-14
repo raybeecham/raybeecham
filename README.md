@@ -18,6 +18,7 @@ _May 2023 - Present_
 - Research on lighweight block cipher algorithms and their implications in relation to cybersecurity.
 - Research on smart contracts and different machine learning techniques and models for vulnerability detection.
 - Assist in peer review of research papers including a summarization, comments on soundness, significance, novelty, verifiability & transparency, presentation, strengths, weaknesses, minor issues.
+- - Research on Hyperledger-Fabric and it's potential use cases for IoT network security.
 
 **Software Product and Platform Engineer Senior Analyst**
 

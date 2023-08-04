@@ -75,6 +75,10 @@ _Causal Analytics & Big Data (CABD) Certificate_
 * Digital Forensics
 * Management Information Systems
 * Technical Project Management
+* Visual Analytics (In Progress)
+* Data Analytics and Management (In Progress)
+* Adv Syst Analysis and Design (In Progress)
+* Causal Analytics (In Progress)
 
 **Organizations:**
 

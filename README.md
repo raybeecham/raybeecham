@@ -121,7 +121,7 @@ Texas State University ⭐
 
 ## Certifications
 
--CompTIA CySA+ (Expected Fall 2023)
+- CompTIA CySA+ (Expected Fall 2023)
 - CompTIA Security+
 - Chainalysis Cryptocurrency Fundamentals Certification (CCFC)
 - Google IT Automation with Python

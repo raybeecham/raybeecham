@@ -60,6 +60,7 @@ Texas A&M University - Central Texas 🛡️
 **Information Systems (Cybersecurity),** Master of Science
 
 _Micro-Credential: Data Analytics_
+_Causal Analytics & Big Data (CABD) Certificate_
 
 **GPA 4.0**
 
@@ -71,9 +72,13 @@ _Micro-Credential: Data Analytics_
 * Enterprise Security
 * Telecommunications for Managers
 * Foundations of Information Security
-* Digital Forensics **(In Progress)**
-* Management Information Systems **(In Progress)**
+* Digital Forensics
+* Management Information Systems
 * Technical Project Management
+
+**Organizations:**
+
+* Student Government Association - Graduate Senator
 
 ---
 
@@ -100,10 +105,20 @@ Texas State University ⭐
 * Computer Database Systems
 * Enterprise Information Technology and Business Intelligence
 
+**Organizations:**
+
+* Association of Information Technology Professionals
+* Veterans Association
+* Honors College
+* Non-Traditional Student Organization
+* Student Leadership Board
+
 ---
 
 ## Certifications
 
+-CompTIA CySA+ (Expected Fall 2023)
+- CompTIA Security+
 - Chainalysis Cryptocurrency Fundamentals Certification (CCFC)
 - Google IT Automation with Python
 - ICAgile Certified Professional - Agile Coaching

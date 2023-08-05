@@ -84,6 +84,10 @@ _Causal Analytics & Big Data (CABD) Certificate_
 
 * Student Government Association - Graduate Senator
 
+**Awards:**
+- College of Business Administration Scholarship Recipient 2022-2023
+- Mary Yeaman Memorial Endowed Scholarship 2023
+
 ---
 
 Texas State University ⭐

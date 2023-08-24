@@ -1,4 +1,4 @@
-# Ray Beecham
+# Ray Beecham (Veteran🎖️)
 
 > [raybeecham2009@gmail.com](mailto:raybeecham2009@gmail.com) <br>
 > [GitHub @raybeecham 🐉](https://github.com/raybeecham) <br>

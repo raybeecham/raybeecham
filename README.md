@@ -24,7 +24,7 @@ _November 2023 - Present_
 
 Texas A&M University - Central Texas
 
-_May 2023 - Present_
+_May 2023 - August 2023_
 
 - Research on lighweight block cipher algorithms and their implications in relation to cybersecurity.
 - Research on smart contracts and different machine learning techniques and models for vulnerability detection.

@@ -9,6 +9,17 @@ _May 2023 - Present_
 
 ## Work Experience
 
+**Quantum Security Crypto-Agility Engineer**
+
+Accenture Federal Services
+
+_November 2023 - Present_
+
+- Skilled in safeguarding on-preimse infrastructure, ensuring robust defense against physical and digital threats.
+- Analyze network systems for vulnerabilities and design solutions to mitigate them.
+- Knowledge of frameworks like Access Control and Zero Trust to manage access and trust levels.
+- Knowledge of cryptographic security measures to assess system vulnerabilities and recommend enhancements.
+
 **Graduate Research Assistant**
 
 Texas A&M University - Central Texas

@@ -9,13 +9,13 @@ _May 2023 - Present_
 
 ## Work Experience
 
-**Quantum Security Crypto-Agility Engineer**
+**Quantum Security Crypto-Agility Engineer (Building Specialization)**
 
 Accenture Federal Services
 
 _November 2023 - Present_
 
-- Skilled in safeguarding on-preimse infrastructure, ensuring robust defense against physical and digital threats.
+- Skilled in safeguarding on-premise infrastructure, ensuring robust defense against physical and digital threats.
 - Analyze network systems for vulnerabilities and design solutions to mitigate them.
 - Knowledge of frameworks like Access Control and Zero Trust to manage access and trust levels.
 - Knowledge of cryptographic security measures to assess system vulnerabilities and recommend enhancements.
@@ -26,10 +26,10 @@ Texas A&M University - Central Texas
 
 _May 2023 - August 2023_
 
-- Conducted research on lighweight block cipher algorithms and their implications in relation to cybersecurity.
-- Conducted Research on smart contracts and different machine learning techniques and models for vulnerability detection.
+- Conducted research on lightweight block cipher algorithms and their implications in relation to cybersecurity.
+- Conducted Research on smart contracts and different machine-learning techniques and models for vulnerability detection.
 - Assisted in peer review of research papers including a summarization, comments on soundness, significance, novelty, verifiability & transparency, presentation, strengths, weaknesses, minor issues.
-- Conducted Research on Hyperledger-Fabric and it's potential use cases for IoT network security.
+- Conducted Research on Hyperledger-Fabric and its potential use cases for IoT network security.
 
 **Software Product and Platform Engineer Senior Analyst**
 

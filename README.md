@@ -13,7 +13,7 @@ _May 2023 - Present_
 
 Accenture Federal Services
 
-_November 2023 - Present_
+_November 2023 - May 2024_
 
 - Skilled in safeguarding on-premise infrastructure, ensuring robust defense against physical and digital threats.
 - Analyze network systems for vulnerabilities and design solutions to mitigate them.

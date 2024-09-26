@@ -5,20 +5,18 @@
 > [LinkedIn @Ray](https://linkedin.com/in/RaymondBeecham) <br>
 > [Trailhead @rbeecham ⛰️](https://trailblazer.me/id/rbeecham2) 
 
-_May 2023 - Present_
-
 ## Work Experience
 
-**Quantum Security Crypto-Agility Engineer (Building Specialization)**
+**Quantum Security Crypto-Agility Engineer**
 
 Accenture Federal Services
 
-_November 2023 - May 2024_
+_November 2023 - Present_
 
-- Skilled in safeguarding on-premise infrastructure, ensuring robust defense against physical and digital threats.
-- Analyze network systems for vulnerabilities and design solutions to mitigate them.
-- Knowledge of frameworks like Access Control and Zero Trust to manage access and trust levels.
-- Knowledge of cryptographic security measures to assess system vulnerabilities and recommend enhancements.
+- Led collaborative efforts with vendors to evaluate and integrate their cryptographic inventory processes, effectively mitigating vulnerabilities related to post-quantum cryptography (PQC)
+- Maintained up-to-date knowledge of new FIPS standards issues by NIST like FIPS 203, 204, and 205 to ensure compliance and enhance cryptographic security measures.
+- Developed and implemented comprehensive strategies to address PQC-associated cryptographic vulnerabilities.
+- Collaborated with cross-functional teams to align and elevate security protocols in line with evolving PIV and SPKI standards, ensuring strong cryptographic practices and full compliance.
 
 **Graduate Research Assistant**
 

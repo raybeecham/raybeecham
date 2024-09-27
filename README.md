@@ -136,6 +136,10 @@ Texas State University ⭐
 
 - GIAC Intrusion Analyst (GCIA) (In Progress)
 - AWS Certified Solutions Architect - Associate (In Progress)
+- Casual Analytics and Big Data Certification - Distinguished Graduate (Texas A&M)
+- Data Analytics Micro-Credential (Texas A&M)
+- Quantum Programming - Core (D-Wave)
+- Cryptocurrency Fundamentals Certification (Chainalaysis)
 - ISC2 Certified in Cybersecurity
 - ISC2 System Security Certified Practitioner
 - CompTIA Security+

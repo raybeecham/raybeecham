@@ -73,7 +73,7 @@ _Causal Analytics & Big Data (CABD) Certificate_
 
 **GPA 4.0**
 
-**Spring 2022 - Present**
+**Spring 2022 - May 2024**
 
 **Coursework:**
 
@@ -134,7 +134,10 @@ Texas State University ⭐
 
 ## Certifications
 
-- CompTIA CySA+ (Expected Fall 2023)
+- GIAC Intrusion Analyst (GCIA) (In Progress)
+- AWS Certified Solutions Architect - Associate (In Progress)
+- ISC2 Certified in Cybersecurity
+- ISC2 System Security Certified Practitioner
 - CompTIA Security+
 - Chainalysis Cryptocurrency Fundamentals Certification (CCFC)
 - Google IT Automation with Python

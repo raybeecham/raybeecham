@@ -134,8 +134,8 @@ Texas State University ⭐
 
 ## Certifications
 
-- GIAC Intrusion Analyst (GCIA) (In Progress)
-- AWS Certified Solutions Architect - Associate (In Progress)
+- GIAC Intrusion Analyst (GCIA)
+- AWS Certified Solutions Architect - Associate
 - Casual Analytics and Big Data Certification - Distinguished Graduate (Texas A&M)
 - Data Analytics Micro-Credential (Texas A&M)
 - Quantum Programming - Core (D-Wave)

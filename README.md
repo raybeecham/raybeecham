@@ -134,6 +134,8 @@ Texas State University ⭐
 
 ## Certifications
 
+- SandboxAQ AQtive Guard Certified Practitioner
+- Q-CTRL Quantum Professional Certificate
 - GIAC Intrusion Analyst (GCIA)
 - AWS Certified Solutions Architect - Associate
 - Casual Analytics and Big Data Certification - Distinguished Graduate (Texas A&M)

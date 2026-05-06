@@ -3,6 +3,13 @@
 **Quantum Security & Crypto-Agility Engineer**  
 Veteran | Cybersecurity | Post-Quantum Cryptography | Cloud Security | DevSecOps | Quantum Computing
 
+[![GitHub](https://img.shields.io/badge/GitHub-raybeecham-181717?logo=github)](https://github.com/raybeecham)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ray%20Beecham-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/RaymondBeecham)
+[![AWS](https://img.shields.io/badge/AWS-Solutions%20Architect%20Associate-232F3E?logo=amazonaws&logoColor=white)](https://aws.amazon.com/certification/)
+[![GIAC](https://img.shields.io/badge/GIAC-GCIA-003366)](https://www.giac.org/)
+[![Security](https://img.shields.io/badge/Security-PQC%20%7C%20Cloud%20%7C%20DevSecOps-critical)](https://github.com/raybeecham)
+[![Quantum](https://img.shields.io/badge/Quantum-Computing%20%7C%20Optimization-6f42c1)](https://github.com/raybeecham)
+
 I work at the intersection of cybersecurity, cryptography, quantum technology, and federal modernization. My current focus is helping organizations understand and prepare for post-quantum cryptography (PQC), improve cryptographic visibility, and build practical security tooling that turns complex technical risk into actionable decisions.
 
 ---
@@ -23,6 +30,49 @@ I work at the intersection of cybersecurity, cryptography, quantum technology, a
 
 - **Cybersecurity Engineering**  
   Network analysis, intrusion detection, TLS visibility, secure architecture, vulnerability management, and federal cybersecurity use cases.
+
+---
+
+## Featured Repositories
+
+| Repository | Focus | Why it matters |
+| --- | --- | --- |
+| [crypto-inventory-demo](https://github.com/raybeecham/crypto-inventory-demo) | Crypto inventory, CodeQL, PQC readiness | Demonstrates how cryptographic usage can be discovered, normalized, scored, and reported for crypto-agility planning. |
+| [devsecops-lab](https://github.com/raybeecham/devsecops-lab) | DevSecOps, automation, secure pipelines | A working space for CI/CD security controls, scanning patterns, and pipeline-based security experiments. |
+| [quantum-computing-fundamentals-2833097](https://github.com/raybeecham/quantum-computing-fundamentals-2833097) | Quantum computing fundamentals | Captures hands-on quantum computing learning and demonstrations that support more advanced security and optimization work. |
+| [qrypt-security-quickstarts-cpp](https://github.com/raybeecham/qrypt-security-quickstarts-cpp) | Cryptography, C++, security quickstarts | Explores cryptographic implementation patterns and security-focused quickstarts. |
+| [DWaveDemos](https://github.com/raybeecham/DWaveDemos) | Quantum optimization | Space for D-Wave and optimization experiments, including QUBO-style problem modeling. |
+| [MEnGPT](https://github.com/raybeecham/MEnGPT) | Local AI, experimentation | Prototype space for AI-assisted workflows and local model experimentation. |
+
+---
+
+## Live Demo Concepts
+
+These are the kinds of demos I build and refine for technical storytelling, research, and security strategy discussions:
+
+### TLS 1.3 Visibility Lab
+
+A network visibility demo showing how TLS 1.3 changes traditional passive inspection assumptions. The goal is not universal decryption. The goal is governed, authorized visibility using the right vantage point, metadata, endpoint context, and policy controls.
+
+**Key concepts:** TLS 1.3, forward secrecy, ClientHello visibility, QUIC/HTTP/3, edge metadata, authorized inspection, Zero Trust.
+
+### Crypto Inventory / CBOM Pipeline
+
+A crypto-agility workflow that scans code for cryptographic usage, extracts structured findings, and produces inventory-style output for PQC readiness analysis.
+
+**Key concepts:** CodeQL, cryptographic discovery, algorithm inventory, weak key detection, PQC migration planning, CBOM-style reporting.
+
+### Quantum Optimization Sandbox
+
+A hands-on environment for modeling optimization problems using quantum and hybrid quantum-classical approaches.
+
+**Key concepts:** QUBO, QAOA, D-Wave, quantum optimization, resource allocation, security-relevant optimization problems.
+
+### DevSecOps Security Lab
+
+A practical lab for security automation across the software delivery lifecycle.
+
+**Key concepts:** GitHub Actions, SBOM, SAST, IaC scanning, artifact integrity, container scanning, policy-as-code, runtime security.
 
 ---
 
@@ -86,6 +136,13 @@ Example topics:
 
 ### Programming & Scripting
 
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-007396?logo=openjdk&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![C%23](https://img.shields.io/badge/C%23-512BD4?logo=dotnet&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-336791?logo=postgresql&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?logo=gnubash&logoColor=white)
+
 - Python
 - Java
 - JavaScript
@@ -96,6 +153,13 @@ Example topics:
 - Bash / Linux CLI
 
 ### Security & Cloud
+
+![AWS](https://img.shields.io/badge/AWS-232F3E?logo=amazonaws&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)
+![DevSecOps](https://img.shields.io/badge/DevSecOps-Security%20Automation-critical)
+![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?logo=wireshark&logoColor=white)
+![TLS](https://img.shields.io/badge/TLS-Visibility%20%26%20Analysis-blue)
+![PQC](https://img.shields.io/badge/PQC-Crypto--Agility-6f42c1)
 
 - AWS
 - GitHub Actions
@@ -108,6 +172,13 @@ Example topics:
 - Security automation
 
 ### Data, AI & Quantum
+
+![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white)
+![scikit--learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white)
+![Qiskit](https://img.shields.io/badge/Qiskit-6929C4?logo=qiskit&logoColor=white)
+![Quantum](https://img.shields.io/badge/Quantum-Optimization%20%7C%20QAOA-6f42c1)
 
 - NumPy
 - pandas
@@ -128,6 +199,21 @@ Example topics:
 - Streamlit
 - Salesforce
 - Agile / Scrum
+
+---
+
+## Recommended Pinned Repositories
+
+For the strongest first impression, I recommend pinning these repositories on the GitHub profile:
+
+1. [crypto-inventory-demo](https://github.com/raybeecham/crypto-inventory-demo)
+2. [devsecops-lab](https://github.com/raybeecham/devsecops-lab)
+3. [quantum-computing-fundamentals-2833097](https://github.com/raybeecham/quantum-computing-fundamentals-2833097)
+4. [qrypt-security-quickstarts-cpp](https://github.com/raybeecham/qrypt-security-quickstarts-cpp)
+5. [DWaveDemos](https://github.com/raybeecham/DWaveDemos)
+6. [MEnGPT](https://github.com/raybeecham/MEnGPT)
+
+These align best with the profile theme: cryptography, PQC readiness, DevSecOps, quantum computing, and practical technical demos.
 
 ---
 

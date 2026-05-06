@@ -1,177 +1,183 @@
-# Ray Beecham (Veteran🎖️)
+# Ray Beecham
 
-> [raybeecham2009@gmail.com](mailto:raybeecham2009@gmail.com) <br>
-> [GitHub @raybeecham 🐉](https://github.com/raybeecham) <br>
-> [LinkedIn @Ray](https://linkedin.com/in/RaymondBeecham) <br>
-> [Trailhead @rbeecham ⛰️](https://trailblazer.me/id/rbeecham2) 
+**Quantum Security & Crypto-Agility Engineer**  
+Veteran | Cybersecurity | Post-Quantum Cryptography | Cloud Security | DevSecOps | Quantum Computing
 
-## Work Experience
-
-**Quantum Security Crypto-Agility Engineer**
-
-Accenture Federal Services
-
-_November 2023 - Present_
-
-- Led collaborative efforts with vendors to evaluate and integrate their cryptographic inventory processes, effectively mitigating vulnerabilities related to post-quantum cryptography (PQC)
-- Maintained up-to-date knowledge of new FIPS standards issues by NIST like FIPS 203, 204, and 205 to ensure compliance and enhance cryptographic security measures.
-- Developed and implemented comprehensive strategies to address PQC-associated cryptographic vulnerabilities.
-- Collaborated with cross-functional teams to align and elevate security protocols in line with evolving PIV and SPKI standards, ensuring strong cryptographic practices and full compliance.
-
-**Graduate Research Assistant**
-
-Texas A&M University - Central Texas
-
-_May 2023 - August 2023_
-
-- Conducted research on lightweight block cipher algorithms and their implications in relation to cybersecurity.
-- Conducted Research on smart contracts and different machine-learning techniques and models for vulnerability detection.
-- Assisted in peer review of research papers including a summarization, comments on soundness, significance, novelty, verifiability & transparency, presentation, strengths, weaknesses, minor issues.
-- Conducted Research on Hyperledger-Fabric and its potential use cases for IoT network security.
-
-**Software Product and Platform Engineer Senior Analyst**
-
-Accenture Federal Services
-
-_August 2021 - November 2022_
-
-- Devised strategic placement of stories within sprints based on successors, predecessors, dependencies, and team member velocity and capacity.
-- Led and coordinated a diverse team of 10, including developers, business analysts, product owners, automated testers, a UX designer, and a solution architect.
-- Resolved conflicts, communicated blocking issues, removed impediments, and predicted future complications through scrum of scrums, release planning, and inter-team communication.
-- Delivered over 50+ key system features for a brand new completely reimagined contact center application that successfully went live on 6/1/22.
-
-**System Developer Analyst**
-
-Accenture Federal Services
-
-_August 2020 - August 2021_
-
-- Developed coding and testing solutions that would automatically trigger events such as email reminders within flows and process builder in Salesforce, using HTML, CSS, Java, JavaScript, and Lightning Web Components.
-- Created mobile test plans including test scripts and scenarios involving iOS and Android.
-- Collaborated with cross-functional teams such as Human Resources and Finance to create, update, or delete acceptance criteria for upcoming stories in sprints.
-
-**Test Engineer Associate**
-
-Accenture Federal Services
-
-_September 2020 - August 2020_
-
-- Updated the traceability matrix to include 40+ stories associated with business processes and rules.
-- Created test cases to include test case ID, description, dependencies, and requirements
-- Assisted military team members with test scenarios that included allowances such as basic allowance for housing (BAH), special and incentive pays, and reenlistment pays.
-
-
-## Education
-
-
-Texas A&M University - Central Texas 🛡️
-
-**Information Systems (Cybersecurity),** Master of Science
-
-_Micro-Credential: Data Analytics_
-_Causal Analytics & Big Data (CABD) Certificate_
-
-**GPA 4.0**
-
-**Spring 2022 - May 2024**
-
-**Coursework:**
-
-* Advanced Database Management
-* Enterprise Security
-* Telecommunications for Managers
-* Foundations of Information Security
-* Digital Forensics
-* Management Information Systems
-* Technical Project Management
-* Visual Analytics (In Progress)
-* Data Analytics and Management (In Progress)
-* Adv Syst Analysis and Design (In Progress)
-* Causal Analytics (In Progress)
-
-**Organizations:**
-
-* Student Government Association - Graduate Senator
-
-**Awards:**
-- College of Business Administration Scholarship Recipient 2022-2023
-- Mary Yeaman Memorial Endowed Scholarship 2023
+I work at the intersection of cybersecurity, cryptography, quantum technology, and federal modernization. My current focus is helping organizations understand and prepare for post-quantum cryptography (PQC), improve cryptographic visibility, and build practical security tooling that turns complex technical risk into actionable decisions.
 
 ---
 
-Texas State University ⭐
+## Focus Areas
 
-**Computer Information Systems,** Bachelor of Business Administration
+- **Post-Quantum Cryptography (PQC)**  
+  Crypto-agility, cryptographic inventory, migration planning, NIST PQC standards, and harvest-now-decrypt-later risk.
 
-**Fall 2015 - Spring 2019**
+- **Cryptographic Discovery & Visibility**  
+  Identifying where cryptography is used across applications, infrastructure, protocols, certificates, libraries, and cloud environments.
 
-**Coursework:**
+- **Cloud & DevSecOps Security**  
+  AWS security, CI/CD security, infrastructure-as-code scanning, container security, SBOM/CBOM concepts, and automated security workflows.
 
-* Data Mining and Visualization
-* Entrepreneurship, Leadership, and Team Building
-* Mobile Application Development for Android
-* System Analysis and Design
-* Topics in Data Analytics
-* Visual Programming I
-* Visual Programming II
-* Web Applications Design and Development
-* Introduction to Microcomputer Applications
-* The Legal Environment of Business
-* Starting IT Business
-* Agile Project Management
-* Computer Database Systems
-* Enterprise Information Technology and Business Intelligence
+- **Quantum Computing & Security Research**  
+  Quantum optimization, QAOA, quantum machine learning concepts, quantum-safe security strategy, and applied quantum demos.
 
-**Organizations:**
+- **Cybersecurity Engineering**  
+  Network analysis, intrusion detection, TLS visibility, secure architecture, vulnerability management, and federal cybersecurity use cases.
 
-* Association of Information Technology Professionals
-* Veterans Association
-* Honors College
-* Non-Traditional Student Organization
-* Student Leadership Board
+---
+
+## Current Work
+
+I am currently focused on building and evaluating practical approaches for:
+
+- PQC readiness and crypto-agility
+- Cryptographic inventory generation
+- CBOM-style reporting for cryptographic assets
+- TLS 1.3 visibility and metadata-driven inspection
+- Federal cybersecurity modernization
+- DevSecOps security automation
+- Quantum computing demonstrations for security and optimization use cases
+
+---
+
+## Selected Project Themes
+
+### Crypto-Agility & PQC Readiness
+
+Projects and research focused on identifying cryptographic assets, evaluating risk, and preparing systems for migration to quantum-resistant algorithms.
+
+Example topics:
+
+- RSA, ECC, DH, and legacy algorithm discovery
+- Weak key-size detection
+- TLS version and cipher visibility
+- PQC migration planning
+- CBOM-style cryptographic reporting
+- Harvest-now-decrypt-later risk analysis
+
+### Cloud Security & DevSecOps
+
+Security automation projects that help detect misconfigurations, strengthen CI/CD pipelines, and improve cloud security posture.
+
+Example topics:
+
+- AWS security automation
+- Infrastructure-as-code checks
+- GitHub Actions security workflows
+- SBOM and software supply chain security
+- Container and dependency scanning
+- Policy-as-code concepts
+
+### Quantum Computing Experiments
+
+Applied quantum computing projects exploring how quantum and hybrid quantum-classical methods may support optimization, cybersecurity, and research use cases.
+
+Example topics:
+
+- QAOA for optimization problems
+- Quantum machine learning proof-of-concepts
+- Quantum-safe security demonstrations
+- Quantum networking and sensing concepts
+- Benchmarking and simulation experiments
+
+---
+
+## Technical Skills
+
+### Programming & Scripting
+
+- Python
+- Java
+- JavaScript
+- C#
+- Apex
+- SQL
+- SOQL
+- Bash / Linux CLI
+
+### Security & Cloud
+
+- AWS
+- GitHub Actions
+- DevSecOps
+- Network security
+- TLS analysis
+- Vulnerability management
+- Cryptographic inventory
+- Post-quantum cryptography
+- Security automation
+
+### Data, AI & Quantum
+
+- NumPy
+- pandas
+- scikit-learn
+- TensorFlow
+- Jupyter
+- Qiskit
+- PennyLane
+- D-Wave tools
+- Quantum optimization concepts
+
+### Tools & Platforms
+
+- Git / GitHub
+- VS Code
+- Linux / WSL
+- Wireshark
+- Streamlit
+- Salesforce
+- Agile / Scrum
 
 ---
 
 ## Certifications
 
-- SandboxAQ AQtive Guard Certified Practitioner
-- Q-CTRL Quantum Professional Certificate
-- GIAC Intrusion Analyst (GCIA)
+- GIAC Certified Intrusion Analyst (GCIA)
 - AWS Certified Solutions Architect - Associate
-- Casual Analytics and Big Data Certification - Distinguished Graduate (Texas A&M)
-- Data Analytics Micro-Credential (Texas A&M)
-- Quantum Programming - Core (D-Wave)
-- Cryptocurrency Fundamentals Certification (Chainalaysis)
+- ISC2 Systems Security Certified Practitioner (SSCP)
 - ISC2 Certified in Cybersecurity
-- ISC2 System Security Certified Practitioner
 - CompTIA Security+
-- Chainalysis Cryptocurrency Fundamentals Certification (CCFC)
+- Salesforce Certified Administrator
+- Q-CTRL Quantum Professional Certificate
+- SandboxAQ AQtive Guard Certified Practitioner
+- D-Wave Quantum Programming - Core
+- Chainalysis Cryptocurrency Fundamentals Certification
 - Google IT Automation with Python
-- ICAgile Certified Professional - Agile Coaching
-- ICAgile Team Facilitation
-- Salesforce Certified Administrator (SCA)
-- ITIL 4 Foundation CPD
-- ICAgile Certified Professional (ICP)
-- ICAgile Certified Professional - Foundations of DevOps
-- ICAgile Certified Professional - Implementing DevOps
+- ITIL 4 Foundation
+- ICAgile Certified Professional credentials
+- Data Analytics and Causal Analytics credentials from Texas A&M University - Central Texas
 
-## Technical Skills
+---
 
-| General                                | Front-End                                | Back-End                      | Other                                    |
-| :------------------------------------- | ---------------------------------------- | ----------------------------- | ---------------------------------------- |
-| Python, C#, Java, JavaScript, APEX | HTML, CSS, jQuery, SQL, SOQL | Git, Linux | numpy, tensorflow, scikit-learn, jupyter, Agile, Scrum
+## Education
 
-<!--
-**raybeecham/raybeecham** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Texas A&M University - Central Texas**  
+Master of Science, Information Systems  
+Cybersecurity concentration  
+GPA: 4.0
 
-Here are some ideas to get you started:
+**Texas State University**  
+Bachelor of Business Administration, Computer Information Systems
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+## What I Build
+
+I use this GitHub profile to explore and share work related to:
+
+- Practical cybersecurity tooling
+- Quantum-safe security strategy
+- PQC and crypto-agility demos
+- Cloud security automation
+- Security dashboards and visualizations
+- Quantum computing experiments
+- Research-driven technical prototypes
+
+---
+
+## Connect
+
+- GitHub: [@raybeecham](https://github.com/raybeecham)
+- LinkedIn: [Ray Beecham](https://linkedin.com/in/RaymondBeecham)
+- Trailhead: [@rbeecham](https://trailblazer.me/id/rbeecham2)

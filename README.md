@@ -5,13 +5,12 @@ Veteran | Cybersecurity | Post-Quantum Cryptography | Cloud Security | DevSecOps
 
 <a href="https://github.com/raybeecham"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-raybeecham-181717?logo=github&logoColor=white" /></a>
 <a href="https://linkedin.com/in/RaymondBeecham"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Ray%20Beecham-0A66C2?logo=linkedin&logoColor=white" /></a>
-
-<img alt="AWS Solutions Architect Associate" src="https://img.shields.io/badge/AWS-Solutions%20Architect%20Associate-232F3E?logo=amazonaws&logoColor=white" style="pointer-events: none;" />
-<img alt="GIAC GCIA" src="https://img.shields.io/badge/GIAC-GCIA-003366" style="pointer-events: none;" />
-<img alt="PQC" src="https://img.shields.io/badge/PQC-Crypto--Agility-6f42c1" style="pointer-events: none;" />
-<img alt="Cloud Security" src="https://img.shields.io/badge/Cloud-Security-0A66C2" style="pointer-events: none;" />
-<img alt="DevSecOps" src="https://img.shields.io/badge/DevSecOps-Security%20Automation-critical" style="pointer-events: none;" />
-<img alt="Quantum Computing" src="https://img.shields.io/badge/Quantum-Computing%20%7C%20Optimization-6f42c1" style="pointer-events: none;" />
+<a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/"><img alt="AWS Solutions Architect Associate" src="https://img.shields.io/badge/AWS-Solutions%20Architect%20Associate-232F3E?logo=amazonaws&logoColor=white" /></a>
+<a href="https://www.giac.org/certifications/certified-intrusion-analyst-gcia/"><img alt="GIAC GCIA" src="https://img.shields.io/badge/GIAC-GCIA-003366" /></a>
+<a href="https://github.com/raybeecham/crypto-inventory-demo"><img alt="PQC" src="https://img.shields.io/badge/PQC-Crypto--Agility-6f42c1" /></a>
+<a href="https://aws.amazon.com/security/"><img alt="Cloud Security" src="https://img.shields.io/badge/Cloud-Security-0A66C2" /></a>
+<a href="https://github.com/raybeecham/crypto-inventory-demo"><img alt="DevSecOps" src="https://img.shields.io/badge/DevSecOps-Security%20Automation-critical" /></a>
+<a href="https://learning.quantum.ibm.com/"><img alt="Quantum Computing" src="https://img.shields.io/badge/Quantum-Computing%20%7C%20Optimization-6f42c1" /></a>
 
 I work at the intersection of cybersecurity, cryptography, quantum technology, and federal modernization. My current focus is helping organizations understand and prepare for post-quantum cryptography (PQC), improve cryptographic visibility, and build practical security tooling that turns complex technical risk into actionable decisions.
 

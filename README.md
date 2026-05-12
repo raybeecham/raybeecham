@@ -5,7 +5,12 @@ Veteran | Cybersecurity | Post-Quantum Cryptography | Cloud Security | DevSecOps
 
 [GitHub: @raybeecham](https://github.com/raybeecham) | [LinkedIn: Ray Beecham](https://linkedin.com/in/RaymondBeecham)
 
-`AWS Solutions Architect Associate` `GIAC GCIA` `PQC` `Cloud Security` `DevSecOps` `Quantum Computing`
+<img alt="AWS Solutions Architect Associate" src="https://img.shields.io/badge/AWS-Solutions%20Architect%20Associate-232F3E?logo=amazonaws&logoColor=white" style="pointer-events: none;" />
+<img alt="GIAC GCIA" src="https://img.shields.io/badge/GIAC-GCIA-003366" style="pointer-events: none;" />
+<img alt="PQC" src="https://img.shields.io/badge/PQC-Crypto--Agility-6f42c1" style="pointer-events: none;" />
+<img alt="Cloud Security" src="https://img.shields.io/badge/Cloud-Security-0A66C2" style="pointer-events: none;" />
+<img alt="DevSecOps" src="https://img.shields.io/badge/DevSecOps-Security%20Automation-critical" style="pointer-events: none;" />
+<img alt="Quantum Computing" src="https://img.shields.io/badge/Quantum-Computing%20%7C%20Optimization-6f42c1" style="pointer-events: none;" />
 
 I work at the intersection of cybersecurity, cryptography, quantum technology, and federal modernization. My current focus is helping organizations understand and prepare for post-quantum cryptography (PQC), improve cryptographic visibility, and build practical security tooling that turns complex technical risk into actionable decisions.
 

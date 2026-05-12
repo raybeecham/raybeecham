@@ -3,7 +3,8 @@
 **Quantum Security & Crypto-Agility Engineer**  
 Veteran | Cybersecurity | Post-Quantum Cryptography | Cloud Security | DevSecOps | Quantum Computing
 
-[GitHub: @raybeecham](https://github.com/raybeecham) | [LinkedIn: Ray Beecham](https://linkedin.com/in/RaymondBeecham)
+<a href="https://github.com/raybeecham"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-raybeecham-181717?logo=github&logoColor=white" /></a>
+<a href="https://linkedin.com/in/RaymondBeecham"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Ray%20Beecham-0A66C2?logo=linkedin&logoColor=white" /></a>
 
 <img alt="AWS Solutions Architect Associate" src="https://img.shields.io/badge/AWS-Solutions%20Architect%20Associate-232F3E?logo=amazonaws&logoColor=white" style="pointer-events: none;" />
 <img alt="GIAC GCIA" src="https://img.shields.io/badge/GIAC-GCIA-003366" style="pointer-events: none;" />
@@ -62,7 +63,7 @@ These are the kinds of demos I build and refine for technical storytelling, rese
 
 A network visibility demo showing how TLS 1.3 changes traditional passive inspection assumptions. The goal is not universal decryption. The goal is governed, authorized visibility using the right vantage point, metadata, endpoint context, and policy controls.
 
-**Key concepts:** TLS 1.3, forward secrecy, ClientHello visibility, QUIC/HTTP/3, edge metadata, authorized inspection, Zero Trust.
+**Key concepts:** TLS 1.3, forward secrecy, ClientHello visibility, QUIC/HTTP3, edge metadata, authorized inspection, Zero Trust.
 
 ### Crypto Inventory / CBOM Pipeline
 

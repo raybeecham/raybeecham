@@ -5,10 +5,10 @@ Veteran | Cybersecurity | Post-Quantum Cryptography | Cloud Security | DevSecOps
 
 [![GitHub](https://img.shields.io/badge/GitHub-raybeecham-181717?logo=github)](https://github.com/raybeecham)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ray%20Beecham-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/RaymondBeecham)
-[![AWS](https://img.shields.io/badge/AWS-Solutions%20Architect%20Associate-232F3E?logo=amazonaws&logoColor=white)](https://aws.amazon.com/certification/)
-[![GIAC](https://img.shields.io/badge/GIAC-GCIA-003366)](https://www.giac.org/)
-[![Security](https://img.shields.io/badge/Security-PQC%20%7C%20Cloud%20%7C%20DevSecOps-critical)](https://github.com/raybeecham)
-[![Quantum](https://img.shields.io/badge/Quantum-Computing%20%7C%20Optimization-6f42c1)](https://github.com/raybeecham)
+![AWS](https://img.shields.io/badge/AWS-Solutions%20Architect%20Associate-232F3E?logo=amazonaws&logoColor=white)
+![GIAC](https://img.shields.io/badge/GIAC-GCIA-003366)
+![Security](https://img.shields.io/badge/Security-PQC%20%7C%20Cloud%20%7C%20DevSecOps-critical)
+![Quantum](https://img.shields.io/badge/Quantum-Computing%20%7C%20Optimization-6f42c1)
 
 I work at the intersection of cybersecurity, cryptography, quantum technology, and federal modernization. My current focus is helping organizations understand and prepare for post-quantum cryptography (PQC), improve cryptographic visibility, and build practical security tooling that turns complex technical risk into actionable decisions.
 

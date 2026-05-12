@@ -3,12 +3,9 @@
 **Quantum Security & Crypto-Agility Engineer**  
 Veteran | Cybersecurity | Post-Quantum Cryptography | Cloud Security | DevSecOps | Quantum Computing
 
-[![GitHub](https://img.shields.io/badge/GitHub-raybeecham-181717?logo=github)](https://github.com/raybeecham)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ray%20Beecham-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/RaymondBeecham)
-![AWS](https://img.shields.io/badge/AWS-Solutions%20Architect%20Associate-232F3E?logo=amazonaws&logoColor=white)
-![GIAC](https://img.shields.io/badge/GIAC-GCIA-003366)
-![Security](https://img.shields.io/badge/Security-PQC%20%7C%20Cloud%20%7C%20DevSecOps-critical)
-![Quantum](https://img.shields.io/badge/Quantum-Computing%20%7C%20Optimization-6f42c1)
+[GitHub: @raybeecham](https://github.com/raybeecham) | [LinkedIn: Ray Beecham](https://linkedin.com/in/RaymondBeecham)
+
+`AWS Solutions Architect Associate` `GIAC GCIA` `PQC` `Cloud Security` `DevSecOps` `Quantum Computing`
 
 I work at the intersection of cybersecurity, cryptography, quantum technology, and federal modernization. My current focus is helping organizations understand and prepare for post-quantum cryptography (PQC), improve cryptographic visibility, and build practical security tooling that turns complex technical risk into actionable decisions.
 
@@ -156,13 +153,6 @@ Example topics:
 
 ### Programming & Scripting
 
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-007396?logo=openjdk&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![C%23](https://img.shields.io/badge/C%23-512BD4?logo=dotnet&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-336791?logo=postgresql&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?logo=gnubash&logoColor=white)
-
 - Python
 - Java
 - JavaScript
@@ -173,13 +163,6 @@ Example topics:
 - Bash / Linux CLI
 
 ### Security & Cloud
-
-![AWS](https://img.shields.io/badge/AWS-232F3E?logo=amazonaws&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)
-![DevSecOps](https://img.shields.io/badge/DevSecOps-Security%20Automation-critical)
-![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?logo=wireshark&logoColor=white)
-![TLS](https://img.shields.io/badge/TLS-Visibility%20%26%20Analysis-blue)
-![PQC](https://img.shields.io/badge/PQC-Crypto--Agility-6f42c1)
 
 - AWS
 - GitHub Actions
@@ -192,13 +175,6 @@ Example topics:
 - Security automation
 
 ### Data, AI & Quantum
-
-![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white)
-![pandas](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white)
-![scikit--learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white)
-![Qiskit](https://img.shields.io/badge/Qiskit-6929C4?logo=qiskit&logoColor=white)
-![Quantum](https://img.shields.io/badge/Quantum-Optimization%20%7C%20QAOA-6f42c1)
 
 - NumPy
 - pandas

@@ -33,16 +33,22 @@ I work at the intersection of cybersecurity, cryptography, quantum technology, a
 
 ---
 
-## Featured Repositories
+## Featured Repository
 
-| Repository | Focus | Why it matters |
-| --- | --- | --- |
-| [crypto-inventory-demo](https://github.com/raybeecham/crypto-inventory-demo) | Crypto inventory, CodeQL, PQC readiness | Demonstrates how cryptographic usage can be discovered, normalized, scored, and reported for crypto-agility planning. |
-| [devsecops-lab](https://github.com/raybeecham/devsecops-lab) | DevSecOps, automation, secure pipelines | A working space for CI/CD security controls, scanning patterns, and pipeline-based security experiments. |
-| [quantum-computing-fundamentals-2833097](https://github.com/raybeecham/quantum-computing-fundamentals-2833097) | Quantum computing fundamentals | Captures hands-on quantum computing learning and demonstrations that support more advanced security and optimization work. |
-| [qrypt-security-quickstarts-cpp](https://github.com/raybeecham/qrypt-security-quickstarts-cpp) | Cryptography, C++, security quickstarts | Explores cryptographic implementation patterns and security-focused quickstarts. |
-| [DWaveDemos](https://github.com/raybeecham/DWaveDemos) | Quantum optimization | Space for D-Wave and optimization experiments, including QUBO-style problem modeling. |
-| [MEnGPT](https://github.com/raybeecham/MEnGPT) | Local AI, experimentation | Prototype space for AI-assisted workflows and local model experimentation. |
+### [crypto-inventory-demo](https://github.com/raybeecham/crypto-inventory-demo)
+
+A practical crypto-agility demo focused on discovering cryptographic usage in code and turning those findings into structured inventory data for PQC readiness planning.
+
+**Why it matters:** organizations cannot migrate what they cannot see. Crypto inventory is a foundational step for identifying legacy algorithms, prioritizing risk, and planning a post-quantum migration path.
+
+**Current focus:**
+
+- Code-level cryptographic discovery
+- Algorithm and key-size identification
+- Weak or legacy crypto detection
+- Inventory-style output for crypto-agility planning
+- CBOM-style thinking for cryptographic assets
+- PQC readiness analysis
 
 ---
 
@@ -73,6 +79,20 @@ A hands-on environment for modeling optimization problems using quantum and hybr
 A practical lab for security automation across the software delivery lifecycle.
 
 **Key concepts:** GitHub Actions, SBOM, SAST, IaC scanning, artifact integrity, container scanning, policy-as-code, runtime security.
+
+---
+
+## Building Next
+
+I am gradually building out additional public demos around:
+
+- DevSecOps security pipelines
+- TLS visibility and transport metadata
+- Quantum optimization experiments
+- Local AI-assisted security workflows
+- Cloud security automation
+
+These are active learning and prototyping areas. I prefer to publish projects when they can clearly explain the problem, the architecture, and the security value.
 
 ---
 
@@ -202,18 +222,13 @@ Example topics:
 
 ---
 
-## Recommended Pinned Repositories
+## Recommended Profile Pin
 
-For the strongest first impression, I recommend pinning these repositories on the GitHub profile:
+For now, I recommend pinning only one repository:
 
 1. [crypto-inventory-demo](https://github.com/raybeecham/crypto-inventory-demo)
-2. [devsecops-lab](https://github.com/raybeecham/devsecops-lab)
-3. [quantum-computing-fundamentals-2833097](https://github.com/raybeecham/quantum-computing-fundamentals-2833097)
-4. [qrypt-security-quickstarts-cpp](https://github.com/raybeecham/qrypt-security-quickstarts-cpp)
-5. [DWaveDemos](https://github.com/raybeecham/DWaveDemos)
-6. [MEnGPT](https://github.com/raybeecham/MEnGPT)
 
-These align best with the profile theme: cryptography, PQC readiness, DevSecOps, quantum computing, and practical technical demos.
+This keeps the profile focused and avoids over-selling projects that are still in early prototype or learning-stage form.
 
 ---
 

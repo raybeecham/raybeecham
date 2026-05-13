@@ -7,9 +7,9 @@ Veteran | Cybersecurity | Post-Quantum Cryptography | Cloud Security | DevSecOps
 <a href="https://linkedin.com/in/RaymondBeecham"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Ray%20Beecham-0A66C2?logo=linkedin&logoColor=white" /></a>
 <a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/"><img alt="AWS Solutions Architect Associate" src="https://img.shields.io/badge/AWS-Solutions%20Architect%20Associate-232F3E?logo=amazonaws&logoColor=white" /></a>
 <a href="https://www.giac.org/certifications/certified-intrusion-analyst-gcia/"><img alt="GIAC GCIA" src="https://img.shields.io/badge/GIAC-GCIA-003366" /></a>
-<a href="https://github.com/raybeecham/crypto-inventory-demo"><img alt="PQC" src="https://img.shields.io/badge/PQC-Crypto--Agility-6f42c1" /></a>
+<a href="https://github.com/raybeecham/quantum-research-scout"><img alt="PQC" src="https://img.shields.io/badge/PQC-Quantum%20Research-6f42c1" /></a>
 <a href="https://aws.amazon.com/security/"><img alt="Cloud Security" src="https://img.shields.io/badge/Cloud-Security-0A66C2" /></a>
-<a href="https://github.com/raybeecham/crypto-inventory-demo"><img alt="DevSecOps" src="https://img.shields.io/badge/DevSecOps-Security%20Automation-critical" /></a>
+<a href="https://github.com/raybeecham/quantum-research-scout"><img alt="Research Automation" src="https://img.shields.io/badge/Research-Automation-critical" /></a>
 <a href="https://learning.quantum.ibm.com/"><img alt="Quantum Computing" src="https://img.shields.io/badge/Quantum-Computing%20%7C%20Optimization-6f42c1" /></a>
 
 I work at the intersection of cybersecurity, cryptography, quantum technology, and federal modernization. My current focus is helping organizations understand and prepare for post-quantum cryptography (PQC), improve cryptographic visibility, and build practical security tooling that turns complex technical risk into actionable decisions.
@@ -37,26 +37,32 @@ I work at the intersection of cybersecurity, cryptography, quantum technology, a
 
 ## Featured Repository
 
-### [crypto-inventory-demo](https://github.com/raybeecham/crypto-inventory-demo)
+### [Quantum Research Scout](https://github.com/raybeecham/quantum-research-scout)
 
-A practical crypto-agility demo focused on discovering cryptographic usage in code and turning those findings into structured inventory data for PQC readiness planning.
+An automated daily research scout for post-quantum cryptography, quantum technology, and AI security signals. It collects from arXiv, IACR ePrint, RSS feeds, and configurable web pages, then classifies, scores, deduplicates, stores, date-filters, and reports the results as compact Markdown intelligence digests.
 
-**Why it matters:** organizations cannot migrate what they cannot see. Crypto inventory is a foundational step for identifying legacy algorithms, prioritizing risk, and planning a post-quantum migration path.
+**Why it matters:** PQC and quantum technology move quickly across papers, standards bodies, government advisories, vendor blogs, and research labs. This project turns scattered updates into a daily briefing that is easier to scan, compare, and archive.
 
 **Current focus:**
 
-- Code-level cryptographic discovery
-- Algorithm and key-size identification
-- Weak or legacy crypto detection
-- Inventory-style output for crypto-agility planning
-- CBOM-style thinking for cryptographic assets
-- PQC readiness analysis
+- Daily PQC, quantum, and AI security research collection
+- Relevance scoring and topical confidence filtering
+- Source weighting for high-signal institutions and labs
+- SQLite storage for retained research items
+- Markdown digest generation for human scanning
+- GitHub Actions automation for scheduled runs
 
 ---
 
 ## Live Demo Concepts
 
 These are the kinds of demos I build and refine for technical storytelling, research, and security strategy discussions:
+
+### Quantum Research Scout
+
+An automated research workflow that collects, classifies, scores, and summarizes PQC, quantum technology, and AI security updates into daily Markdown intelligence digests.
+
+**Key concepts:** Post-quantum cryptography, quantum technology tracking, AI security, source scoring, SQLite, GitHub Actions, research automation.
 
 ### TLS 1.3 Visibility Lab
 
@@ -205,11 +211,11 @@ Example topics:
 
 ## Recommended Profile Pin
 
-For now, I recommend pinning only one repository:
+For now, I recommend pinning this repository first:
 
-1. [crypto-inventory-demo](https://github.com/raybeecham/crypto-inventory-demo)
+1. [quantum-research-scout](https://github.com/raybeecham/quantum-research-scout)
 
-This keeps the profile focused and avoids over-selling projects that are still in early prototype or learning-stage form.
+This is the clearest flagship project because it shows working automation, domain focus, scheduled GitHub Actions, structured data storage, and readable research output.
 
 ---
 

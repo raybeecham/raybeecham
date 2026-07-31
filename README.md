@@ -8,6 +8,7 @@ U.S. Navy Veteran · Federal Cybersecurity · Post-Quantum Cryptography · Cloud
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ray%20Beecham-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/RaymondBeecham)
 [![GitHub](https://img.shields.io/badge/GitHub-%40raybeecham-181717?logo=github&logoColor=white)](https://github.com/raybeecham)
+[![Research Portfolio](https://img.shields.io/badge/Research%20Portfolio-Open-087D9F?logo=githubpages&logoColor=white)](https://raybeecham.github.io/raybeecham/)
 [![Quantum Research Scout](https://img.shields.io/badge/Quantum%20Research%20Scout-Live-2ea44f?logo=github)](https://raybeecham.github.io/quantum-research-scout/)
 [![PQC Readiness War Room](https://img.shields.io/badge/PQC%20Readiness%20War%20Room-Live-F38020?logo=cloudflare&logoColor=white)](https://pqc-readiness-war-room.raybeecham2009.workers.dev/)
 
@@ -78,6 +79,7 @@ Some work is still private or being prepared for a future public release:
 
 ## Connect
 
+- [Research portfolio](https://raybeecham.github.io/raybeecham/)
 - [LinkedIn](https://linkedin.com/in/RaymondBeecham)
 - [GitHub](https://github.com/raybeecham)
 

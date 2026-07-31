@@ -1,0 +1,75 @@
+name: Validate and deploy research portfolio
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "site/**"
+      - ".github/workflows/deploy-portfolio.yml"
+  pull_request:
+    paths:
+      - "site/**"
+      - ".github/workflows/deploy-portfolio.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Validate static site
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s site/index.html
+          test -s site/assets/styles.css
+          test -s site/assets/site.js
+          node --check site/assets/site.js
+          python -m json.tool site/site.webmanifest >/dev/null
+          python - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+
+          for file_name in ("site/index.html", "site/404.html"):
+              parser = HTMLParser()
+              parser.feed(Path(file_name).read_text(encoding="utf-8"))
+              parser.close()
+              print(f"parsed {file_name}")
+          PY
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload static site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,271 +1,86 @@
+<div align="center">
+
 # Ray Beecham
 
-**Quantum Security & Crypto-Agility Engineer**  
-Veteran | Cybersecurity | Post-Quantum Cryptography | Cloud Security | DevSecOps | Quantum Computing
+**Quantum Security · Crypto-Agility · Applied Quantum Systems · Technology Decision Assurance**
 
-<a href="https://github.com/raybeecham"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-raybeecham-181717?logo=github&logoColor=white" /></a>
-<a href="https://linkedin.com/in/RaymondBeecham"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Ray%20Beecham-0A66C2?logo=linkedin&logoColor=white" /></a>
-<a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/"><img alt="AWS Solutions Architect Associate" src="https://img.shields.io/badge/AWS-Solutions%20Architect%20Associate-232F3E?logo=amazonaws&logoColor=white" /></a>
-<a href="https://www.giac.org/certifications/certified-intrusion-analyst-gcia/"><img alt="GIAC GCIA" src="https://img.shields.io/badge/GIAC-GCIA-003366" /></a>
-<a href="https://github.com/raybeecham/quantum-research-scout"><img alt="PQC" src="https://img.shields.io/badge/PQC-Quantum%20Research-6f42c1" /></a>
-<a href="https://aws.amazon.com/security/"><img alt="Cloud Security" src="https://img.shields.io/badge/Cloud-Security-0A66C2" /></a>
-<a href="https://github.com/raybeecham/quantum-research-scout"><img alt="Research Automation" src="https://img.shields.io/badge/Research-Automation-critical" /></a>
-<a href="https://learning.quantum.ibm.com/"><img alt="Quantum Computing" src="https://img.shields.io/badge/Quantum-Computing%20%7C%20Optimization-6f42c1" /></a>
+U.S. Navy Veteran · Federal Cybersecurity · Post-Quantum Cryptography · Cloud & DevSecOps
 
-I work at the intersection of cybersecurity, cryptography, quantum technology, and federal modernization. My current focus is helping organizations understand and prepare for post-quantum cryptography (PQC), improve cryptographic visibility, and build practical security tooling that turns complex technical risk into actionable decisions.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ray%20Beecham-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/RaymondBeecham)
+[![GitHub](https://img.shields.io/badge/GitHub-%40raybeecham-181717?logo=github&logoColor=white)](https://github.com/raybeecham)
+[![Quantum Research Scout](https://img.shields.io/badge/Quantum%20Research%20Scout-Live-2ea44f?logo=github)](https://raybeecham.github.io/quantum-research-scout/)
+[![PQC Readiness War Room](https://img.shields.io/badge/PQC%20Readiness%20War%20Room-Live-F38020?logo=cloudflare&logoColor=white)](https://pqc-readiness-war-room.raybeecham2009.workers.dev/)
 
----
+</div>
 
-## Focus Areas
+I build evidence-driven systems for **post-quantum migration, cryptographic discovery, transport visibility, quantum workload evaluation, and emerging-technology decision assurance**.
 
-- **Post-Quantum Cryptography (PQC)**  
-  Crypto-agility, cryptographic inventory, migration planning, NIST PQC standards, and harvest-now-decrypt-later risk.
+My current work is centered on a practical question:
 
-- **Cryptographic Discovery & Visibility**  
-  Identifying where cryptography is used across applications, infrastructure, protocols, certificates, libraries, and cloud environments.
+> How do we turn complex technical evidence into a decision that is explainable, reproducible, appropriately bounded, and useful to a real mission owner?
 
-- **Cloud & DevSecOps Security**  
-  AWS security, CI/CD security, infrastructure-as-code scanning, container security, SBOM/CBOM concepts, and automated security workflows.
+That means preserving what was observed, what was inferred, what remains unknown, which rules produced a result, and what still requires accountable human judgment.
 
-- **Quantum Computing & Security Research**  
-  Quantum optimization, QAOA, quantum machine learning concepts, quantum-safe security strategy, and applied quantum demos.
+## Current Research Programs
 
-- **Cybersecurity Engineering**  
-  Network analysis, intrusion detection, TLS visibility, secure architecture, vulnerability management, and federal cybersecurity use cases.
+| Program | What I am building |
+|---|---|
+| **Technology Decision Assurance Framework (TDAF)** | A mission-first, deterministic framework for evaluating whether an emerging technology should be considered for a specific problem. It separates the mission problem, evidence, rulebook, computed result, decision record, and organizational decision. Quantum suitability is the first technology module. |
+| **PQC and Crypto-Agility Engineering** | Practical methods for cryptographic inventory, CBOM-style reporting, TLS 1.3 and HTTP/3 visibility, hybrid ML-KEM testing, harvest-now-decrypt-later risk analysis, certificate agility, and phased migration planning. |
+| **Applied Quantum Systems** | Hardware-aware benchmarking, quantum-kernel evaluation, QUBO and Hamiltonian optimization, grid-resilience planning, fraud-detection experiments, and workload-to-platform suitability analysis. |
+| **Research and AI Systems Engineering** | Evidence pipelines, strategic signal tracking, temporal intelligence, testable forecasts, governed agent workflows, output evaluation, and reusable engineering playbooks. |
 
----
+## Featured Public Projects
 
-## Featured Repository
+| Project | Purpose |
+|---|---|
+| **[Quantum Research Scout](https://github.com/raybeecham/quantum-research-scout)** · [Live dashboard](https://raybeecham.github.io/quantum-research-scout/) | Evidence-first intelligence for quantum technology, PQC, federal missions, procurement, patents, organizations, and strategic forecasts. The system preserves provenance, labels inference, quarantines weak evidence, and publishes daily, weekly, and monthly intelligence. |
+| **[Quantum Oncology Benchmark](https://github.com/raybeecham/quantum-oncology-benchmark)** | A reproducible framework for comparing strong classical baselines with quantum-kernel methods on oncology research tasks. It emphasizes leakage prevention, shared partitions, confidence intervals, pairwise provenance, resource accounting, and explicit limits on quantum-advantage claims. |
+| **[PQC Readiness War Room](https://github.com/raybeecham/pqc-readiness-war-room)** · [Live demo](https://pqc-readiness-war-room.raybeecham2009.workers.dev/) | A Cloudflare Worker that explains observable TLS modernization and HTTPS posture while keeping ML-KEM support, crypto discovery, vendor readiness, and enterprise migration readiness explicitly unverified until evidence exists. |
+| **[Crypto Inventory Demo](https://github.com/raybeecham/crypto-inventory-demo)** | A CodeQL-based cryptographic discovery pipeline for Java, Python, TLS configuration, and runtime observations. It produces a normalized inventory, risk summary, and CI enforcement for critical cryptographic findings. |
+| **[Claude Foundations and AI Systems Engineering Handbook](https://github.com/raybeecham/claude-certified-associate-foundations)** | Scenario-based certification preparation combined with a vendor-neutral method for designing reliable, secure, evaluated, and human-governed AI workflows. |
+| **[Modern Practical PKI](https://github.com/raybeecham/modern-practical-pki)** | An incremental Docker-based OpenSSL lab that moves from encoding, hashing, ASN.1, and key generation toward certificate authorities, certificates, revocation, TLS, HSMs, and broader PKI operations. |
+| **[Chrono](https://github.com/raybeecham/Chrono)** | An AI-powered historical simulation built during OpenAI Build Week, featuring a reconstructed 1998 desktop, period-aware dialogue, structured temporal-contamination detection, and a deterministic offline fallback. |
 
-### [Quantum Research Scout](https://github.com/raybeecham/quantum-research-scout)
+## Additional Active R&D
 
-An automated daily research scout for post-quantum cryptography, quantum technology, and AI security signals. It collects from arXiv, IACR ePrint, RSS feeds, and configurable web pages, then classifies, scores, deduplicates, stores, date-filters, and reports the results as compact Markdown intelligence digests.
+Some work is still private or being prepared for a future public release:
 
-**Why it matters:** PQC and quantum technology move quickly across papers, standards bodies, government advisories, vendor blogs, and research labs. This project turns scattered updates into a daily briefing that is easier to scan, compare, and archive.
+- A local defensive lab that measures classical and hybrid post-quantum TLS handshakes, records only observed negotiation data, and produces transparent HNDL risk and migration outputs.
+- A hardware-architecture assessment method covering circuit fidelity, routing behavior, error provenance, fault-tolerance readiness, and cryptographic resource projections.
+- Hybrid quantum-classical optimization pipelines for federal energy-resilience exercises and highly imbalanced fraud-detection workloads.
+- An emerging vendor-neutral quantum workload advisor for deciding whether a controlled experiment is justified before comparing providers.
 
-**Current focus:**
+## Engineering Principles
 
-- Daily PQC, quantum, and AI security research collection
-- Relevance scoring and topical confidence filtering
-- Source weighting for high-signal institutions and labs
-- SQLite storage for retained research items
-- Markdown digest generation for human scanning
-- GitHub Actions automation for scheduled runs
+- **Evidence before claims:** Source provenance, limitations, conflicts, and unknowns remain visible.
+- **Mission before technology:** Start with the problem and decision context, not a preferred platform or vendor.
+- **Classical baselines before quantum conclusions:** Quantum results are compared against credible classical methods under shared evaluation conditions.
+- **Reproducibility by default:** Versioned configurations, schemas, deterministic outputs, CI, tests, and machine-readable artifacts are part of the design.
+- **Human accountability:** A model, score, benchmark, or framework result supports a decision. It does not authorize procurement, deployment, clinical action, or operational control.
+- **Security boundaries matter:** Tools fail closed, protect credentials, avoid unauthorized scanning, and distinguish lab evidence from production assurance.
 
----
+## Technical Stack
 
-## Live Demo Concepts
+| Area | Tools and methods |
+|---|---|
+| **Security and Cryptography** | PQC, ML-KEM, TLS 1.3, HTTP/3 and QUIC, PKI, OpenSSL, CodeQL, CBOM concepts, Wireshark, tshark, cryptographic inventory, Zero Trust |
+| **Software and Automation** | Python, TypeScript and JavaScript, FastAPI, Streamlit, Next.js, Cloudflare Workers, Docker, GitHub Actions, SQLite, REST APIs, JSON Schema |
+| **Quantum and Optimization** | Qiskit, Qrisp, D-Wave Ocean, quantum kernels, QUBO, Hamiltonian optimization, circuit benchmarking, hardware-aware compilation and routing analysis |
+| **Data and AI** | pandas, NumPy, scikit-learn, statistical evaluation, provenance tracking, structured outputs, agent workflows, retrieval and evidence pipelines |
+| **Cloud and Federal Strategy** | AWS, cloud security, DevSecOps, NIST and FIPS alignment, federal modernization, mission assurance, technology evaluation, acquisition-support analysis |
 
-These are the kinds of demos I build and refine for technical storytelling, research, and security strategy discussions:
+## Credentials and Education
 
-### Quantum Research Scout
+**Selected credentials:** GIAC Certified Intrusion Analyst (GCIA), AWS Certified Solutions Architect - Associate, ISC2 Systems Security Certified Practitioner (SSCP), CompTIA Security+, Q-CTRL Quantum Professional, SandboxAQ AQtive Guard Certified Practitioner, and D-Wave Quantum Programming - Core.
 
-An automated research workflow that collects, classifies, scores, and summarizes PQC, quantum technology, and AI security updates into daily Markdown intelligence digests.
-
-**Key concepts:** Post-quantum cryptography, quantum technology tracking, AI security, source scoring, SQLite, GitHub Actions, research automation.
-
-### TLS 1.3 Visibility Lab
-
-A network visibility demo showing how TLS 1.3 changes traditional passive inspection assumptions. The goal is not universal decryption. The goal is governed, authorized visibility using the right vantage point, metadata, endpoint context, and policy controls.
-
-**Key concepts:** TLS 1.3, forward secrecy, ClientHello visibility, QUIC/HTTP3, edge metadata, authorized inspection, Zero Trust.
-
-### Crypto Inventory / CBOM Pipeline
-
-A crypto-agility workflow that scans code for cryptographic usage, extracts structured findings, and produces inventory-style output for PQC readiness analysis.
-
-**Key concepts:** CodeQL, cryptographic discovery, algorithm inventory, weak key detection, PQC migration planning, CBOM-style reporting.
-
-### Quantum Optimization Sandbox
-
-A hands-on environment for modeling optimization problems using quantum and hybrid quantum-classical approaches.
-
-**Key concepts:** QUBO, QAOA, D-Wave, quantum optimization, resource allocation, security-relevant optimization problems.
-
-### DevSecOps Security Lab
-
-A practical lab for security automation across the software delivery lifecycle.
-
-**Key concepts:** GitHub Actions, SBOM, SAST, IaC scanning, artifact integrity, container scanning, policy-as-code, runtime security.
-
----
-
-## Building Next
-
-I am gradually building out additional public demos around:
-
-- DevSecOps security pipelines
-- TLS visibility and transport metadata
-- Quantum optimization experiments
-- Local AI-assisted security workflows
-- Cloud security automation
-
-These are active learning and prototyping areas. I prefer to publish projects when they can clearly explain the problem, the architecture, and the security value.
-
----
-
-## Current Work
-
-I am currently focused on building and evaluating practical approaches for:
-
-- PQC readiness and crypto-agility
-- Cryptographic inventory generation
-- CBOM-style reporting for cryptographic assets
-- TLS 1.3 visibility and metadata-driven inspection
-- Federal cybersecurity modernization
-- DevSecOps security automation
-- Quantum computing demonstrations for security and optimization use cases
-
----
-
-## Selected Project Themes
-
-### Crypto-Agility & PQC Readiness
-
-Projects and research focused on identifying cryptographic assets, evaluating risk, and preparing systems for migration to quantum-resistant algorithms.
-
-Example topics:
-
-- RSA, ECC, DH, and legacy algorithm discovery
-- Weak key-size detection
-- TLS version and cipher visibility
-- PQC migration planning
-- CBOM-style cryptographic reporting
-- Harvest-now-decrypt-later risk analysis
-
-### Cloud Security & DevSecOps
-
-Security automation projects that help detect misconfigurations, strengthen CI/CD pipelines, and improve cloud security posture.
-
-Example topics:
-
-- AWS security automation
-- Infrastructure-as-code checks
-- GitHub Actions security workflows
-- SBOM and software supply chain security
-- Container and dependency scanning
-- Policy-as-code concepts
-
-### Quantum Computing Experiments
-
-Applied quantum computing projects exploring how quantum and hybrid quantum-classical methods may support optimization, cybersecurity, and research use cases.
-
-Example topics:
-
-- QAOA for optimization problems
-- Quantum machine learning proof-of-concepts
-- Quantum-safe security demonstrations
-- Quantum networking and sensing concepts
-- Benchmarking and simulation experiments
-
----
-
-## Technical Skills
-
-### Programming & Scripting
-
-- Python
-- Java
-- JavaScript
-- C#
-- Apex
-- SQL
-- SOQL
-- Bash / Linux CLI
-
-### Security & Cloud
-
-- AWS
-- GitHub Actions
-- DevSecOps
-- Network security
-- TLS analysis
-- Vulnerability management
-- Cryptographic inventory
-- Post-quantum cryptography
-- Security automation
-
-### Data, AI & Quantum
-
-- NumPy
-- pandas
-- scikit-learn
-- TensorFlow
-- Jupyter
-- Qiskit
-- PennyLane
-- D-Wave tools
-- Quantum optimization concepts
-
-### Tools & Platforms
-
-- Git / GitHub
-- VS Code
-- Linux / WSL
-- Wireshark
-- Streamlit
-- Salesforce
-- Agile / Scrum
-
----
-
-## Recommended Profile Pin
-
-For now, I recommend pinning this repository first:
-
-1. [quantum-research-scout](https://github.com/raybeecham/quantum-research-scout)
-
-This is the clearest flagship project because it shows working automation, domain focus, scheduled GitHub Actions, structured data storage, and readable research output.
-
----
-
-## Certifications
-
-- GIAC Certified Intrusion Analyst (GCIA)
-- AWS Certified Solutions Architect - Associate
-- ISC2 Systems Security Certified Practitioner (SSCP)
-- ISC2 Certified in Cybersecurity
-- CompTIA Security+
-- Salesforce Certified Administrator
-- Q-CTRL Quantum Professional Certificate
-- SandboxAQ AQtive Guard Certified Practitioner
-- D-Wave Quantum Programming - Core
-- Chainalysis Cryptocurrency Fundamentals Certification
-- Google IT Automation with Python
-- ITIL 4 Foundation
-- ICAgile Certified Professional credentials
-- Data Analytics and Causal Analytics credentials from Texas A&M University - Central Texas
-
----
-
-## Education
-
-**Texas A&M University - Central Texas**  
-Master of Science, Information Systems  
-Cybersecurity concentration  
-GPA: 4.0
-
-**Texas State University**  
-Bachelor of Business Administration, Computer Information Systems
-
----
-
-## What I Build
-
-I use this GitHub profile to explore and share work related to:
-
-- Practical cybersecurity tooling
-- Quantum-safe security strategy
-- PQC and crypto-agility demos
-- Cloud security automation
-- Security dashboards and visualizations
-- Quantum computing experiments
-- Research-driven technical prototypes
-
----
+**Education:** M.S. in Information Systems with a cybersecurity concentration from Texas A&M University-Central Texas, and B.B.A. in Computer Information Systems from Texas State University.
 
 ## Connect
 
-- GitHub: [@raybeecham](https://github.com/raybeecham)
-- LinkedIn: [Ray Beecham](https://linkedin.com/in/RaymondBeecham)
-- Trailhead: [@rbeecham](https://trailblazer.me/id/rbeecham2)
+- [LinkedIn](https://linkedin.com/in/RaymondBeecham)
+- [GitHub](https://github.com/raybeecham)
+
+---
+
+<sub>These are personal research and open-source projects. Views are my own. Project outputs are decision support and research artifacts, not employer or client positions, procurement authorization, medical advice, or operational approval.</sub>

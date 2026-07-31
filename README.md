@@ -14,6 +14,16 @@ U.S. Navy Veteran · Federal Cybersecurity · Post-Quantum Cryptography · Cloud
 
 </div>
 
+<p align="center">
+  <a href="https://raybeecham.github.io/raybeecham/">
+    <img src="docs/assets/research-portfolio-banner.svg" alt="Open Ray Beecham's interactive research portfolio" width="100%">
+  </a>
+</p>
+
+<p align="center">
+  <strong><a href="https://raybeecham.github.io/raybeecham/">Enter the interactive research portfolio →</a></strong>
+</p>
+
 I build evidence-driven systems for **post-quantum migration, cryptographic discovery, transport visibility, quantum workload evaluation, and emerging-technology decision assurance**.
 
 My current work is centered on a practical question:
@@ -79,7 +89,7 @@ Some work is still private or being prepared for a future public release:
 
 ## Connect
 
-- [Research portfolio](https://raybeecham.github.io/raybeecham/)
+- [Interactive research portfolio](https://raybeecham.github.io/raybeecham/)
 - [LinkedIn](https://linkedin.com/in/RaymondBeecham)
 - [GitHub](https://github.com/raybeecham)
 

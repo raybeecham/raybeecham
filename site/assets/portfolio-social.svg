@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#050816"/><stop offset=".5" stop-color="#0b1024"/><stop offset="1" stop-color="#111733"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#62f2ff"/><stop offset=".5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#b8f45d"/></linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="18" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#62f2ff" stroke-opacity=".06"/></pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <circle cx="985" cy="315" r="215" fill="none" stroke="#62f2ff" stroke-opacity=".17"/>
+  <circle cx="985" cy="315" r="158" fill="none" stroke="#8b5cf6" stroke-opacity=".23"/>
+  <circle cx="985" cy="315" r="102" fill="none" stroke="#b8f45d" stroke-opacity=".18"/>
+  <circle cx="985" cy="315" r="44" fill="url(#accent)" filter="url(#glow)"/>
+  <g fill="#dffcff" font-family="Segoe UI, Arial, sans-serif">
+    <text x="78" y="112" font-size="25" letter-spacing="5" fill="#62f2ff">RAY BEECHAM // RESEARCH PORTFOLIO</text>
+    <text x="78" y="240" font-size="72" font-weight="700">Quantum security.</text>
+    <text x="78" y="324" font-size="72" font-weight="700">Evidence-driven decisions.</text>
+    <text x="78" y="408" font-size="28" fill="#aeb9d8">Applied quantum systems · crypto-agility · technology decision assurance</text>
+    <text x="78" y="520" font-size="24" fill="#b8f45d">Evidence before claims. Mission before technology. Humans remain accountable.</text>
+  </g>
+  <g stroke="url(#accent)" stroke-width="3" fill="none" opacity=".8">
+    <path d="M794 171L985 315L1129 184"/><path d="M790 461L985 315L1131 454"/>
+  </g>
+  <g fill="#62f2ff"><circle cx="794" cy="171" r="7"/><circle cx="1129" cy="184" r="7"/><circle cx="790" cy="461" r="7"/><circle cx="1131" cy="454" r="7"/></g>
+</svg>

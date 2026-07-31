@@ -1,9 +1,10 @@
 {
   "name": "Ray Beecham Research Portfolio",
   "short_name": "Ray Beecham",
-  "description": "Quantum security, applied research, and evidence-driven decision systems.",
+  "description": "Quantum security, applied quantum systems, and evidence-driven decision assurance.",
   "start_url": "/raybeecham/",
   "display": "standalone",
-  "background_color": "#07101d",
-  "theme_color": "#08111f"
+  "background_color": "#050816",
+  "theme_color": "#050816",
+  "icons": []
 }

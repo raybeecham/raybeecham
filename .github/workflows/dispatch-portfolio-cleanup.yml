@@ -6,6 +6,7 @@ on:
       - main
     types:
       - opened
+      - reopened
 
 permissions:
   contents: write
@@ -23,7 +24,9 @@ jobs:
           fetch-depth: 0
 
       - name: Apply structural cleanup
-        run: python scripts/refactor_portfolio.py
+        run: |
+          python scripts/refactor_portfolio.py
+          python scripts/post_refactor_cleanup.py
 
       - name: Validate cleaned portfolio
         shell: bash
@@ -35,6 +38,7 @@ jobs:
       - name: Remove branch-only refactor machinery
         run: |
           rm scripts/refactor_portfolio.py
+          rm scripts/post_refactor_cleanup.py
           rm .github/workflows/portfolio-cleanup.yml
 
       - name: Commit cleanup branch

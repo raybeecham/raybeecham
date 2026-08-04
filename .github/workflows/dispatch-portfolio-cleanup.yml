@@ -1,17 +1,18 @@
 name: Dispatch portfolio cleanup branch
 
 on:
-  push:
+  pull_request:
     branches:
       - main
-    paths:
-      - ".github/workflows/dispatch-portfolio-cleanup.yml"
+    types:
+      - opened
 
 permissions:
   contents: write
 
 jobs:
   refactor-branch:
+    if: github.head_ref == 'agent/portfolio-cleanup-v1'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:

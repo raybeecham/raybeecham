@@ -8,7 +8,7 @@ U.S. Navy Veteran · Federal Cybersecurity · Post-Quantum Cryptography · Cloud
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ray%20Beecham-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/RaymondBeecham)
 [![GitHub](https://img.shields.io/badge/GitHub-%40raybeecham-181717?logo=github&logoColor=white)](https://github.com/raybeecham)
-[![Research Portfolio](https://img.shields.io/badge/Research%20Portfolio-Open-087D9F?logo=githubpages&logoColor=white)](https://raybeecham.github.io/raybeecham/)
+[![EvidenceOS](https://img.shields.io/badge/EvidenceOS-Launch%20Mission%20Control-087D9F?logo=githubpages&logoColor=white)](https://raybeecham.github.io/raybeecham/)
 [![Quantum Research Scout](https://img.shields.io/badge/Quantum%20Research%20Scout-Live-2ea44f?logo=github)](https://raybeecham.github.io/quantum-research-scout/)
 [![PQC Readiness War Room](https://img.shields.io/badge/PQC%20Readiness%20War%20Room-Live-F38020?logo=cloudflare&logoColor=white)](https://pqc-readiness-war-room.raybeecham2009.workers.dev/)
 
@@ -16,13 +16,13 @@ U.S. Navy Veteran · Federal Cybersecurity · Post-Quantum Cryptography · Cloud
 
 <p align="center">
   <a href="https://raybeecham.github.io/raybeecham/">
-    <img src="docs/assets/research-portfolio-banner.svg" alt="Open Ray Beecham's interactive research portfolio" width="100%">
+    <img src="docs/assets/evidence-os-banner.svg" alt="Launch EvidenceOS, Ray Beecham's interactive mission research environment" width="100%">
   </a>
 </p>
 
 <p align="center">
-  <strong><a href="https://raybeecham.github.io/raybeecham/">Enter the interactive research portfolio →</a></strong><br>
-  <sub>New: an <a href="https://raybeecham.github.io/raybeecham/#tdaf-demo">interactive TDAF walkthrough</a> — trace sample evidence through Observe → Structure → Evaluate → Record → Decide.</sub>
+  <strong><a href="https://raybeecham.github.io/raybeecham/">Launch EvidenceOS →</a></strong><br>
+  <sub>Select a mission, traverse the system graph, replay deterministic decisions, rotate the research globe, compare quantum architectures, or press <code>`</code> and type <code>help</code>.</sub>
 </p>
 
 I build evidence-driven systems for **post-quantum migration, cryptographic discovery, transport visibility, quantum workload evaluation, and emerging-technology decision assurance**.
@@ -32,6 +32,20 @@ My current work is centered on a practical question:
 > How do we turn complex technical evidence into a decision that is explainable, reproducible, appropriately bounded, and useful to a real mission owner?
 
 That means preserving what was observed, what was inferred, what remains unknown, which rules produced a result, and what still requires accountable human judgment.
+
+## EvidenceOS
+
+The profile website is no longer a conventional project gallery. It is an interactive, mission-driven research environment.
+
+| Module | What it does |
+|---|---|
+| **Mission Router** | Reconfigures the environment for enterprise security, PQC migration, quantum evaluation, research intelligence, or open-lab exploration |
+| **Mission Control** | Shows how the public systems, private R&D, laboratories, benchmarks, and decision methods connect |
+| **Cyber Situation Room** | Combines mission brief, public repository evidence, strategic signals, controls, and decision-system health |
+| **Decision Replay** | Executes sample decisions through Observe → Admit → Evaluate → Record → Decide |
+| **Research Earth** | Maps public standards, government, research, security, and quantum-industry organizations |
+| **Quantum Explorer** | Compares architecture families through connectivity, native operations, routing, constraints, and workload fit |
+| **Command Terminal** | Provides keyboard-first mission routing, system navigation, public links, and a few deliberate easter eggs |
 
 ## Current Research Programs
 
@@ -90,7 +104,7 @@ Some work is still private or being prepared for a future public release:
 
 ## Connect
 
-- [Interactive research portfolio](https://raybeecham.github.io/raybeecham/)
+- [Launch EvidenceOS](https://raybeecham.github.io/raybeecham/)
 - [LinkedIn](https://linkedin.com/in/RaymondBeecham)
 - [GitHub](https://github.com/raybeecham)
 

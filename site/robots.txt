@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://raybeecham.github.io/raybeecham/sitemap.xml

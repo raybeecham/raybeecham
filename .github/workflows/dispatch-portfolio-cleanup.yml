@@ -35,11 +35,13 @@ jobs:
           python scripts/validate_portfolio.py
           find site/assets -type f -name '*.js' -print0 | xargs -0 -n1 node --check
 
-      - name: Remove branch-only refactor machinery
+      - name: Restore workflow paths for connector-managed follow-up
+        run: git checkout origin/main -- .github/workflows/deploy-portfolio.yml
+
+      - name: Remove branch-only Python refactor machinery
         run: |
           rm scripts/refactor_portfolio.py
           rm scripts/post_refactor_cleanup.py
-          rm .github/workflows/portfolio-cleanup.yml
 
       - name: Commit cleanup branch
         shell: bash

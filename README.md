@@ -22,7 +22,7 @@ U.S. Navy Veteran · Federal Cybersecurity · Post-Quantum Cryptography · Cloud
 
 <p align="center">
   <strong><a href="https://raybeecham.github.io/raybeecham/">Enter the interactive research portfolio →</a></strong><br>
-<sub>New: an <a href="https://raybeecham.github.io/raybeecham/#tdaf-demo">interactive TDAF walkthrough</a> — trace sample evidence through Observe → Structure → Evaluate → Record → Decide.</sub>
+  <sub>New: an <a href="https://raybeecham.github.io/raybeecham/#tdaf-demo">interactive TDAF walkthrough</a> — trace sample evidence through Observe → Structure → Evaluate → Record → Decide.</sub>
 </p>
 
 I build evidence-driven systems for **post-quantum migration, cryptographic discovery, transport visibility, quantum workload evaluation, and emerging-technology decision assurance**.

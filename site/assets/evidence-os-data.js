@@ -410,45 +410,76 @@
   };
 
   const earthMarkers = [
+
     {
-      id: "nist",
-      name: "NIST",
-      location: "Gaithersburg, Maryland",
-      lat: 39.1434,
-      lon: -77.2014,
+      id: "us-federal-quantum-network",
+      name: "U.S. Federal Quantum & Cybersecurity Programs",
+      location: "United States",
+      lat: 38.9072,
+      lon: -77.0369,
+      category: "government",
+      relevance: "Multi-agency public activity spanning quantum information science, cryptographic standards, cybersecurity, workforce development, national laboratories, and advanced research.",
+      link: "https://www.quantum.gov/"
+    },
+    {
+      id: "european-quantum-programs",
+      name: "European Public Quantum Programs",
+      location: "European Union",
+      lat: 50.8503,
+      lon: 4.3517,
+      category: "government",
+      relevance: "Multi-country public research and innovation programs spanning quantum computing, simulation, communication, sensing, and ecosystem development.",
+      link: "https://qt.eu/"
+    },
+    {
+      id: "uk-quantum-programme",
+      name: "UK National Quantum Technologies Programme",
+      location: "United Kingdom",
+      lat: 51.5074,
+      lon: -0.1278,
+      category: "government",
+      relevance: "A cross-government and research program connecting national strategy, research hubs, skills, infrastructure, and quantum-technology transition.",
+      link: "https://www.gov.uk/government/publications/national-quantum-strategy"
+    },
+    {
+      id: "ietf-pquip",
+      name: "IETF Post-Quantum Use in Protocols",
+      location: "Global standards community",
+      lat: 18.0,
+      lon: -28.0,
       category: "standards",
-      relevance: "Post-quantum standards, cryptographic guidance, and measurement science.",
-      link: "https://www.nist.gov/pqcrypto"
+      relevance: "Open Internet standards work examining post-quantum transition, protocol integration, operational considerations, and implementation guidance.",
+      link: "https://datatracker.ietf.org/wg/pquip/about/"
     },
     {
-      id: "nsa",
-      name: "NSA Cybersecurity",
-      location: "Fort Meade, Maryland",
-      lat: 39.1081,
-      lon: -76.7714,
-      category: "government",
-      relevance: "National-security cryptographic modernization and CNSA direction.",
-      link: "https://www.nsa.gov/Cybersecurity/"
+      id: "etsi-qsc",
+      name: "ETSI Quantum-Safe Cryptography",
+      location: "Sophia Antipolis, France",
+      lat: 43.6156,
+      lon: 7.055,
+      category: "standards",
+      relevance: "Public standards and technical work addressing quantum-safe cryptography, migration, interoperability, and deployment considerations.",
+      link: "https://www.etsi.org/technologies/quantum-safe-cryptography"
     },
     {
-      id: "doe",
-      name: "U.S. Department of Energy",
-      location: "Washington, District of Columbia",
-      lat: 38.8868,
-      lon: -77.0259,
-      category: "government",
-      relevance: "Quantum information science, critical infrastructure, energy systems, and national laboratories.",
-      link: "https://www.energy.gov/science/quantum-information-science"
+      id: "open-quantum-safe",
+      name: "Open Quantum Safe",
+      location: "Global open-source community",
+      lat: 43.4723,
+      lon: -80.5449,
+      category: "security",
+      relevance: "Open-source post-quantum cryptographic implementations and integrations used for research, interoperability testing, and migration experimentation.",
+      link: "https://openquantumsafe.org/"
     },
     {
-      id: "darpa",
-      name: "DARPA",
-      location: "Arlington, Virginia",
-      lat: 38.8816,
-      lon: -77.091,
-      category: "government",
-      relevance: "High-risk research programs spanning quantum systems, cybersecurity, and mission technology.",
-      link: "https://www.darpa.mil/"
+      id: "qutech",
+      name: "QuTech",
+      location: "Delft, Netherlands",
+      lat: 52.0116,
+      lon: 4.3571,
+      category: "research",
+      relevance: "Public quantum research spanning computing, networking, hardware, software, and foundational system engineering.",
+      link: "https://qutech.nl/"
     },
     {
       id: "iqm",
@@ -670,7 +701,7 @@
       date: "August 2026",
       title: "EvidenceOS turns the portfolio into an operating environment",
       category: "platform",
-      summary: "Mission selection, system graph, decision replay, research earth, architecture explorer, situation room, timeline, and terminal converge into one public experience.",
+      summary: "Mission selection, system graph, decision replay, research network, architecture explorer, situation room, timeline, and terminal converge into one public experience.",
       evidence: ["Mission-based navigation", "Interactive decision systems", "Public-safe data", "Accessible static architecture"],
       link: "#mission-control"
     },

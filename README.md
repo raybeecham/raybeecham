@@ -43,7 +43,7 @@ The profile website is no longer a conventional project gallery. It is an intera
 | **Mission Control** | Shows how the public systems, private R&D, laboratories, benchmarks, and decision methods connect |
 | **Cyber Situation Room** | Combines mission brief, public repository evidence, strategic signals, controls, and decision-system health |
 | **Decision Replay** | Executes sample decisions through Observe → Admit → Evaluate → Record → Decide |
-| **Research Earth** | Maps public standards, government, research, security, and quantum-industry organizations |
+| **Research Network** | Maps public standards, government, research, security, and quantum-industry organizations |
 | **Quantum Explorer** | Compares architecture families through connectivity, native operations, routing, constraints, and workload fit |
 | **Command Terminal** | Provides keyboard-first mission routing, system navigation, public links, and a few deliberate easter eggs |
 

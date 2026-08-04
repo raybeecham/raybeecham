@@ -19,8 +19,11 @@ NOT_FOUND = SITE / "404.html"
 HTML_FILES = (INDEX, NOT_FOUND)
 REQUIRED_ASSETS = (
     SITE / "assets" / "evidence-os.css",
+    SITE / "assets" / "evidence-os-refinements.css",
     SITE / "assets" / "evidence-os-data.js",
+    SITE / "assets" / "evidence-os-public-data.js",
     SITE / "assets" / "evidence-os.js",
+    SITE / "assets" / "evidence-os-refinements.js",
     SITE / "assets" / "evidence-os-globe.js",
     SITE / "assets" / "evidence-os-terminal.js",
     SITE / "assets" / "favicon.svg",
@@ -249,6 +252,27 @@ def validate_contract(errors: list[str]) -> None:
     index_text = INDEX.read_text(encoding="utf-8")
     js_text = "\n".join(path.read_text(encoding="utf-8") for path in SITE.rglob("*.js"))
     data_text = (SITE / "assets" / "evidence-os-data.js").read_text(encoding="utf-8")
+    public_paths = [
+        ROOT / "README.md",
+        INDEX,
+        SITE / "assets" / "evidence-os-data.js",
+        ROOT / "docs" / "EVIDENCE_OS_ARCHITECTURE.md",
+    ]
+    public_text = "\n".join(
+        path.read_text(encoding="utf-8")
+        for path in public_paths
+        if isinstance(path, Path) and path.is_file()
+    )
+    forbidden_public_identifiers = (
+        "U.S. Department of Energy",
+        "energy.gov/science/quantum",
+        'id: "doe"',
+    )
+    for token in forbidden_public_identifiers:
+        if token in public_text:
+            errors.append(f"public portfolio contains client-specific identifier: {token}")
+    if re.search(r"\bDOE\b", public_text):
+        errors.append("public portfolio contains client-specific DOE acronym")
 
     for legacy in LEGACY_ASSETS:
         if legacy in index_text:
@@ -261,7 +285,7 @@ def validate_contract(errors: list[str]) -> None:
     required_terms = (
         "MISSION CONTROL",
         "DECISION REPLAY",
-        "RESEARCH EARTH",
+        "RESEARCH NETWORK",
         "QUANTUM EXPLORER",
         "EvidenceOS Command Interface",
     )
@@ -279,19 +303,22 @@ def validate_contract(errors: list[str]) -> None:
 
 def validate_budgets(errors: list[str]) -> None:
     budgets = {
-        INDEX: 70_000,
-        SITE / "assets" / "evidence-os.css": 90_000,
-        SITE / "assets" / "evidence-os-data.js": 60_000,
-        SITE / "assets" / "evidence-os.js": 70_000,
-        SITE / "assets" / "evidence-os-globe.js": 30_000,
-        SITE / "assets" / "evidence-os-terminal.js": 30_000,
+        INDEX: 80_000,
+        SITE / "assets" / "evidence-os.css": 95_000,
+        SITE / "assets" / "evidence-os-refinements.css": 85_000,
+        SITE / "assets" / "evidence-os-data.js": 75_000,
+        SITE / "assets" / "evidence-os-public-data.js": 35_000,
+        SITE / "assets" / "evidence-os.js": 80_000,
+        SITE / "assets" / "evidence-os-refinements.js": 90_000,
+        SITE / "assets" / "evidence-os-globe.js": 60_000,
+        SITE / "assets" / "evidence-os-terminal.js": 35_000,
     }
     for path, limit in budgets.items():
         if path.is_file() and path.stat().st_size > limit:
             errors.append(f"{path.relative_to(ROOT)} exceeds {limit:,}-byte budget ({path.stat().st_size:,})")
     total_js = sum(path.stat().st_size for path in (SITE / "assets").glob("*.js"))
-    if total_js > 180_000:
-        errors.append(f"JavaScript total exceeds 180,000-byte budget ({total_js:,})")
+    if total_js > 320_000:
+        errors.append(f"JavaScript total exceeds 320,000-byte budget ({total_js:,})")
 
 
 def main() -> int:

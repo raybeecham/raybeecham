@@ -1,17 +1,19 @@
 name: Dispatch EvidenceOS mission control build
 
 on:
-  push:
+  pull_request:
     branches:
       - main
-    paths:
-      - ".github/workflows/dispatch-evidence-os.yml"
+    types:
+      - opened
+      - reopened
 
 permissions:
   contents: write
 
 jobs:
   build-branch:
+    if: github.head_ref == 'agent/evidenceos-mission-control'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:

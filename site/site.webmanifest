@@ -1,8 +1,10 @@
 {
+  "id": "/raybeecham/",
   "name": "EvidenceOS by Ray Beecham",
   "short_name": "EvidenceOS",
   "description": "Interactive research environment for quantum security, post-quantum migration, quantum technology evaluation, and accountable mission decisions.",
   "start_url": "/raybeecham/",
+  "scope": "/raybeecham/",
   "display": "standalone",
   "background_color": "#03050d",
   "theme_color": "#03050d",

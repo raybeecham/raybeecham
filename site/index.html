@@ -56,6 +56,7 @@
         <a href="#research">Research</a>
         <a href="#projects">Systems</a>
         <a href="#architecture">Method</a>
+        <a href="#tdaf-demo">Demo</a>
         <a href="#outputs">Outputs</a>
         <a href="#about">About</a>
       </nav>
@@ -104,6 +105,14 @@
             Evidence stays attached. Assumptions stay visible. Unknowns remain unknown. Human owners remain accountable.
           </p>
 
+          <ul class="identity-strip" aria-label="Background at a glance">
+            <li>U.S. Navy veteran</li>
+            <li>Federal cybersecurity</li>
+            <li>M.S. Information Systems</li>
+            <li>GCIA · SSCP · Security+</li>
+            <li>AWS Solutions Architect</li>
+          </ul>
+
           <div class="hero-actions">
             <a class="button button-primary" href="#projects">
               <span>Enter the research systems</span>
@@ -128,7 +137,14 @@
               <strong data-counter="2">2</strong>
               <span>live public systems</span>
             </div>
+            <div class="metric metric-live" data-live-pulse hidden>
+              <strong data-live-value>—</strong>
+              <span data-live-label>latest public commit</span>
+            </div>
           </div>
+          <p class="live-note" data-live-note hidden>
+            Verified in your browser just now via the public GitHub API — freshness shown as evidence, not asserted.
+          </p>
         </div>
 
         <div class="hero-visual" data-reveal aria-label="Research system constellation">
@@ -253,6 +269,7 @@
               <li>Auditable decision results and records</li>
               <li>Human organizational disposition</li>
             </ul>
+            <p class="program-gloss">In plain terms: a written, repeatable checklist that turns evidence into a recommendation you can audit — the same inputs always produce the same answer.</p>
             <div class="program-footer"><span>MISSION → EVIDENCE → RULES → RECORD</span></div>
           </article>
 
@@ -273,6 +290,7 @@
               <li>Hybrid ML-KEM handshake experimentation</li>
               <li>HNDL exposure and phased migration</li>
             </ul>
+            <p class="program-gloss">In plain terms: find every place an organization uses encryption (a CBOM is that inventory), and fix the pieces a future quantum computer could break — because encrypted traffic stolen today can be decrypted later (HNDL: harvest now, decrypt later).</p>
             <div class="program-footer"><span>DISCOVER → VERIFY → PRIORITIZE → MIGRATE</span></div>
           </article>
 
@@ -333,10 +351,11 @@
         </div>
 
         <div class="project-bento">
-          <article class="project-card project-flagship project-cyan" data-reveal data-tilt>
+          <article class="project-card project-flagship project-cyan" data-reveal data-tilt data-repo="raybeecham/quantum-research-scout">
             <div class="project-ambient" aria-hidden="true"></div>
             <div class="project-topline">
               <span class="project-index">01 // FLAGSHIP</span>
+              <span class="fresh-chip" data-fresh hidden></span>
               <span class="state-chip state-live"><i></i> LIVE SYSTEM</span>
             </div>
             <div class="project-content">
@@ -368,9 +387,10 @@
             </div>
           </article>
 
-          <article class="project-card project-orange" data-reveal data-tilt>
+          <article class="project-card project-orange" data-reveal data-tilt data-repo="raybeecham/pqc-readiness-war-room">
             <div class="project-topline">
               <span class="project-index">02 // PQC</span>
+              <span class="fresh-chip" data-fresh hidden></span>
               <span class="state-chip state-live"><i></i> LIVE DEMO</span>
             </div>
             <div class="mini-visual lock-visual" aria-hidden="true">
@@ -386,9 +406,10 @@
             </div>
           </article>
 
-          <article class="project-card project-violet" data-reveal data-tilt>
+          <article class="project-card project-violet" data-reveal data-tilt data-repo="raybeecham/quantum-oncology-benchmark">
             <div class="project-topline">
               <span class="project-index">03 // QML</span>
+              <span class="fresh-chip" data-fresh hidden></span>
               <span class="state-chip">PUBLIC BENCHMARK</span>
             </div>
             <div class="mini-visual oncology-visual" aria-hidden="true">
@@ -402,9 +423,10 @@
             <div class="project-links"><a class="text-link" href="https://github.com/raybeecham/quantum-oncology-benchmark">View repository <span>↗</span></a></div>
           </article>
 
-          <article class="project-card project-lime" data-reveal data-tilt>
+          <article class="project-card project-lime" data-reveal data-tilt data-repo="raybeecham/crypto-inventory-demo">
             <div class="project-topline">
               <span class="project-index">04 // DISCOVERY</span>
+              <span class="fresh-chip" data-fresh hidden></span>
               <span class="state-chip">PUBLIC PIPELINE</span>
             </div>
             <div class="mini-visual inventory-visual" aria-hidden="true">
@@ -418,9 +440,10 @@
             <div class="project-links"><a class="text-link" href="https://github.com/raybeecham/crypto-inventory-demo">View repository <span>↗</span></a></div>
           </article>
 
-          <article class="project-card project-wide project-blue" data-reveal data-tilt>
+          <article class="project-card project-wide project-blue" data-reveal data-tilt data-repo="raybeecham/claude-certified-associate-foundations">
             <div class="project-topline">
               <span class="project-index">05 // AI SYSTEMS</span>
+              <span class="fresh-chip" data-fresh hidden></span>
               <span class="state-chip">PUBLIC HANDBOOK</span>
             </div>
             <div class="project-wide-grid">
@@ -441,9 +464,10 @@
             </div>
           </article>
 
-          <article class="project-card project-blue" data-reveal data-tilt>
+          <article class="project-card project-blue" data-reveal data-tilt data-repo="raybeecham/modern-practical-pki">
             <div class="project-topline">
               <span class="project-index">06 // PKI</span>
+              <span class="fresh-chip" data-fresh hidden></span>
               <span class="state-chip">PUBLIC LAB</span>
             </div>
             <div class="mini-visual certificate-visual" aria-hidden="true">
@@ -456,9 +480,10 @@
             <div class="project-links"><a class="text-link" href="https://github.com/raybeecham/modern-practical-pki">View repository <span>↗</span></a></div>
           </article>
 
-          <article class="project-card project-amber" data-reveal data-tilt>
+          <article class="project-card project-amber" data-reveal data-tilt data-repo="raybeecham/Chrono">
             <div class="project-topline">
               <span class="project-index">07 // EXPERIENCE</span>
+              <span class="fresh-chip" data-fresh hidden></span>
               <span class="state-chip">PUBLIC PROTOTYPE</span>
             </div>
             <div class="mini-visual chrono-visual" aria-hidden="true">
@@ -467,7 +492,7 @@
             </div>
             <p class="project-kicker">Period-aware interactive AI</p>
             <h3>Chrono</h3>
-            <p>An AI-powered historical simulation with a reconstructed 1998 desktop, period-aware dialogue, structured temporal-contamination detection, and deterministic fallback.</p>
+            <p>An AI-powered historical simulation with a reconstructed 1998 desktop, period-aware dialogue, structured temporal-contamination detection — catching the model whenever it references anything after 1998 — and deterministic fallback.</p>
             <ul class="tag-list"><li>Next.js</li><li>Structured outputs</li><li>AI experience</li></ul>
             <div class="project-links"><a class="text-link" href="https://github.com/raybeecham/Chrono">View repository <span>↗</span></a></div>
           </article>
@@ -526,6 +551,55 @@
       </div>
     </section>
 
+    <section class="section section-tdaf-demo" id="tdaf-demo">
+      <div class="shell">
+        <div class="section-heading" data-reveal>
+          <div>
+            <p class="eyebrow">Interactive walkthrough</p>
+            <h2>Watch a technology decision get built.</h2>
+          </div>
+          <p>
+            The Technology Decision Assurance Framework is private while the rulebook format stabilizes,
+            but the reasoning is not a secret. Pick a scenario and trace how sample evidence becomes an
+            auditable recommendation. Sample data, real method.
+          </p>
+        </div>
+
+        <div class="tdaf-demo" data-tdaf-demo data-reveal>
+          <div class="tdaf-scenarios" role="tablist" aria-label="Choose a demonstration scenario">
+            <button class="tdaf-scenario" type="button" role="tab" data-scenario="grid" aria-selected="true">
+              <span>Scenario A</span>
+              <strong>Quantum optimization for grid-resilience scheduling</strong>
+            </button>
+            <button class="tdaf-scenario" type="button" role="tab" data-scenario="pqc" aria-selected="false">
+              <span>Scenario B</span>
+              <strong>Hybrid ML-KEM rollout for public TLS endpoints</strong>
+            </button>
+            <button class="tdaf-scenario" type="button" role="tab" data-scenario="fraud" aria-selected="false">
+              <span>Scenario C</span>
+              <strong>Quantum ML for production fraud detection</strong>
+            </button>
+          </div>
+
+          <div class="tdaf-trace" data-tdaf-trace aria-live="polite">
+            <!-- Stages rendered by site.js -->
+          </div>
+
+          <div class="tdaf-record" data-tdaf-record hidden>
+            <div class="tdaf-record-head">
+              <span>DECISION RECORD // SAMPLE</span>
+              <button class="tdaf-replay" type="button" data-tdaf-replay>Replay trace</button>
+            </div>
+            <pre data-tdaf-record-body></pre>
+            <p class="tdaf-boundary">
+              The framework stops here. The record supports a decision — an accountable human owner makes it.
+              This walkthrough uses illustrative sample data, not a live TDAF instance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section section-outputs" id="outputs">
       <div class="shell">
         <div class="section-heading" data-reveal>
@@ -554,19 +628,19 @@
           </article>
           <article class="ledger-row">
             <div><span class="ledger-chip chip-private">Private R&amp;D</span><small>Active development</small></div>
-            <div><h3>Technology Decision Assurance Framework</h3><p>Technology-independent deterministic decision model</p></div>
+            <div><h3>Technology Decision Assurance Framework</h3><p>Technology-independent deterministic decision model</p><small class="ledger-why">Private until the rulebook and record formats stabilize — publishing a moving spec would break the framework's own reproducibility rule. Method shown in the walkthrough above.</small></div>
             <div><p>Rulebooks, evidence governance, decision records</p></div>
             <span class="ledger-boundary">Pre-release</span>
           </article>
           <article class="ledger-row">
             <div><span class="ledger-chip chip-working">Working research</span><small>Architecture assessment</small></div>
-            <div><h3>Quantum Hardware Architecture Assessment</h3><p>Hardware-aware readiness methodology</p></div>
+            <div><h3>Quantum Hardware Architecture Assessment</h3><p>Hardware-aware readiness methodology</p><small class="ledger-why">Private while results are validated against additional hardware — releasing unverified benchmark claims would contradict the point.</small></div>
             <div><p>Routing, error provenance, FT and crypto resources</p></div>
             <span class="ledger-boundary">Private</span>
           </article>
           <article class="ledger-row">
             <div><span class="ledger-chip chip-defensive">Defensive lab</span><small>Authorized targets only</small></div>
-            <div><h3>Quantum Attack and Defense Lab</h3><p>Classical and hybrid TLS experimentation</p></div>
+            <div><h3>Quantum Attack and Defense Lab</h3><p>Classical and hybrid TLS experimentation</p><small class="ledger-why">Private by security boundary — the lab only measures systems it is authorized to touch, and publishing tooling without that guard would invite misuse.</small></div>
             <div><p>Observed negotiation, timing, HNDL, migration</p></div>
             <span class="ledger-boundary">Private</span>
           </article>
@@ -652,7 +726,17 @@
         <div class="contact-links">
           <a href="https://github.com/raybeecham"><span>GitHub</span><strong>@raybeecham</strong><i>↗</i></a>
           <a href="https://linkedin.com/in/RaymondBeecham"><span>LinkedIn</span><strong>Ray Beecham</strong><i>↗</i></a>
+          <a href="mailto:raybeecham2009@gmail.com"><span>Email</span><strong>Direct inquiries</strong><i>↗</i></a>
         </div>
+      </div>
+      <div class="shell evaluator-note" data-reveal>
+        <span class="panel-label">For federal evaluators and hiring teams</span>
+        <p>
+          U.S. Navy veteran working in federal cybersecurity, with hands-on NIST-aligned post-quantum migration work:
+          ML-KEM experimentation, CBOM-style cryptographic inventory, and TLS modernization evidence. Every public claim
+          on this page links to inspectable source. For consulting, collaboration, or role conversations, email or
+          LinkedIn reaches me directly.
+        </p>
       </div>
     </section>
   </main>
@@ -666,6 +750,7 @@
         <div><strong>Ray Beecham</strong><p>Quantum security, applied research, and evidence-driven decision systems.</p></div>
       </div>
       <p class="footer-note">Personal research and open-source work. Views are my own. Outputs are research artifacts and decision support, not employer or client positions, procurement authorization, medical advice, or operational approval.</p>
+      <p class="footer-updated">Page last updated <time datetime="2026-08-04">August 4, 2026</time> · live repo activity verified client-side on each visit</p>
       <a class="back-to-top" href="#top">Back to top <span>↑</span></a>
     </div>
   </footer>

@@ -17,6 +17,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PAYLOAD = ROOT / ".evidenceos-payload"
+CORRECTIONS = PAYLOAD / "corrections"
 
 EXPECTED_SHA256 = {
     "00.txt": "9cd362541b3958cf74280fc0147494aad51ecc22b827c311db592a5f15e17cc7",
@@ -30,6 +31,8 @@ EXPECTED_SHA256 = {
     "08.txt": "1aa1162586b79c38b337e548a9a4575f90c2a3fa50768491f44df6e80212c955",
     "09.txt": "72919d5fa549b770cecce4b829070fc43d5f8dba7eb8e82babd4aa1b0c802d0c",
 }
+
+CORRECTED_CHUNKS = {"03.txt", "04.txt", "07.txt", "08.txt"}
 
 REQUIRED_ARCHIVE_MEMBERS = {
     "README.md",
@@ -60,19 +63,39 @@ SUPERSEDED_PATHS = (
 )
 
 
-def validate_chunks(chunks: list[Path]) -> None:
-    if [path.name for path in chunks] != list(EXPECTED_SHA256):
-        raise RuntimeError(f"Unexpected payload chunks: {[path.name for path in chunks]}")
+def read_logical_chunk(name: str) -> bytes:
+    """Return the verified logical chunk, using split correction files when needed."""
+    if name in CORRECTED_CHUNKS:
+        stem = name.removesuffix(".txt")
+        parts = [CORRECTIONS / f"{stem}.a.txt", CORRECTIONS / f"{stem}.b.txt"]
+        missing = [str(path.relative_to(ROOT)) for path in parts if not path.is_file()]
+        if missing:
+            raise RuntimeError(f"Missing correction payload files: {missing}")
+        text = "".join(path.read_text(encoding="utf-8").strip() for path in parts)
+        return text.encode("utf-8")
 
+    path = PAYLOAD / name
+    if not path.is_file():
+        raise RuntimeError(f"Missing payload chunk: {path.relative_to(ROOT)}")
+    return path.read_text(encoding="utf-8").strip().encode("utf-8")
+
+
+def validate_chunks() -> dict[str, bytes]:
+    logical: dict[str, bytes] = {}
     mismatches: list[str] = []
-    for path in chunks:
-        actual = hashlib.sha256(path.read_bytes()).hexdigest()
-        expected = EXPECTED_SHA256[path.name]
-        print(f"payload {path.name}: {actual}")
+
+    for name, expected in EXPECTED_SHA256.items():
+        data = read_logical_chunk(name)
+        actual = hashlib.sha256(data).hexdigest()
+        source = "correction" if name in CORRECTED_CHUNKS else "original"
+        print(f"payload {name} ({source}): {actual}")
         if actual != expected:
-            mismatches.append(f"{path.name}: expected {expected}, found {actual}")
+            mismatches.append(f"{name}: expected {expected}, found {actual}")
+        logical[name] = data
+
     if mismatches:
         raise RuntimeError("Payload checksum mismatch:\n  " + "\n  ".join(mismatches))
+    return logical
 
 
 def safe_extract(archive: tarfile.TarFile) -> None:
@@ -93,10 +116,8 @@ def safe_extract(archive: tarfile.TarFile) -> None:
 
 
 def main() -> None:
-    chunks = sorted(PAYLOAD.glob("*.txt"))
-    validate_chunks(chunks)
-
-    encoded = "".join(path.read_text(encoding="utf-8").strip() for path in chunks)
+    logical = validate_chunks()
+    encoded = "".join(logical[name].decode("utf-8") for name in EXPECTED_SHA256)
     compressed = base64.b64decode(encoded, validate=True)
 
     with tarfile.open(fileobj=io.BytesIO(compressed), mode="r:gz") as archive:

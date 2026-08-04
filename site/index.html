@@ -17,277 +17,8 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
-  <style>
-/* ==========================================================================
-   UPGRADE ADDITIONS
-   Live Evidence Strip + Interactive TDAF Walkthrough
-   Append this entire file to the end of assets/styles.css.
-   Tokens below borrow the site's own palette (deep navy bg, cyan/violet/lime
-   accents) rather than introducing a new one, so nothing looks bolted on.
-   ========================================================================== */
+  <link rel="stylesheet" href="assets/portfolio-components.css">
 
-/* ---------- Live Evidence Strip (hero) ---------- */
-.ev-strip {
-  --ev-panel: rgba(255, 255, 255, 0.04);
-  --ev-line: rgba(148, 163, 184, 0.18);
-  --ev-text: #e6ecf7;
-  --ev-muted: #8b98ad;
-  --ev-live: #62f2ff;
-  --ev-mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
-
-  margin-top: 1.75rem;
-  background: var(--ev-panel);
-  border: 1px solid var(--ev-line);
-  border-radius: 12px;
-  padding: 0.85rem 1.1rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem 1.75rem;
-  align-items: center;
-}
-.ev-strip .ev-label {
-  font-family: var(--ev-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--ev-muted);
-  display: flex;
-  align-items: center;
-  gap: 0.45rem;
-  flex: 0 0 auto;
-}
-.ev-strip .ev-pulse {
-  width: 7px; height: 7px; border-radius: 50%;
-  background: var(--ev-live);
-  animation: evPulse 2.2s ease-in-out infinite;
-}
-@keyframes evPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
-.ev-strip .ev-item { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
-.ev-strip .ev-value {
-  font-family: var(--ev-mono);
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--ev-text);
-}
-.ev-strip .ev-value a { color: inherit; text-decoration: none; border-bottom: 1px dotted var(--ev-muted); }
-.ev-strip .ev-value a:hover { border-bottom-color: var(--ev-live); }
-.ev-strip .ev-key { font-size: 0.68rem; color: var(--ev-muted); letter-spacing: 0.02em; }
-.ev-strip .ev-fresh { color: var(--ev-live); }
-.ev-strip .ev-note {
-  margin-left: auto;
-  font-family: var(--ev-mono);
-  font-size: 0.62rem;
-  color: var(--ev-muted);
-  letter-spacing: 0.05em;
-}
-[data-theme="light"] .ev-strip { --ev-panel: rgba(5, 8, 22, 0.03); --ev-text: #14192b; --ev-muted: #5b6478; }
-@media (max-width: 640px) {
-  .ev-strip { gap: 0.6rem 1.1rem; }
-  .ev-strip .ev-note { margin-left: 0; flex-basis: 100%; }
-}
-
-/* ---------- TDAF Interactive Section ---------- */
-.section-tdaf { position: relative; }
-
-.tdaf-demo {
-  --tdaf-panel: rgba(255, 255, 255, 0.035);
-  --tdaf-panel-2: rgba(255, 255, 255, 0.06);
-  --tdaf-line: rgba(148, 163, 184, 0.18);
-  --tdaf-text: #e6ecf7;
-  --tdaf-muted: #8b98ad;
-  --tdaf-admit: #b8f45d;
-  --tdaf-quarantine: #ffb454;
-  --tdaf-block: #ff6f91;
-  --tdaf-mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
-
-  color: var(--tdaf-text);
-  border: 1px solid var(--tdaf-line);
-  border-radius: 18px;
-  padding: clamp(1.1rem, 3vw, 2rem);
-  background: linear-gradient(180deg, rgba(139, 92, 246, 0.05), rgba(0,0,0,0));
-}
-.tdaf-demo * { box-sizing: border-box; }
-
-.tdaf-demo .tdaf-scenario {
-  background: var(--tdaf-panel);
-  border: 1px solid var(--tdaf-line);
-  border-left: 3px solid var(--tdaf-admit);
-  border-radius: 10px;
-  padding: 0.9rem 1.1rem;
-  font-size: 0.92rem;
-  margin-bottom: 1.4rem;
-}
-.tdaf-demo .tdaf-scenario strong { color: var(--tdaf-text); display: block; margin: 0.15rem 0 0.35rem; }
-.tdaf-demo .tdaf-mono-label {
-  font-family: var(--tdaf-mono);
-  font-size: 0.66rem;
-  color: var(--tdaf-muted);
-  letter-spacing: 0.1em;
-  display: block;
-}
-
-.tdaf-demo .tdaf-pipeline { display: flex; gap: 0.4rem; flex-wrap: wrap; margin: 0 0 1.3rem; }
-.tdaf-demo .tdaf-stage {
-  font-family: var(--tdaf-mono);
-  font-size: 0.66rem;
-  letter-spacing: 0.06em;
-  border: 1px solid var(--tdaf-line);
-  border-radius: 999px;
-  padding: 0.35rem 0.7rem;
-  color: var(--tdaf-muted);
-  background: var(--tdaf-panel);
-}
-.tdaf-demo .tdaf-stage.active { color: #050816; background: var(--tdaf-admit); border-color: var(--tdaf-admit); font-weight: 700; }
-.tdaf-demo .tdaf-stage.done { color: var(--tdaf-admit); border-color: var(--tdaf-admit); }
-
-.tdaf-demo .tdaf-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: 1.5rem; }
-@media (max-width: 860px) { .tdaf-demo .tdaf-grid { grid-template-columns: 1fr; } }
-
-.tdaf-demo h3 {
-  font-family: var(--tdaf-mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--tdaf-muted);
-  margin: 0 0 0.65rem;
-  display: flex; align-items: center; gap: 0.5rem;
-}
-.tdaf-demo h3 .tdaf-step-chip {
-  background: var(--tdaf-panel-2);
-  border: 1px solid var(--tdaf-line);
-  border-radius: 5px;
-  padding: 0.1rem 0.4rem;
-  font-size: 0.6rem;
-  color: var(--tdaf-admit);
-}
-
-.tdaf-demo .tdaf-evidence { display: flex; flex-direction: column; gap: 0.65rem; }
-.tdaf-demo .tdaf-card {
-  background: var(--tdaf-panel);
-  border: 1px solid var(--tdaf-line);
-  border-radius: 10px;
-  padding: 0.75rem 0.9rem;
-  transition: border-color 160ms ease, opacity 160ms ease;
-}
-.tdaf-demo .tdaf-card[data-state="admitted"] { border-left: 3px solid var(--tdaf-admit); }
-.tdaf-demo .tdaf-card[data-state="quarantined"] { border-left: 3px solid var(--tdaf-quarantine); opacity: 0.72; }
-.tdaf-demo .tdaf-card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 0.6rem; }
-.tdaf-demo .tdaf-card-title { font-size: 0.88rem; font-weight: 600; margin: 0; }
-.tdaf-demo .tdaf-card-meta { font-family: var(--tdaf-mono); font-size: 0.66rem; color: var(--tdaf-muted); margin: 0.1rem 0 0.4rem; }
-.tdaf-demo .tdaf-card-note { font-size: 0.82rem; color: var(--tdaf-muted); margin: 0; }
-
-.tdaf-demo .tdaf-toggle {
-  font-family: var(--tdaf-mono);
-  font-size: 0.66rem;
-  letter-spacing: 0.04em;
-  border-radius: 7px;
-  border: 1px solid var(--tdaf-line);
-  background: var(--tdaf-panel-2);
-  color: var(--tdaf-text);
-  padding: 0.3rem 0.6rem;
-  cursor: pointer;
-  white-space: nowrap;
-}
-.tdaf-demo .tdaf-toggle:hover { border-color: var(--tdaf-admit); }
-.tdaf-demo .tdaf-toggle:focus-visible,
-.tdaf-demo button:focus-visible { outline: 2px solid var(--tdaf-admit); outline-offset: 2px; }
-
-.tdaf-demo .tdaf-badge {
-  font-family: var(--tdaf-mono);
-  font-size: 0.58rem;
-  letter-spacing: 0.06em;
-  padding: 0.12rem 0.5rem;
-  border-radius: 999px;
-  border: 1px solid;
-}
-.tdaf-demo .tdaf-badge.admitted { color: var(--tdaf-admit); border-color: var(--tdaf-admit); }
-.tdaf-demo .tdaf-badge.quarantined { color: var(--tdaf-quarantine); border-color: var(--tdaf-quarantine); }
-
-.tdaf-demo .tdaf-rules { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.1rem; }
-.tdaf-demo .tdaf-rule {
-  font-size: 0.82rem;
-  background: var(--tdaf-panel);
-  border: 1px solid var(--tdaf-line);
-  border-radius: 10px;
-  padding: 0.6rem 0.8rem;
-  display: flex; gap: 0.6rem; align-items: baseline;
-}
-.tdaf-demo .tdaf-rule .tdaf-rule-id { font-family: var(--tdaf-mono); font-size: 0.68rem; color: var(--tdaf-muted); flex: 0 0 auto; }
-.tdaf-demo .tdaf-rule .tdaf-rule-fire {
-  font-family: var(--tdaf-mono); font-size: 0.6rem; margin-left: auto; flex: 0 0 auto;
-  padding: 0.1rem 0.5rem; border-radius: 999px; border: 1px solid var(--tdaf-line); color: var(--tdaf-muted);
-}
-.tdaf-demo .tdaf-rule.fired { border-color: var(--tdaf-admit); }
-.tdaf-demo .tdaf-rule.fired .tdaf-rule-fire { color: var(--tdaf-admit); border-color: var(--tdaf-admit); }
-
-.tdaf-demo .tdaf-record {
-  background: rgba(0,0,0,0.35);
-  border: 1px solid var(--tdaf-line);
-  border-radius: 10px;
-  padding: 0.9rem;
-  font-family: var(--tdaf-mono);
-  font-size: 0.72rem;
-  line-height: 1.6;
-  white-space: pre-wrap;
-  word-break: break-word;
-  max-height: 380px;
-  overflow: auto;
-  color: #b9c5d8;
-}
-
-.tdaf-demo .tdaf-disposition {
-  display: flex; align-items: center; gap: 0.65rem;
-  margin: 0.9rem 0;
-  padding: 0.75rem 0.9rem;
-  border-radius: 10px;
-  border: 1px solid var(--tdaf-line);
-  background: var(--tdaf-panel);
-  font-size: 0.88rem;
-}
-.tdaf-demo .tdaf-disposition .tdaf-dot { width: 9px; height: 9px; border-radius: 50%; flex: 0 0 auto; }
-.tdaf-demo .tdaf-disposition[data-kind="alt"] .tdaf-dot { background: var(--tdaf-admit); }
-.tdaf-demo .tdaf-disposition[data-kind="insufficient"] .tdaf-dot { background: var(--tdaf-quarantine); }
-.tdaf-demo .tdaf-disposition[data-kind="blocked"] .tdaf-dot { background: var(--tdaf-block); }
-.tdaf-demo .tdaf-disposition[data-kind="conditional"] .tdaf-dot { background: #62f2ff; }
-
-.tdaf-demo .tdaf-actions { display: flex; gap: 0.6rem; margin-top: 0.75rem; flex-wrap: wrap; }
-.tdaf-demo .tdaf-btn {
-  font-family: var(--tdaf-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.04em;
-  border-radius: 8px;
-  padding: 0.55rem 0.9rem;
-  cursor: pointer;
-  border: 1px solid var(--tdaf-admit);
-  background: transparent;
-  color: var(--tdaf-admit);
-}
-.tdaf-demo .tdaf-btn.primary { background: var(--tdaf-admit); color: #050816; font-weight: 700; }
-.tdaf-demo .tdaf-btn:hover { filter: brightness(1.12); }
-
-.tdaf-demo .tdaf-footnote {
-  font-size: 0.76rem;
-  color: var(--tdaf-muted);
-  margin-top: 1.1rem;
-  border-top: 1px solid var(--tdaf-line);
-  padding-top: 0.85rem;
-  max-width: 78ch;
-}
-
-[data-theme="light"] .tdaf-demo {
-  --tdaf-panel: rgba(5, 8, 22, 0.03);
-  --tdaf-panel-2: rgba(5, 8, 22, 0.06);
-  --tdaf-text: #14192b;
-  --tdaf-muted: #5b6478;
-}
-[data-theme="light"] .tdaf-demo .tdaf-record { background: rgba(5,8,22,0.05); color: #2a3149; }
-
-@media (prefers-reduced-motion: reduce) {
-  .ev-strip .ev-pulse { animation: none; }
-  .tdaf-demo * { transition: none !important; }
-}
-
-  </style>
   <title>Ray Beecham | Quantum Security and Decision Systems</title>
   <script>
     (() => {
@@ -364,6 +95,8 @@
             <span class="status-code">RB.2026</span>
           </div>
 
+          <p class="identity-line">Quantum security engineer · U.S. Navy veteran · emerging-technology researcher</p>
+
           <p class="eyebrow">Quantum security · applied quantum systems · technology decision assurance</p>
           <h1>
             Engineering the <span class="gradient-text">evidence layer</span> between emerging technology and mission decisions.
@@ -403,7 +136,7 @@
           </div>
 
           <div class="ev-strip" id="evStrip" role="status" aria-label="Live repository evidence">
-            <span class="ev-label"><span class="ev-pulse" aria-hidden="true"></span>Verified in your browser, not asserted by the author</span>
+            <span class="ev-label" title="Repository activity is fetched from GitHub in the visitor browser and fails closed to source links."><span class="ev-pulse" aria-hidden="true"></span>Live public evidence</span>
             <span class="ev-item">
               <span class="ev-value" id="evScout">checking</span>
               <span class="ev-key">Quantum Research Scout, last push</span>
@@ -414,7 +147,7 @@
             </span>
             <span class="ev-item">
               <span class="ev-value" id="evRepos">checking</span>
-              <span class="ev-key">Public repositories</span>
+              <span class="ev-key">Active public repositories (180d)</span>
             </span>
             <span class="ev-note" id="evNote">source: api.github.com</span>
           </div>
@@ -621,8 +354,10 @@
           </p>
         </div>
 
+        <p class="priority-note">Quantum Research Scout · interactive TDAF walkthrough · PQC Readiness War Room</p>
+
         <div class="project-bento">
-          <article class="project-card project-flagship project-cyan" data-reveal data-tilt>
+          <article class="project-card project-flagship project-cyan project-priority" data-reveal data-repo="raybeecham/quantum-research-scout">
             <div class="project-ambient" aria-hidden="true"></div>
             <div class="project-topline">
               <span class="project-index">01 // FLAGSHIP</span>
@@ -657,7 +392,7 @@
             </div>
           </article>
 
-          <article class="project-card project-orange" data-reveal data-tilt>
+          <article class="project-card project-orange project-priority" data-reveal data-repo="raybeecham/pqc-readiness-war-room">
             <div class="project-topline">
               <span class="project-index">02 // PQC</span>
               <span class="state-chip state-live"><i></i> LIVE DEMO</span>
@@ -675,7 +410,7 @@
             </div>
           </article>
 
-          <article class="project-card project-violet" data-reveal data-tilt>
+          <article class="project-card project-violet project-priority" data-reveal data-repo="raybeecham/quantum-oncology-benchmark">
             <div class="project-topline">
               <span class="project-index">03 // QML</span>
               <span class="state-chip">PUBLIC BENCHMARK</span>
@@ -691,7 +426,7 @@
             <div class="project-links"><a class="text-link" href="https://github.com/raybeecham/quantum-oncology-benchmark">View repository <span>↗</span></a></div>
           </article>
 
-          <article class="project-card project-lime" data-reveal data-tilt>
+          <article class="project-card project-lime project-secondary" data-reveal data-repo="raybeecham/crypto-inventory-demo">
             <div class="project-topline">
               <span class="project-index">04 // DISCOVERY</span>
               <span class="state-chip">PUBLIC PIPELINE</span>
@@ -707,7 +442,7 @@
             <div class="project-links"><a class="text-link" href="https://github.com/raybeecham/crypto-inventory-demo">View repository <span>↗</span></a></div>
           </article>
 
-          <article class="project-card project-wide project-blue" data-reveal data-tilt>
+          <article class="project-card project-wide project-blue project-secondary" data-reveal data-repo="raybeecham/claude-certified-associate-foundations">
             <div class="project-topline">
               <span class="project-index">05 // AI SYSTEMS</span>
               <span class="state-chip">PUBLIC HANDBOOK</span>
@@ -730,7 +465,7 @@
             </div>
           </article>
 
-          <article class="project-card project-blue" data-reveal data-tilt>
+          <article class="project-card project-blue project-secondary" data-reveal data-repo="raybeecham/modern-practical-pki">
             <div class="project-topline">
               <span class="project-index">06 // PKI</span>
               <span class="state-chip">PUBLIC LAB</span>
@@ -745,7 +480,7 @@
             <div class="project-links"><a class="text-link" href="https://github.com/raybeecham/modern-practical-pki">View repository <span>↗</span></a></div>
           </article>
 
-          <article class="project-card project-amber" data-reveal data-tilt>
+          <article class="project-card project-amber project-secondary" data-reveal data-repo="raybeecham/Chrono">
             <div class="project-topline">
               <span class="project-index">07 // EXPERIENCE</span>
               <span class="state-chip">PUBLIC PROTOTYPE</span>
@@ -1024,355 +759,8 @@
   </footer>
 
   <script src="assets/site.js" defer></script>
-  <script>
-/* ==========================================================================
-   UPGRADE ADDITIONS — behavior for the Live Evidence Strip and the
-   Interactive TDAF Walkthrough. Inlined directly in index.html, no
-   separate file needed. Both modules are self-contained IIFEs and
-   no-op safely if their markup is not present on the page.
-   ========================================================================== */
+  <script src="assets/portfolio-data.js" defer></script>
+  <script src="assets/tdaf-demo.js" defer></script>
 
-/* ---------- Live Evidence Strip ---------- */
-(function () {
-  "use strict";
-  var strip = document.getElementById("evStrip");
-  if (!strip) return;
-
-  var USER = "raybeecham";
-  var REPOS = [
-    { repo: "quantum-research-scout", el: "evScout" },
-    { repo: "pqc-readiness-war-room", el: "evWarRoom" }
-  ];
-
-  function relTime(iso) {
-    var then = new Date(iso).getTime();
-    if (isNaN(then)) return null;
-    var s = Math.floor((Date.now() - then) / 1000);
-    if (s < 60) return "just now";
-    var m = Math.floor(s / 60);
-    if (m < 60) return m + (m === 1 ? " minute ago" : " minutes ago");
-    var h = Math.floor(m / 60);
-    if (h < 24) return h + (h === 1 ? " hour ago" : " hours ago");
-    var d = Math.floor(h / 24);
-    if (d < 31) return d + (d === 1 ? " day ago" : " days ago");
-    var mo = Math.floor(d / 30);
-    if (mo < 12) return mo + (mo === 1 ? " month ago" : " months ago");
-    var y = Math.floor(d / 365);
-    return y + (y === 1 ? " year ago" : " years ago");
-  }
-
-  function isFresh(iso) {
-    var then = new Date(iso).getTime();
-    return !isNaN(then) && (Date.now() - then) < 1000 * 60 * 60 * 24 * 8;
-  }
-
-  function setText(id, text, fresh, href) {
-    var el = document.getElementById(id);
-    if (!el) return;
-    el.textContent = "";
-    if (href) {
-      var a = document.createElement("a");
-      a.href = href; a.target = "_blank"; a.rel = "noopener";
-      a.textContent = text;
-      el.appendChild(a);
-    } else {
-      el.textContent = text;
-    }
-    el.classList.toggle("ev-fresh", !!fresh);
-  }
-
-  function failClosed() {
-    setText("evScout", "view repo", false, "https://github.com/" + USER + "/quantum-research-scout");
-    setText("evWarRoom", "view repo", false, "https://github.com/" + USER + "/pqc-readiness-war-room");
-    setText("evRepos", "github.com/" + USER, false, "https://github.com/" + USER);
-    var note = document.getElementById("evNote");
-    if (note) note.textContent = "live check unavailable, links go to source";
-  }
-
-  function fetchJson(url) {
-    return fetch(url, { headers: { "Accept": "application/vnd.github+json" } })
-      .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); });
-  }
-
-  var anyFailed = false;
-
-  var repoChecks = REPOS.map(function (item) {
-    return fetchJson("https://api.github.com/repos/" + USER + "/" + item.repo)
-      .then(function (data) {
-        var t = relTime(data.pushed_at);
-        if (!t) throw new Error("bad timestamp");
-        setText(item.el, t, isFresh(data.pushed_at), "https://github.com/" + USER + "/" + item.repo + "/commits");
-      })
-      .catch(function () { anyFailed = true; });
-  });
-
-  var userCheck = fetchJson("https://api.github.com/users/" + USER)
-    .then(function (data) {
-      if (typeof data.public_repos !== "number") throw new Error("bad payload");
-      setText("evRepos", String(data.public_repos), false, "https://github.com/" + USER + "?tab=repositories");
-    })
-    .catch(function () { anyFailed = true; });
-
-  Promise.all(repoChecks.concat([userCheck])).then(function () {
-    if (anyFailed) failClosed();
-  });
-
-  setTimeout(function () {
-    ["evScout", "evWarRoom", "evRepos"].forEach(function (id) {
-      var el = document.getElementById(id);
-      if (el && el.textContent === "checking") failClosed();
-    });
-  }, 6000);
-})();
-
-/* ---------- Interactive TDAF Walkthrough ---------- */
-(function () {
-  "use strict";
-  var root = document.getElementById("tdafRoot");
-  if (!root) return;
-
-  var EVIDENCE = [
-    {
-      id: "EV-001", title: "NSA public guidance on QKD for NSS",
-      source: "NSA.gov, Quantum Key Distribution and Quantum Cryptography guidance",
-      cls: "authoritative_guidance",
-      note: "States QKD is not recommended for securing national security systems; recommends quantum-resistant (PQC) algorithms instead.",
-      tags: ["guidance_disfavors_candidate", "alternative_endorsed"],
-      admissible: true, defaultAdmitted: true
-    },
-    {
-      id: "EV-002", title: "CNSA 2.0 migration timeline",
-      source: "NSA CNSA 2.0 advisory and FAQ",
-      cls: "authoritative_guidance",
-      note: "Establishes ML-KEM based key establishment as the approved direction and phased timeline for NSS.",
-      tags: ["alternative_endorsed", "timeline_defined"],
-      admissible: true, defaultAdmitted: true
-    },
-    {
-      id: "EV-003", title: "Vendor whitepaper: QKD product maturity claims",
-      source: "Vendor marketing publication, no independent verification",
-      cls: "vendor_claim",
-      note: "Fails admission: capability claims without independent test evidence are quarantined by policy, not rebutted.",
-      tags: ["capability_claim_unverified"],
-      admissible: false, defaultAdmitted: false
-    },
-    {
-      id: "EV-004", title: "Peer-reviewed QKD field trial",
-      source: "Refereed journal, metropolitan fiber testbed",
-      cls: "independent_study",
-      note: "Demonstrates link-layer key exchange in a bounded environment. Scope limitation recorded: no authentication solution, no satellite free-space result at mission scale.",
-      tags: ["capability_demonstrated_bounded"],
-      admissible: true, defaultAdmitted: true
-    },
-    {
-      id: "EV-005", title: "Program asset inventory: 25+ year data lifetime",
-      source: "Internal CBOM and data classification review",
-      cls: "internal_finding",
-      note: "Confirms harvest-now-decrypt-later exposure. Establishes mission need for quantum-resistant protection on this link.",
-      tags: ["mission_need_confirmed", "hndl_exposure"],
-      admissible: true, defaultAdmitted: true
-    }
-  ];
-
-  var RULES = [
-    {
-      id: "R1",
-      text: "If admitted authoritative guidance disfavors the candidate technology for this mission class, disposition cannot be ADOPT.",
-      test: function (adm) { return adm.some(function (e) { return e.tags.indexOf("guidance_disfavors_candidate") >= 0; }); }
-    },
-    {
-      id: "R2",
-      text: "If mission need is confirmed and an endorsed alternative exists in admitted evidence, recommend the alternative path.",
-      test: function (adm) {
-        var need = adm.some(function (e) { return e.tags.indexOf("mission_need_confirmed") >= 0; });
-        var alt = adm.some(function (e) { return e.tags.indexOf("alternative_endorsed") >= 0; });
-        return need && alt;
-      }
-    },
-    {
-      id: "R3",
-      text: "If fewer than three admitted evidence items support the context, flag INSUFFICIENT EVIDENCE and stop.",
-      test: function (adm) { return adm.length < 3; }
-    },
-    {
-      id: "R4",
-      text: "Quarantined or vendor-only claims never satisfy a capability requirement. Quarantine is recorded, not silently dropped.",
-      test: function () { return EVIDENCE.some(function (e) { return !e.admissible; }); }
-    }
-  ];
-
-  var admitted = {};
-  EVIDENCE.forEach(function (e) { admitted[e.id] = e.defaultAdmitted; });
-
-  var evEl = root.querySelector("#tdafEvidence");
-  var rulesEl = root.querySelector("#tdafRules");
-  var recordEl = root.querySelector("#tdafRecord");
-  var dispEl = root.querySelector("#tdafDisposition");
-  var dispTextEl = root.querySelector("#tdafDispositionText");
-  var pipelineEl = root.querySelector("#tdafPipeline");
-
-  function evaluate() {
-    var adm = EVIDENCE.filter(function (e) { return e.admissible && admitted[e.id]; });
-    var quarantined = EVIDENCE.filter(function (e) { return !e.admissible || !admitted[e.id]; });
-
-    var fired = {};
-    RULES.forEach(function (r) { fired[r.id] = r.test(adm); });
-
-    var disposition, kind, rationale;
-    if (fired.R3) {
-      disposition = "INSUFFICIENT EVIDENCE: DO NOT PROCEED TO SELECTION";
-      kind = "insufficient";
-      rationale = "Admitted evidence fell below the minimum admission threshold (R3). The framework stops rather than infers.";
-    } else if (fired.R1 && fired.R2) {
-      disposition = "DO NOT CONSIDER CANDIDATE: PROCEED WITH ENDORSED ALTERNATIVE (HYBRID ML-KEM PATH)";
-      kind = "alt";
-      rationale = "Authoritative guidance disfavors the candidate for this mission class (R1) while mission need and an endorsed alternative are both established (R2).";
-    } else if (fired.R1) {
-      disposition = "CANDIDATE BLOCKED FOR THIS MISSION CLASS: ALTERNATIVE NOT YET ESTABLISHED IN ADMITTED EVIDENCE";
-      kind = "blocked";
-      rationale = "R1 fired without R2: the endorsed alternative or mission need is missing from admitted evidence, so no forward path is asserted.";
-    } else if (fired.R2) {
-      disposition = "CONDITIONAL: MISSION NEED AND ALTERNATIVE ESTABLISHED, CANDIDATE NOT EXCLUDED BY ADMITTED GUIDANCE";
-      kind = "conditional";
-      rationale = "With authoritative guidance removed from admission, the rulebook cannot exclude the candidate. Note what changed: the evidence set, not the rules.";
-    } else {
-      disposition = "NO DETERMINATION: RULE CONDITIONS UNMET ON ADMITTED EVIDENCE";
-      kind = "insufficient";
-      rationale = "No rule producing a disposition fired. Unknowns remain unknowns.";
-    }
-
-    var unknowns = [
-      "QKD authentication approach at mission scale (no admitted evidence)",
-      "Free-space satellite QKD performance under operational conditions (no admitted evidence)"
-    ];
-    if (!adm.some(function (e) { return e.tags.indexOf("mission_need_confirmed") >= 0; })) {
-      unknowns.push("Mission data lifetime and HNDL exposure (evidence not admitted)");
-    }
-
-    var record = {
-      record_id: "TDAF-DEMO-QKD-GROUNDLINK",
-      schema: "tdaf.decision-record/0.3-public-demo",
-      generated: "deterministic (no timestamp: identical inputs yield identical records)",
-      decision_context: {
-        question: "Consider QKD for long-lived satellite ground-link vs planned PQC migration",
-        mission_class: "national_security_system",
-        data_lifetime_years: "25+"
-      },
-      evidence_admitted: adm.map(function (e) { return { id: e.id, class: e.cls, source: e.source }; }),
-      evidence_quarantined: quarantined.map(function (e) {
-        return { id: e.id, class: e.cls, reason: e.admissible ? "manually excluded in this run" : "fails admission policy: unverified vendor claim" };
-      }),
-      rules_evaluated: RULES.map(function (r) { return { id: r.id, fired: fired[r.id] }; }),
-      disposition: disposition,
-      rationale: rationale,
-      assumptions: ["Public guidance documents are current as of record generation", "Asset inventory classification is accurate"],
-      unknowns_preserved: unknowns,
-      accountable_owner: "REQUIRED: UNASSIGNED (authority is not inherited by this system)"
-    };
-
-    render(fired, record, disposition, kind);
-  }
-
-  function render(fired, record, disposition, kind) {
-    evEl.innerHTML = "";
-    EVIDENCE.forEach(function (e) {
-      var isAdmitted = e.admissible && admitted[e.id];
-      var card = document.createElement("div");
-      card.className = "tdaf-card";
-      card.dataset.state = isAdmitted ? "admitted" : "quarantined";
-
-      var top = document.createElement("div");
-      top.className = "tdaf-card-top";
-
-      var left = document.createElement("div");
-      var title = document.createElement("p");
-      title.className = "tdaf-card-title";
-      title.textContent = e.id + " \u00b7 " + e.title;
-      var meta = document.createElement("p");
-      meta.className = "tdaf-card-meta";
-      meta.textContent = e.cls + " \u00b7 " + e.source;
-      left.appendChild(title); left.appendChild(meta);
-
-      var right = document.createElement("div");
-      right.style.display = "flex"; right.style.flexDirection = "column";
-      right.style.alignItems = "flex-end"; right.style.gap = "6px";
-
-      var badge = document.createElement("span");
-      badge.className = "tdaf-badge " + (isAdmitted ? "admitted" : "quarantined");
-      badge.textContent = isAdmitted ? "ADMITTED" : "QUARANTINED";
-      right.appendChild(badge);
-
-      if (e.admissible) {
-        var btn = document.createElement("button");
-        btn.className = "tdaf-toggle"; btn.type = "button";
-        btn.textContent = isAdmitted ? "Exclude" : "Admit";
-        btn.setAttribute("aria-pressed", String(isAdmitted));
-        btn.setAttribute("aria-label", (isAdmitted ? "Exclude " : "Admit ") + e.id);
-        btn.addEventListener("click", function () { admitted[e.id] = !admitted[e.id]; evaluate(); });
-        right.appendChild(btn);
-      } else {
-        var locked = document.createElement("span");
-        locked.className = "tdaf-card-meta";
-        locked.textContent = "policy lock";
-        right.appendChild(locked);
-      }
-
-      top.appendChild(left); top.appendChild(right);
-      card.appendChild(top);
-
-      var note = document.createElement("p");
-      note.className = "tdaf-card-note";
-      note.textContent = e.note;
-      card.appendChild(note);
-
-      evEl.appendChild(card);
-    });
-
-    rulesEl.innerHTML = "";
-    RULES.forEach(function (r) {
-      var row = document.createElement("div");
-      row.className = "tdaf-rule" + (fired[r.id] ? " fired" : "");
-      var rid = document.createElement("span");
-      rid.className = "tdaf-rule-id"; rid.textContent = r.id;
-      var txt = document.createElement("span"); txt.textContent = r.text;
-      var chip = document.createElement("span");
-      chip.className = "tdaf-rule-fire"; chip.textContent = fired[r.id] ? "FIRED" : "idle";
-      row.appendChild(rid); row.appendChild(txt); row.appendChild(chip);
-      rulesEl.appendChild(row);
-    });
-
-    dispEl.dataset.kind = kind;
-    dispTextEl.textContent = disposition;
-    recordEl.textContent = JSON.stringify(record, null, 2);
-
-    var stages = pipelineEl.querySelectorAll(".tdaf-stage");
-    stages.forEach(function (s, i) {
-      s.classList.remove("active", "done");
-      if (i < stages.length - 1) s.classList.add("done"); else s.classList.add("active");
-    });
-  }
-
-  var copyBtn = root.querySelector("#tdafCopy");
-  if (copyBtn) {
-    copyBtn.addEventListener("click", function () {
-      var btn = this;
-      var text = recordEl.textContent;
-      function ok() { btn.textContent = "Copied"; setTimeout(function () { btn.textContent = "Copy record JSON"; }, 1400); }
-      if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(ok, ok); } else { ok(); }
-    });
-  }
-
-  var resetBtn = root.querySelector("#tdafReset");
-  if (resetBtn) {
-    resetBtn.addEventListener("click", function () {
-      EVIDENCE.forEach(function (e) { admitted[e.id] = e.defaultAdmitted; });
-      evaluate();
-    });
-  }
-
-  evaluate();
-})();
-
-  </script>
 </body>
 </html>

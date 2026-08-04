@@ -1092,7 +1092,7 @@ html[data-theme="light"] .signal-rail {
   font-size: 0.65rem;
   letter-spacing: 0.12em;
   white-space: nowrap;
-  animation: railMove 35s linear infinite;
+  animation: railMove 48s linear infinite;
 }
 
 .signal-track i {
@@ -1517,7 +1517,7 @@ html[data-theme="light"] .section-projects {
   border-radius: 100% 0 0;
   background: conic-gradient(from 270deg, color-mix(in srgb, var(--project-accent) 24%, transparent), transparent 34%);
   transform-origin: right top;
-  animation: radarSweep 6s linear infinite;
+  animation: radarSweep 9s linear infinite;
 }
 
 .radar-point {
@@ -1577,7 +1577,7 @@ html[data-theme="light"] .section-projects {
   border: 1px solid color-mix(in srgb, var(--project-accent) 50%, transparent);
   border-radius: 45% 55% 52% 48%;
   background: color-mix(in srgb, var(--project-accent) 9%, transparent);
-  animation: cellFloat 7s ease-in-out infinite;
+  animation: cellFloat 10s ease-in-out infinite;
 }
 
 .cell-one { top: 22px; left: 24px; }

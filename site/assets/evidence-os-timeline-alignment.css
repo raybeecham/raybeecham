@@ -1,0 +1,110 @@
+/* EvidenceOS timeline rail alignment
+   Every milestone uses one marker center and one discrete connector segment. */
+
+.timeline-rail {
+  --timeline-marker-x: 66px;
+  --timeline-marker-y: 35px;
+}
+
+/* The former container-length spine used a different coordinate system from
+   the milestone buttons. Per-item connectors remain aligned regardless of
+   text wrapping, active-card height, or the inspector panel height. */
+.timeline-rail::before {
+  display: none;
+}
+
+.timeline-item {
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 18px;
+  isolation: isolate;
+}
+
+.timeline-item::before {
+  top: var(--timeline-marker-y);
+  left: var(--timeline-marker-x);
+  z-index: 2;
+  box-sizing: border-box;
+  width: 14px;
+  height: 14px;
+  transform: translate(-50%, -50%);
+}
+
+.timeline-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: var(--timeline-marker-y);
+  left: var(--timeline-marker-x);
+  z-index: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--timeline-color, var(--mission)) 72%, transparent),
+    color-mix(in srgb, var(--timeline-color, var(--mission)) 24%, var(--line))
+  );
+  box-shadow: 0 0 10px color-mix(in srgb, var(--timeline-color, var(--mission)) 24%, transparent);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.timeline-item:last-child::after {
+  display: none;
+}
+
+.timeline-item:last-child::before {
+  box-shadow:
+    0 0 0 5px color-mix(in srgb, var(--timeline-color, var(--mission)) 7%, var(--bg-panel-strong)),
+    0 0 18px color-mix(in srgb, var(--timeline-color, var(--mission)) 58%, transparent);
+}
+
+.timeline-item:last-child > div::after {
+  content: "NEXT SYSTEM STATE";
+  display: inline-flex;
+  margin-top: 10px;
+  color: var(--timeline-color, var(--mission));
+  font-family: var(--mono);
+  font-size: .45rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+
+.timeline-item > span:first-child {
+  align-self: start;
+  justify-self: start;
+  width: 48px;
+  padding-top: 1px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.timeline-item > div {
+  min-width: 0;
+}
+
+.timeline-item:hover,
+.timeline-item.is-active {
+  border-radius: 12px;
+}
+
+.timeline-item:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--timeline-color, var(--mission)) 78%, white);
+  outline-offset: 2px;
+}
+
+@media (max-width: 680px) {
+  .timeline-rail {
+    --timeline-marker-x: 54px;
+    padding-inline: 16px;
+  }
+
+  .timeline-item {
+    grid-template-columns: 58px minmax(0, 1fr);
+    gap: 12px;
+    padding-inline: 8px;
+  }
+
+  .timeline-item > span:first-child {
+    width: 38px;
+    font-size: .49rem;
+  }
+}

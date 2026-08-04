@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Enter EvidenceOS, Ray Beecham's interactive mission research environment</title>
+  <desc id="desc">A dark mission-control banner connecting quantum security, post-quantum migration, quantum evaluation, research intelligence, and accountable decisions.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#03050d"/><stop offset=".55" stop-color="#090f22"/><stop offset="1" stop-color="#16163a"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#62f2ff"/><stop offset=".55" stop-color="#9f7cff"/><stop offset="1" stop-color="#b8f45d"/></linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#62f2ff" stroke-opacity=".055"/></pattern>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="360" rx="24" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1198" height="358" rx="23" fill="none" stroke="url(#accent)" stroke-opacity=".48"/>
+  <rect width="1200" height="360" rx="24" fill="url(#grid)"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="55" y="67" fill="#62f2ff" font-size="18" letter-spacing="5">EVIDENCEOS // MISSION RESEARCH ENVIRONMENT</text>
+    <text x="55" y="140" fill="#ffffff" font-size="53" font-weight="750">Do not read the portfolio.</text>
+    <text x="55" y="199" fill="url(#accent)" font-size="53" font-weight="750">Enter the decision environment.</text>
+    <text x="55" y="253" fill="#aab8d3" font-size="21">Mission Control · Decision Replay · Research Earth · Quantum Explorer · Terminal</text>
+    <text x="55" y="316" fill="#b8f45d" font-size="20" font-weight="700">LAUNCH EVIDENCEOS  →</text>
+  </g>
+  <g transform="translate(982 180)">
+    <circle r="34" fill="url(#accent)" filter="url(#glow)"/>
+    <circle r="7" fill="#fff"/>
+    <g fill="none" stroke="url(#accent)" stroke-width="2.2" opacity=".92">
+      <ellipse rx="145" ry="54"/><ellipse rx="145" ry="54" transform="rotate(60)"/><ellipse rx="145" ry="54" transform="rotate(120)"/>
+      <circle r="88" stroke-dasharray="6 9" stroke-opacity=".4"/>
+    </g>
+    <g fill="#62f2ff"><circle cx="-132" cy="-61" r="6"/><circle cx="124" cy="-72" r="6"/><circle cx="132" cy="66" r="6"/><circle cx="-120" cy="78" r="6"/></g>
+  </g>
+</svg>

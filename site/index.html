@@ -1,25 +1,23 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="dark" data-mission="research">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark light">
-  <meta name="theme-color" content="#050816">
-  <meta name="description" content="Ray Beecham builds evidence-driven systems for post-quantum security, applied quantum computing, AI systems engineering, and technology decision assurance.">
+  <meta name="theme-color" content="#03050d">
+  <meta name="description" content="EvidenceOS is Ray Beecham's interactive research environment for quantum security, post-quantum migration, quantum technology evaluation, research intelligence, and accountable mission decisions.">
   <meta name="author" content="Ray Beecham">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Ray Beecham | Quantum Security and Decision Systems">
-  <meta property="og:description" content="Evidence-first research systems for quantum security, emerging technology evaluation, and accountable mission decisions.">
+  <meta property="og:title" content="EvidenceOS | Ray Beecham">
+  <meta property="og:description" content="Enter an interactive mission environment for quantum security, emerging-technology evidence, and accountable decisions.">
   <meta property="og:url" content="https://raybeecham.github.io/raybeecham/">
-  <meta property="og:image" content="https://raybeecham.github.io/raybeecham/assets/portfolio-social.svg">
+  <meta property="og:image" content="https://raybeecham.github.io/raybeecham/assets/evidence-os-social.svg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://raybeecham.github.io/raybeecham/">
   <link rel="manifest" href="site.webmanifest">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/styles.css">
-  <link rel="stylesheet" href="assets/portfolio-components.css">
-
-  <title>Ray Beecham | Quantum Security and Decision Systems</title>
+  <link rel="stylesheet" href="assets/evidence-os.css">
+  <title>EvidenceOS | Ray Beecham</title>
   <script>
     (() => {
       const saved = localStorage.getItem("rb-theme");
@@ -29,738 +27,376 @@
   </script>
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to content</a>
-  <div class="scroll-progress" aria-hidden="true"><span data-scroll-progress></span></div>
+  <a class="skip-link" href="#main-content">Skip to mission environment</a>
+  <div class="page-progress" aria-hidden="true"><span data-page-progress></span></div>
 
-  <header class="site-header" data-header>
-    <div class="shell header-inner">
-      <a class="brand" href="#top" aria-label="Ray Beecham, home">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 52 52" role="img">
-            <circle cx="26" cy="26" r="6"></circle>
-            <ellipse cx="26" cy="26" rx="21" ry="9"></ellipse>
-            <ellipse cx="26" cy="26" rx="21" ry="9" transform="rotate(60 26 26)"></ellipse>
-            <ellipse cx="26" cy="26" rx="21" ry="9" transform="rotate(120 26 26)"></ellipse>
-          </svg>
+  <section class="boot-screen" id="boot-screen" aria-label="EvidenceOS initialization" data-boot-screen>
+    <div class="boot-noise" aria-hidden="true"></div>
+    <div class="boot-shell">
+      <div class="boot-brand">
+        <span class="boot-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="6"></circle><ellipse cx="32" cy="32" rx="25" ry="10"></ellipse><ellipse cx="32" cy="32" rx="25" ry="10" transform="rotate(60 32 32)"></ellipse><ellipse cx="32" cy="32" rx="25" ry="10" transform="rotate(120 32 32)"></ellipse></svg>
         </span>
-        <span class="brand-copy">
-          <strong>Ray Beecham</strong>
-          <small>Quantum security · decision systems</small>
-        </span>
-      </a>
-
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
-        <span class="sr-only">Toggle navigation</span>
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-nav>
-        <a href="#research">Research</a>
-        <a href="#projects">Systems</a>
-        <a href="#architecture">Method</a>
-        <a href="#tdaf-demo">Try TDAF</a>
-        <a href="#outputs">Outputs</a>
-        <a href="#about">About</a>
-      </nav>
-
-      <div class="header-actions">
-        <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme" data-theme-toggle>
-          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="12" cy="12" r="4"></circle>
-            <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.41M17.66 6.34l1.41-1.41"></path>
-          </svg>
-          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path>
-          </svg>
-        </button>
-        <a class="button button-compact button-ghost" href="https://github.com/raybeecham" rel="me">
-          <span>GitHub</span><span aria-hidden="true">↗</span>
-        </a>
+        <div>
+          <strong>EVIDENCE<span>OS</span></strong>
+          <small>Ray Beecham // Mission Research Environment</small>
+        </div>
       </div>
+      <div class="boot-log" aria-live="polite" data-boot-log>
+        <p><span>01</span> initializing evidence graph</p>
+        <p><span>02</span> loading mission pathways</p>
+        <p><span>03</span> preserving human authority boundary</p>
+        <p><span>04</span> opening research environment</p>
+      </div>
+      <div class="boot-progress" aria-hidden="true"><span data-boot-progress></span></div>
+      <div class="boot-footer">
+        <span data-boot-status>INITIALIZING</span>
+        <button type="button" class="text-button" data-skip-boot>Skip initialization</button>
+      </div>
+    </div>
+  </section>
+
+  <header class="os-header" data-header>
+    <a class="os-brand" href="#top" aria-label="EvidenceOS home">
+      <span class="os-brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="5"></circle><ellipse cx="26" cy="26" rx="20" ry="8"></ellipse><ellipse cx="26" cy="26" rx="20" ry="8" transform="rotate(60 26 26)"></ellipse><ellipse cx="26" cy="26" rx="20" ry="8" transform="rotate(120 26 26)"></ellipse></svg>
+      </span>
+      <span class="os-brand-copy"><strong>EvidenceOS</strong><small>Ray Beecham // Research Lab</small></span>
+    </a>
+
+    <nav class="os-nav" id="site-nav" aria-label="Mission modules" data-nav>
+      <a href="#mission-control">Control</a>
+      <a href="#situation-room">Situation</a>
+      <a href="#decision-replay">Replay</a>
+      <a href="#research-earth">Earth</a>
+      <a href="#quantum-explorer">Quantum</a>
+      <a href="#timeline">Timeline</a>
+    </nav>
+
+    <div class="os-header-actions">
+      <button class="mission-chip" type="button" aria-controls="mission-drawer" aria-expanded="false" data-open-missions>
+        <span class="mission-chip-dot" aria-hidden="true"></span>
+        <span data-current-mission>Research Intelligence</span>
+      </button>
+      <button class="icon-button" type="button" aria-label="Switch color theme" data-theme-toggle>
+        <svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.5 1.5M17.6 17.6l1.5 1.5M2 12h2M20 12h2M4.9 19.1l1.5-1.5M17.6 6.4l1.5-1.5"></path></svg>
+        <svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"></path></svg>
+      </button>
+      <button class="terminal-button" type="button" aria-controls="terminal" aria-expanded="false" data-open-terminal>
+        <span aria-hidden="true">&gt;_</span><span>Terminal</span><kbd>`</kbd>
+      </button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="sr-only">Toggle navigation</span><span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
+  <aside class="mission-drawer" id="mission-drawer" aria-label="Select mission" hidden data-mission-drawer>
+    <div class="drawer-head">
+      <div><span class="micro-label">MISSION ROUTER</span><h2>Select an operating context</h2></div>
+      <button class="icon-button" type="button" aria-label="Close mission selector" data-close-missions>×</button>
+    </div>
+    <div class="drawer-missions" data-drawer-missions></div>
+    <p class="drawer-note">Mission selection changes the system graph, brief, situation room, research earth, and recommended evidence path. It does not hide the underlying projects.</p>
+  </aside>
+  <div class="drawer-backdrop" hidden data-drawer-backdrop></div>
+
   <main id="main-content">
-    <section class="hero" id="top">
-      <canvas class="quantum-field" data-quantum-field aria-hidden="true"></canvas>
-      <div class="hero-noise" aria-hidden="true"></div>
-      <div class="hero-beam hero-beam-one" aria-hidden="true"></div>
-      <div class="hero-beam hero-beam-two" aria-hidden="true"></div>
+    <section class="mission-hero" id="top">
+      <canvas class="hero-field" data-hero-field aria-hidden="true"></canvas>
+      <div class="hero-grid-overlay" aria-hidden="true"></div>
+      <div class="hero-orbit hero-orbit-one" aria-hidden="true"></div>
+      <div class="hero-orbit hero-orbit-two" aria-hidden="true"></div>
 
-      <div class="shell hero-layout">
+      <div class="shell hero-shell">
         <div class="hero-copy" data-reveal>
-          <div class="system-status">
-            <span class="status-pulse" aria-hidden="true"></span>
-            <span>Portfolio // active research</span>
-            <span class="status-code">RB.2026</span>
-          </div>
-
+          <div class="hero-status"><i></i><span>MISSION ENVIRONMENT ONLINE</span><strong data-mission-code>INTEL-01</strong></div>
           <p class="identity-line">Quantum security engineer · U.S. Navy veteran · emerging-technology researcher</p>
-
-          <p class="eyebrow">Quantum security · applied quantum systems · technology decision assurance</p>
-          <h1>
-            Engineering the <span class="gradient-text">evidence layer</span> between emerging technology and mission decisions.
-          </h1>
-          <p class="hero-lead">
-            I build working systems for post-quantum migration, cryptographic discovery, quantum workload evaluation,
-            strategic research intelligence, and auditable technology decisions.
-          </p>
-          <p class="hero-support">
-            Evidence stays attached. Assumptions stay visible. Unknowns remain unknown. Human owners remain accountable.
-          </p>
-
+          <p class="eyebrow">Evidence operating system for emerging technology</p>
+          <h1>Do not read the portfolio. <span>Enter the decision environment.</span></h1>
+          <p class="hero-lead" data-mission-objective>Turn fragmented quantum, PQC, government, patent, and market signals into a traceable intelligence picture.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">
-              <span>Enter the research systems</span>
-              <span aria-hidden="true">→</span>
-            </a>
-            <a class="button button-secondary" href="https://raybeecham.github.io/quantum-research-scout/">
-              <span>Open Quantum Research Scout</span>
-              <span aria-hidden="true">↗</span>
-            </a>
+            <a class="button button-primary" href="#mission-control"><span>Launch mission control</span><span aria-hidden="true">→</span></a>
+            <button class="button button-secondary" type="button" data-open-missions><span>Change mission</span><span aria-hidden="true">⌁</span></button>
           </div>
-
-          <div class="hero-metrics" aria-label="Portfolio overview">
-            <div class="metric">
-              <strong data-counter="4">4</strong>
-              <span>research programs</span>
-            </div>
-            <div class="metric">
-              <strong data-counter="7">7</strong>
-              <span>featured public projects</span>
-            </div>
-            <div class="metric">
-              <strong data-counter="2">2</strong>
-              <span>live public systems</span>
-            </div>
-          </div>
-
-          <div class="ev-strip" id="evStrip" role="status" aria-label="Live repository evidence">
-            <span class="ev-label" title="Repository activity is fetched from GitHub in the visitor browser and fails closed to source links."><span class="ev-pulse" aria-hidden="true"></span>Live public evidence</span>
-            <span class="ev-item">
-              <span class="ev-value" id="evScout">checking</span>
-              <span class="ev-key">Quantum Research Scout, last push</span>
-            </span>
-            <span class="ev-item">
-              <span class="ev-value" id="evWarRoom">checking</span>
-              <span class="ev-key">PQC Readiness War Room, last push</span>
-            </span>
-            <span class="ev-item">
-              <span class="ev-value" id="evRepos">checking</span>
-              <span class="ev-key">Active public repositories (180d)</span>
-            </span>
-            <span class="ev-note" id="evNote">source: api.github.com</span>
-          </div>
+          <div class="hero-command-hint"><span>Try the terminal</span><code>`</code><span>then type</span><code>help</code></div>
         </div>
 
-        <div class="hero-visual" data-reveal aria-label="Research system constellation">
-          <div class="constellation-shell" data-tilt>
-            <div class="constellation-glow" aria-hidden="true"></div>
-            <svg class="constellation-lines" viewBox="0 0 640 640" aria-hidden="true">
-              <defs>
-                <linearGradient id="orbitStroke" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0" stop-color="#62f2ff" stop-opacity=".9"></stop>
-                  <stop offset=".5" stop-color="#8b5cf6" stop-opacity=".55"></stop>
-                  <stop offset="1" stop-color="#b8f45d" stop-opacity=".75"></stop>
-                </linearGradient>
-                <radialGradient id="coreFill">
-                  <stop offset="0" stop-color="#ffffff"></stop>
-                  <stop offset=".22" stop-color="#75f6ff"></stop>
-                  <stop offset=".65" stop-color="#6f4cff"></stop>
-                  <stop offset="1" stop-color="#11152f"></stop>
-                </radialGradient>
-                <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
-                  <feGaussianBlur stdDeviation="10" result="blur"></feGaussianBlur>
-                  <feMerge><feMergeNode in="blur"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge>
-                </filter>
-              </defs>
-              <circle class="orbit orbit-a" cx="320" cy="320" r="220"></circle>
-              <circle class="orbit orbit-b" cx="320" cy="320" r="164"></circle>
-              <circle class="orbit orbit-c" cx="320" cy="320" r="108"></circle>
-              <path class="signal-path" d="M117 258 C200 160, 431 153, 520 266"></path>
-              <path class="signal-path signal-path-alt" d="M116 382 C221 487, 430 492, 529 364"></path>
-              <line class="signal-line" x1="320" y1="320" x2="151" y2="199"></line>
-              <line class="signal-line" x1="320" y1="320" x2="507" y2="192"></line>
-              <line class="signal-line" x1="320" y1="320" x2="510" y2="448"></line>
-              <line class="signal-line" x1="320" y1="320" x2="143" y2="452"></line>
-              <circle class="core-halo" cx="320" cy="320" r="72"></circle>
-              <circle class="core-sphere" cx="320" cy="320" r="46" fill="url(#coreFill)" filter="url(#softGlow)"></circle>
-              <circle class="core-point" cx="320" cy="320" r="8"></circle>
-              <circle class="travel-node travel-node-one" cx="100" cy="320" r="5"></circle>
-              <circle class="travel-node travel-node-two" cx="320" cy="156" r="5"></circle>
-              <circle class="travel-node travel-node-three" cx="428" cy="454" r="5"></circle>
+        <div class="mission-selector-panel" data-reveal>
+          <div class="panel-kicker"><span>SELECT MISSION</span><strong>05 PATHWAYS</strong></div>
+          <div class="mission-options" data-mission-options></div>
+          <div class="mission-brief-mini">
+            <span class="micro-label">PRIMARY QUESTION</span>
+            <p data-mission-question>What changed, why does it matter, and what deserves attention next?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-system-rail" aria-label="EvidenceOS modules">
+        <span>MISSION CONTROL</span><i></i><span>DECISION REPLAY</span><i></i><span>LIVE RESEARCH EARTH</span><i></i><span>QUANTUM EXPLORER</span><i></i><span>CYBER SITUATION ROOM</span><i></i><span>RESEARCH TIMELINE</span><i></i><span>COMMAND TERMINAL</span>
+      </div>
+    </section>
+
+    <section class="module-section mission-control-section" id="mission-control">
+      <div class="shell">
+        <div class="section-heading" data-reveal>
+          <div><p class="eyebrow">Mission control</p><h2>The research environment as a living system graph.</h2></div>
+          <p>Systems are connected by evidence flow, decision logic, validation needs, and mission boundaries. Select a node to inspect what it proves, what it cannot prove, and where it connects next.</p>
+        </div>
+
+        <div class="mission-control-layout">
+          <div class="graph-panel" data-reveal>
+            <div class="panel-toolbar">
+              <div><span class="micro-label">SYSTEM GRAPH</span><strong data-graph-mission>Research Intelligence</strong></div>
+              <div class="graph-legend"><span><i class="legend-live"></i>Live</span><span><i class="legend-public"></i>Public</span><span><i class="legend-private"></i>Private R&amp;D</span></div>
+            </div>
+            <svg class="system-graph" viewBox="0 0 1000 660" role="img" aria-labelledby="graph-title graph-desc" data-system-graph>
+              <title id="graph-title">EvidenceOS research system graph</title>
+              <desc id="graph-desc">An interactive graph connecting research intelligence, cryptographic discovery, post-quantum readiness, quantum evaluation, benchmarks, laboratories, and decision assurance.</desc>
+              <g data-graph-edges></g>
+              <g data-graph-nodes></g>
             </svg>
-
-            <div class="core-label">
-              <span>Decision core</span>
-              <strong>Evidence</strong>
-              <small>traceable · bounded · reproducible</small>
-            </div>
-
-            <div class="constellation-node node-one">
-              <span>01</span><strong>PQC</strong><small>Crypto-agility</small>
-            </div>
-            <div class="constellation-node node-two">
-              <span>02</span><strong>Quantum</strong><small>Workload evaluation</small>
-            </div>
-            <div class="constellation-node node-three">
-              <span>03</span><strong>TDAF</strong><small>Decision assurance</small>
-            </div>
-            <div class="constellation-node node-four">
-              <span>04</span><strong>AI Systems</strong><small>Governed workflows</small>
-            </div>
-
-            <div class="telemetry-card telemetry-top">
-              <span>Evidence admission</span>
-              <strong>ENFORCED</strong>
-            </div>
-            <div class="telemetry-card telemetry-bottom">
-              <span>Human authority</span>
-              <strong>RETAINED</strong>
-            </div>
+            <div class="graph-instruction"><span>Click a node</span><span>Mission-relevant paths glow</span><span>All boundaries remain visible</span></div>
           </div>
 
-          <div class="hero-readout">
-            <div><span>01</span><strong>Observe</strong><small>source-attached evidence</small></div>
-            <div><span>02</span><strong>Evaluate</strong><small>rules, baselines, tests</small></div>
-            <div><span>03</span><strong>Record</strong><small>limits and provenance</small></div>
-            <div><span>04</span><strong>Decide</strong><small>accountable human owner</small></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="signal-rail" aria-label="Core disciplines">
-        <div class="signal-track">
-          <span>POST-QUANTUM CRYPTOGRAPHY</span><i></i>
-          <span>CRYPTOGRAPHIC DISCOVERY</span><i></i>
-          <span>QUANTUM BENCHMARKING</span><i></i>
-          <span>MISSION ENGINEERING</span><i></i>
-          <span>AI SYSTEMS ENGINEERING</span><i></i>
-          <span>TECHNOLOGY DECISION ASSURANCE</span><i></i>
-          <span aria-hidden="true">POST-QUANTUM CRYPTOGRAPHY</span><i aria-hidden="true"></i>
-          <span aria-hidden="true">CRYPTOGRAPHIC DISCOVERY</span><i aria-hidden="true"></i>
-          <span aria-hidden="true">QUANTUM BENCHMARKING</span><i aria-hidden="true"></i>
-          <span aria-hidden="true">MISSION ENGINEERING</span><i aria-hidden="true"></i>
+          <aside class="system-inspector" data-system-inspector data-reveal>
+            <div class="inspector-empty">
+              <span class="inspector-glyph" aria-hidden="true">⌬</span>
+              <p class="micro-label">SYSTEM INSPECTOR</p>
+              <h3>Select a node in mission control.</h3>
+              <p>The inspector will show its role, capabilities, public links, evidence boundary, and relationship to the selected mission.</p>
+            </div>
+          </aside>
         </div>
       </div>
     </section>
 
-    <section class="section section-research" id="research">
+    <section class="module-section situation-section" id="situation-room">
       <div class="shell">
         <div class="section-heading" data-reveal>
-          <div>
-            <p class="eyebrow">Research architecture</p>
-            <h2>Four programs. One operating philosophy.</h2>
-          </div>
-          <p>
-            The portfolio connects intelligence collection, cryptographic modernization, quantum experimentation,
-            and deterministic decision support into a single evidence-first research practice.
-          </p>
+          <div><p class="eyebrow">Cyber situation room</p><h2>One operating picture. Multiple evidence channels.</h2></div>
+          <p>The situation room combines public repository activity, mission-specific controls, research signals, and decision-system health. Live data fails closed to source links rather than displaying invented status.</p>
         </div>
 
-        <div class="program-grid">
-          <article class="program-card accent-cyan" data-reveal data-tilt>
-            <div class="program-visual" aria-hidden="true">
-              <svg viewBox="0 0 260 120">
-                <path d="M18 88 C58 18, 118 18, 145 65 S221 112, 245 36"></path>
-                <circle cx="18" cy="88" r="5"></circle><circle cx="145" cy="65" r="5"></circle><circle cx="245" cy="36" r="5"></circle>
-              </svg>
+        <div class="situation-grid" data-reveal>
+          <article class="monitor monitor-wide">
+            <header><span>01 // MISSION BRIEF</span><strong class="monitor-live"><i></i> ACTIVE</strong></header>
+            <div class="mission-brief-board">
+              <div><span>OBJECTIVE</span><p data-situation-objective>Turn fragmented signals into a traceable intelligence picture.</p></div>
+              <div><span>PRIMARY RISK</span><p data-situation-risk>Noise, stale evidence, unsupported inference, and missed strategic signals.</p></div>
+              <div><span>ACCOUNTABILITY</span><p>Automation supports analysis. The responsible human owner retains authority.</p></div>
             </div>
-            <div class="program-topline"><span>PROGRAM 01</span><strong>ACTIVE</strong></div>
-            <h3>Technology Decision Assurance</h3>
-            <p>Mission-first, provider-neutral reasoning that determines whether an emerging technology should be considered before implementation selection begins.</p>
-            <ul>
-              <li>Admitted evidence and explicit assumptions</li>
-              <li>Deterministic rules and governed rulebooks</li>
-              <li>Auditable decision results and records</li>
-              <li>Human organizational disposition</li>
-            </ul>
-            <div class="program-footer"><span>MISSION → EVIDENCE → RULES → RECORD</span></div>
           </article>
 
-          <article class="program-card accent-lime" data-reveal data-tilt>
-            <div class="program-visual crypto-visual" aria-hidden="true">
-              <svg viewBox="0 0 260 120">
-                <rect x="20" y="27" width="220" height="67" rx="12"></rect>
-                <path d="M42 58h34M42 74h58M129 60l13 13 29-32"></path>
-                <circle cx="202" cy="60" r="18"></circle>
-              </svg>
+          <article class="monitor">
+            <header><span>02 // LIVE PUBLIC EVIDENCE</span><strong data-live-state>CHECKING</strong></header>
+            <div class="repo-pulse" data-repo-pulse>
+              <div><span>Research Scout</span><strong data-repo="raybeecham/quantum-research-scout">checking</strong></div>
+              <div><span>PQC War Room</span><strong data-repo="raybeecham/pqc-readiness-war-room">checking</strong></div>
+              <div><span>Oncology Benchmark</span><strong data-repo="raybeecham/quantum-oncology-benchmark">checking</strong></div>
+              <div><span>Active public repos</span><strong data-active-repos>checking</strong></div>
             </div>
-            <div class="program-topline"><span>PROGRAM 02</span><strong>ACTIVE</strong></div>
-            <h3>PQC and Crypto-Agility Engineering</h3>
-            <p>Practical discovery and migration systems for long-lived cryptographic risk, modern transport visibility, and hybrid post-quantum transition paths.</p>
-            <ul>
-              <li>Cryptographic inventory and CBOM reporting</li>
-              <li>TLS 1.3, HTTP/3, QUIC, and visibility</li>
-              <li>Hybrid ML-KEM handshake experimentation</li>
-              <li>HNDL exposure and phased migration</li>
-            </ul>
-            <div class="program-footer"><span>DISCOVER → VERIFY → PRIORITIZE → MIGRATE</span></div>
+            <footer><a href="https://github.com/raybeecham?tab=repositories">Open source evidence ↗</a></footer>
           </article>
 
-          <article class="program-card accent-violet" data-reveal data-tilt>
-            <div class="program-visual quantum-visual" aria-hidden="true">
-              <svg viewBox="0 0 260 120">
-                <circle cx="130" cy="60" r="10"></circle>
-                <ellipse cx="130" cy="60" rx="74" ry="24"></ellipse>
-                <ellipse cx="130" cy="60" rx="74" ry="24" transform="rotate(60 130 60)"></ellipse>
-                <ellipse cx="130" cy="60" rx="74" ry="24" transform="rotate(120 130 60)"></ellipse>
-              </svg>
-            </div>
-            <div class="program-topline"><span>PROGRAM 03</span><strong>ACTIVE</strong></div>
-            <h3>Applied Quantum Systems</h3>
-            <p>Hardware-aware, reproducible evaluation of quantum and hybrid methods with strong classical controls, resource accounting, and bounded interpretation.</p>
-            <ul>
-              <li>Quantum kernels and comparator suites</li>
-              <li>QUBO and Hamiltonian optimization</li>
-              <li>Topology, routing, and error provenance</li>
-              <li>Workload-to-platform suitability</li>
-            </ul>
-            <div class="program-footer"><span>BASELINE → EXPERIMENT → MEASURE → INTERPRET</span></div>
+          <article class="monitor">
+            <header><span>03 // CONTROL SURFACE</span><strong>MISSION</strong></header>
+            <div class="control-matrix" data-control-matrix></div>
           </article>
 
-          <article class="program-card accent-amber" data-reveal data-tilt>
-            <div class="program-visual ai-visual" aria-hidden="true">
-              <svg viewBox="0 0 260 120">
-                <rect x="24" y="24" width="212" height="72" rx="14"></rect>
-                <path d="M48 48h42M48 64h79M48 80h55M160 43h45M160 60h24M160 77h35"></path>
-              </svg>
+          <article class="monitor monitor-feed">
+            <header><span>04 // RESEARCH SIGNALS</span><strong>STREAM</strong></header>
+            <ol class="signal-feed" data-signal-feed></ol>
+          </article>
+
+          <article class="monitor monitor-decision">
+            <header><span>05 // DECISION ENGINE</span><strong>READY</strong></header>
+            <div class="decision-health">
+              <div><span>Evidence admission</span><strong>ENFORCED</strong></div>
+              <div><span>Rule execution</span><strong>DETERMINISTIC</strong></div>
+              <div><span>Unknown handling</span><strong>PRESERVED</strong></div>
+              <div><span>Human authority</span><strong>RETAINED</strong></div>
             </div>
-            <div class="program-topline"><span>PROGRAM 04</span><strong>ACTIVE</strong></div>
-            <h3>Research and AI Systems Engineering</h3>
-            <p>Evidence-oriented automation for strategic intelligence, governed agent workflows, output validation, forecast calibration, and human review.</p>
-            <ul>
-              <li>Strategic signal and temporal intelligence</li>
-              <li>Testable forecasts and resolution rules</li>
-              <li>Governed tool and agent workflows</li>
-              <li>Reusable evaluation and accountability patterns</li>
-            </ul>
-            <div class="program-footer"><span>COLLECT → GROUND → VALIDATE → GOVERN</span></div>
+            <a class="monitor-action" href="#decision-replay">Run decision replay →</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-projects" id="projects">
+    <section class="module-section replay-section" id="decision-replay">
       <div class="shell">
         <div class="section-heading" data-reveal>
-          <div>
-            <p class="eyebrow">Featured systems</p>
-            <h2>Working code. Visible evidence. Bounded claims.</h2>
+          <div><p class="eyebrow">Decision replay</p><h2>Watch a technology decision execute like a packet trace.</h2></div>
+          <p>Evidence enters, admission boundaries fire, deterministic rules evaluate, a record is produced, and human authority remains visible at the end of the chain.</p>
+        </div>
+
+        <div class="replay-shell" data-decision-replay data-reveal>
+          <div class="replay-toolbar">
+            <div class="scenario-tabs" role="tablist" aria-label="Decision scenarios" data-scenario-tabs></div>
+            <div class="replay-controls">
+              <button type="button" data-replay-start>▶ Play</button>
+              <button type="button" data-replay-pause>Ⅱ Pause</button>
+              <button type="button" data-replay-reset>↺ Reset</button>
+            </div>
           </div>
-          <p>
-            These repositories are built to survive scrutiny: inspect the source, challenge the assumptions,
-            reproduce the experiment, and see exactly where the system stops.
-          </p>
-        </div>
-
-        <p class="priority-note">Quantum Research Scout · interactive TDAF walkthrough · PQC Readiness War Room</p>
-
-        <div class="project-bento">
-          <article class="project-card project-flagship project-cyan project-priority" data-reveal data-repo="raybeecham/quantum-research-scout">
-            <div class="project-ambient" aria-hidden="true"></div>
-            <div class="project-topline">
-              <span class="project-index">01 // FLAGSHIP</span>
-              <span class="state-chip state-live"><i></i> LIVE SYSTEM</span>
-            </div>
-            <div class="project-content">
-              <p class="project-kicker">Evidence-first strategic intelligence</p>
-              <h3>Quantum Research Scout</h3>
-              <p>
-                Turns papers, standards, government activity, procurement notices, patents, and industry signals
-                into a traceable intelligence picture with admission controls, temporal awareness, forecasts, and public calibration.
-              </p>
-              <div class="project-metrics">
-                <div><span>Evidence</span><strong>Source-attached</strong></div>
-                <div><span>Automation</span><strong>Daily / weekly / monthly</strong></div>
-                <div><span>Trust</span><strong>Admission + quarantine</strong></div>
-              </div>
-              <ul class="tag-list">
-                <li>Python</li><li>GitHub Actions</li><li>SQLite</li><li>Temporal intelligence</li><li>Strategic forecasts</li>
-              </ul>
-              <div class="project-links">
-                <a class="text-link" href="https://raybeecham.github.io/quantum-research-scout/">Open live dashboard <span>↗</span></a>
-                <a class="text-link" href="https://github.com/raybeecham/quantum-research-scout">View repository <span>↗</span></a>
-              </div>
-            </div>
-            <div class="project-radar" aria-hidden="true">
-              <span class="radar-ring radar-one"></span>
-              <span class="radar-ring radar-two"></span>
-              <span class="radar-ring radar-three"></span>
-              <span class="radar-sweep"></span>
-              <i class="radar-point point-a"></i><i class="radar-point point-b"></i><i class="radar-point point-c"></i>
-            </div>
-          </article>
-
-          <article class="project-card project-orange project-priority" data-reveal data-repo="raybeecham/pqc-readiness-war-room">
-            <div class="project-topline">
-              <span class="project-index">02 // PQC</span>
-              <span class="state-chip state-live"><i></i> LIVE DEMO</span>
-            </div>
-            <div class="mini-visual lock-visual" aria-hidden="true">
-              <svg viewBox="0 0 220 120"><rect x="54" y="50" width="112" height="60" rx="13"></rect><path d="M80 51V37c0-18 13-29 30-29s30 11 30 29v14"></path><circle cx="110" cy="78" r="8"></circle><path d="M110 86v11"></path></svg>
-            </div>
-            <p class="project-kicker">Transport posture and readiness boundaries</p>
-            <h3>PQC Readiness War Room</h3>
-            <p>Explains observable TLS modernization while keeping ML-KEM support, crypto discovery, and enterprise readiness explicitly unverified until evidence exists.</p>
-            <ul class="tag-list"><li>Cloudflare Workers</li><li>TLS 1.3</li><li>HTTP/3</li><li>Evidence ledger</li></ul>
-            <div class="project-links">
-              <a class="text-link" href="https://pqc-readiness-war-room.raybeecham2009.workers.dev/">Open live demo <span>↗</span></a>
-              <a class="text-link" href="https://github.com/raybeecham/pqc-readiness-war-room">Repository <span>↗</span></a>
-            </div>
-          </article>
-
-          <article class="project-card project-violet project-priority" data-reveal data-repo="raybeecham/quantum-oncology-benchmark">
-            <div class="project-topline">
-              <span class="project-index">03 // QML</span>
-              <span class="state-chip">PUBLIC BENCHMARK</span>
-            </div>
-            <div class="mini-visual oncology-visual" aria-hidden="true">
-              <span class="cell cell-one"></span><span class="cell cell-two"></span><span class="cell cell-three"></span>
-              <svg viewBox="0 0 220 120"><path d="M16 86C52 24 86 103 121 48s61 31 84-12"></path><path d="M16 96h188"></path></svg>
-            </div>
-            <p class="project-kicker">Reproducible classical and quantum comparison</p>
-            <h3>Quantum Oncology Benchmark</h3>
-            <p>Leakage-resistant evaluation with shared partitions, training-only preprocessing, confidence intervals, pairwise provenance, and explicit research-use boundaries.</p>
-            <ul class="tag-list"><li>Qiskit</li><li>scikit-learn</li><li>Statistics</li><li>Streamlit</li></ul>
-            <div class="project-links"><a class="text-link" href="https://github.com/raybeecham/quantum-oncology-benchmark">View repository <span>↗</span></a></div>
-          </article>
-
-          <article class="project-card project-lime project-secondary" data-reveal data-repo="raybeecham/crypto-inventory-demo">
-            <div class="project-topline">
-              <span class="project-index">04 // DISCOVERY</span>
-              <span class="state-chip">PUBLIC PIPELINE</span>
-            </div>
-            <div class="mini-visual inventory-visual" aria-hidden="true">
-              <span></span><span></span><span></span><span></span>
-              <svg viewBox="0 0 220 120"><path d="M24 30h172M24 60h172M24 90h172"></path><circle cx="55" cy="30" r="7"></circle><circle cx="126" cy="60" r="7"></circle><circle cx="174" cy="90" r="7"></circle></svg>
-            </div>
-            <p class="project-kicker">Cryptographic asset discovery</p>
-            <h3>Crypto Inventory Demo</h3>
-            <p>CodeQL-driven discovery across Java, Python, TLS configuration, and runtime observations, producing normalized inventory and CI-enforced risk output.</p>
-            <ul class="tag-list"><li>CodeQL</li><li>CBOM</li><li>Python</li><li>GitHub Actions</li></ul>
-            <div class="project-links"><a class="text-link" href="https://github.com/raybeecham/crypto-inventory-demo">View repository <span>↗</span></a></div>
-          </article>
-
-          <article class="project-card project-wide project-blue project-secondary" data-reveal data-repo="raybeecham/claude-certified-associate-foundations">
-            <div class="project-topline">
-              <span class="project-index">05 // AI SYSTEMS</span>
-              <span class="state-chip">PUBLIC HANDBOOK</span>
-            </div>
-            <div class="project-wide-grid">
-              <div>
-                <p class="project-kicker">Workflow engineering beyond prompt writing</p>
-                <h3>AI Systems Engineering Handbook</h3>
-                <p>Scenario-driven certification preparation paired with a vendor-neutral operating method for secure, evaluated, repeatable, and human-governed AI workflows.</p>
-                <ul class="tag-list"><li>Workflow design</li><li>Evaluation</li><li>Governance</li><li>Study systems</li></ul>
-                <div class="project-links"><a class="text-link" href="https://github.com/raybeecham/claude-certified-associate-foundations">View repository <span>↗</span></a></div>
-              </div>
-              <div class="workflow-mini" aria-hidden="true">
-                <div><span>01</span><strong>Outcome</strong></div>
-                <div><span>02</span><strong>Evidence</strong></div>
-                <div><span>03</span><strong>Workflow</strong></div>
-                <div><span>04</span><strong>Validation</strong></div>
-                <div><span>05</span><strong>Human review</strong></div>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card project-blue project-secondary" data-reveal data-repo="raybeecham/modern-practical-pki">
-            <div class="project-topline">
-              <span class="project-index">06 // PKI</span>
-              <span class="state-chip">PUBLIC LAB</span>
-            </div>
-            <div class="mini-visual certificate-visual" aria-hidden="true">
-              <svg viewBox="0 0 220 120"><path d="M50 12h120v96H50z"></path><path d="M74 37h72M74 54h49M74 71h61"></path><circle cx="140" cy="86" r="14"></circle><path d="M134 98l-6 15 12-5 12 5-6-15"></path></svg>
-            </div>
-            <p class="project-kicker">Hands-on public key infrastructure</p>
-            <h3>Modern Practical PKI</h3>
-            <p>A Docker-based OpenSSL lab progressing from encodings and key material into certificate authorities, revocation, TLS, and hardware-backed trust concepts.</p>
-            <ul class="tag-list"><li>OpenSSL</li><li>Docker</li><li>PKI</li><li>TLS</li></ul>
-            <div class="project-links"><a class="text-link" href="https://github.com/raybeecham/modern-practical-pki">View repository <span>↗</span></a></div>
-          </article>
-
-          <article class="project-card project-amber project-secondary" data-reveal data-repo="raybeecham/Chrono">
-            <div class="project-topline">
-              <span class="project-index">07 // EXPERIENCE</span>
-              <span class="state-chip">PUBLIC PROTOTYPE</span>
-            </div>
-            <div class="mini-visual chrono-visual" aria-hidden="true">
-              <div class="chrono-window"><span></span><span></span><span></span><strong>DEC 04 1998</strong></div>
-              <svg viewBox="0 0 220 120"><path d="M22 92C62 53 74 104 112 69s55-43 87-25"></path></svg>
-            </div>
-            <p class="project-kicker">Period-aware interactive AI</p>
-            <h3>Chrono</h3>
-            <p>An AI-powered historical simulation with a reconstructed 1998 desktop, period-aware dialogue, structured temporal-contamination detection, and deterministic fallback.</p>
-            <ul class="tag-list"><li>Next.js</li><li>Structured outputs</li><li>AI experience</li></ul>
-            <div class="project-links"><a class="text-link" href="https://github.com/raybeecham/Chrono">View repository <span>↗</span></a></div>
-          </article>
+          <div class="replay-context"><span class="micro-label">DECISION CONTEXT</span><p data-replay-context></p></div>
+          <div class="replay-grid">
+            <div class="replay-trace" data-replay-trace></div>
+            <aside class="replay-record">
+              <div class="record-head"><span>DECISION RECORD</span><strong data-replay-result>WAITING</strong></div>
+              <pre data-replay-record aria-live="polite">Select Play to execute the decision.</pre>
+              <p class="record-boundary">Decision support only. Procurement, deployment, clinical, and operational authority remain outside the system.</p>
+            </aside>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-architecture" id="architecture">
-      <div class="shell architecture-shell">
-        <div class="architecture-copy" data-reveal>
-          <p class="eyebrow">Operating model</p>
-          <h2>From raw signal to accountable action.</h2>
-          <p>
-            Across domains, the architecture is consistent: collect evidence, normalize the decision context,
-            evaluate against explicit rules and baselines, preserve the complete record, and keep authorization with a responsible human owner.
-          </p>
-          <blockquote>
-            <span>Core doctrine</span>
-            <strong>Automation can accelerate reasoning. It cannot inherit accountability.</strong>
-          </blockquote>
-        </div>
-
-        <div class="decision-engine" data-reveal>
-          <div class="engine-rail" aria-hidden="true"><span></span></div>
-          <article class="engine-step">
-            <span class="engine-index">01</span>
-            <div class="engine-icon"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="12"></circle><path d="M29 29l7 7M14 20h12M20 14v12"></path></svg></div>
-            <div><h3>Observe</h3><p>Collect source-attached evidence and operational signals.</p></div>
-            <strong class="engine-state">INPUT</strong>
-          </article>
-          <article class="engine-step">
-            <span class="engine-index">02</span>
-            <div class="engine-icon"><svg viewBox="0 0 40 40"><path d="M7 8h26v24H7zM12 14h16M12 20h10M12 26h13"></path></svg></div>
-            <div><h3>Structure</h3><p>Normalize mission context, assumptions, constraints, and evidence status.</p></div>
-            <strong class="engine-state">MODEL</strong>
-          </article>
-          <article class="engine-step">
-            <span class="engine-index">03</span>
-            <div class="engine-icon"><svg viewBox="0 0 40 40"><path d="M20 5v30M5 20h30"></path><circle cx="20" cy="20" r="11"></circle></svg></div>
-            <div><h3>Evaluate</h3><p>Apply baselines, tests, deterministic rules, and controlled comparisons.</p></div>
-            <strong class="engine-state">ANALYZE</strong>
-          </article>
-          <article class="engine-step">
-            <span class="engine-index">04</span>
-            <div class="engine-icon"><svg viewBox="0 0 40 40"><path d="M9 5h17l5 5v25H9z"></path><path d="M26 5v7h7M14 19h12M14 25h12M14 31h8"></path></svg></div>
-            <div><h3>Record</h3><p>Preserve result, provenance, missing evidence, conflicts, and limitations.</p></div>
-            <strong class="engine-state">TRACE</strong>
-          </article>
-          <article class="engine-step engine-step-final">
-            <span class="engine-index">05</span>
-            <div class="engine-icon"><svg viewBox="0 0 40 40"><path d="M7 20l8 8L33 10"></path></svg></div>
-            <div><h3>Decide</h3><p>Support an accountable organizational owner without replacing authority.</p></div>
-            <strong class="engine-state">HUMAN</strong>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-tdaf" id="tdaf-demo">
+    <section class="module-section earth-section" id="research-earth">
       <div class="shell">
         <div class="section-heading" data-reveal>
-          <div>
-            <p class="eyebrow">Interactive // Technology Decision Assurance</p>
-            <h2>Run a decision through the framework.</h2>
-          </div>
-          <p>
-            This is a working instance of TDAF, not an animation. Toggle which evidence is admitted,
-            and a deterministic rulebook re-evaluates the disposition and rewrites the decision record.
-            Same admitted evidence, same record, every time.
-          </p>
+          <div><p class="eyebrow">Live research earth</p><h2>A global map of standards, government, research, and quantum industry signals.</h2></div>
+          <p>Rotate the globe and inspect public organizations relevant to the selected mission. This is an illustrative research network, not a live operational or geopolitical tracking system.</p>
         </div>
 
-        <div class="tdaf-demo" id="tdafRoot" data-reveal>
-          <div class="tdaf-scenario">
-            <span class="tdaf-mono-label">DECISION CONTEXT</span>
-            <strong>Should a federal program office consider quantum key distribution (QKD) to protect a
-            long-lived satellite ground-link, ahead of its planned PQC migration?</strong>
-            Mission class: national security system. Data lifetime: 25+ years. Alternative under
-            evaluation: hybrid ML-KEM key establishment per CNSA 2.0 direction.
+        <div class="earth-layout">
+          <div class="globe-panel" data-reveal>
+            <div class="globe-toolbar">
+              <span class="micro-label">RESEARCH NETWORK</span>
+              <div class="globe-filters" data-globe-filters></div>
+            </div>
+            <canvas class="research-globe" width="760" height="620" aria-label="Interactive globe showing public quantum and security research organizations" data-research-globe></canvas>
+            <div class="globe-instructions"><span>Drag to rotate</span><span>Scroll to zoom</span><span>Select a marker</span></div>
           </div>
-
-          <div class="tdaf-pipeline" id="tdafPipeline" aria-label="TDAF stages">
-            <span class="tdaf-stage" data-stage="observe">01 OBSERVE</span>
-            <span class="tdaf-stage" data-stage="structure">02 STRUCTURE</span>
-            <span class="tdaf-stage" data-stage="evaluate">03 EVALUATE</span>
-            <span class="tdaf-stage" data-stage="record">04 RECORD</span>
-            <span class="tdaf-stage" data-stage="decide">05 DECIDE</span>
-          </div>
-
-          <div class="tdaf-grid">
-            <section aria-labelledby="tdafEvHead">
-              <h3 id="tdafEvHead"><span class="tdaf-step-chip">01 to 02</span> Evidence admission</h3>
-              <div class="tdaf-evidence" id="tdafEvidence"></div>
-            </section>
-
-            <section aria-labelledby="tdafRuleHead">
-              <h3 id="tdafRuleHead"><span class="tdaf-step-chip">03</span> Deterministic rulebook</h3>
-              <div class="tdaf-rules" id="tdafRules"></div>
-
-              <h3><span class="tdaf-step-chip">04 to 05</span> Decision record</h3>
-              <div class="tdaf-disposition" id="tdafDisposition">
-                <span class="tdaf-dot"></span>
-                <span id="tdafDispositionText"></span>
-              </div>
-              <div class="tdaf-record" id="tdafRecord" aria-live="polite"></div>
-              <div class="tdaf-actions">
-                <button class="tdaf-btn primary" id="tdafCopy" type="button">Copy record JSON</button>
-                <button class="tdaf-btn" id="tdafReset" type="button">Reset admissions</button>
-              </div>
-            </section>
-          </div>
-
-          <p class="tdaf-footnote">
-            Boundary statement: this walkthrough uses a simplified public rulebook for illustration.
-            It is decision support, not procurement authorization or operational approval. The
-            disposition field "accountable_owner" is intentionally unassigned: the framework never
-            inherits human authority.
-          </p>
+          <aside class="earth-inspector" data-earth-inspector data-reveal>
+            <span class="earth-signal" aria-hidden="true"></span>
+            <p class="micro-label">EARTH NODE</p>
+            <h3>Select a research marker.</h3>
+            <p>Location, mission relevance, category, and a direct public source will appear here.</p>
+          </aside>
         </div>
       </div>
     </section>
 
-    <section class="section section-outputs" id="outputs">
+    <section class="module-section quantum-section" id="quantum-explorer">
       <div class="shell">
         <div class="section-heading" data-reveal>
-          <div>
-            <p class="eyebrow">Research output registry</p>
-            <h2>Public systems, benchmarks, frameworks, and defensive R&amp;D.</h2>
-          </div>
-          <p>Visibility is intentional. Public artifacts link directly. Private and pre-release work is described only within an appropriate public boundary.</p>
+          <div><p class="eyebrow">Quantum computer explorer</p><h2>Architecture is a workload constraint, not a marketing label.</h2></div>
+          <p>Compare generic quantum architecture families through the questions that matter: connectivity, native operations, routing, error provenance, error correction, workload fit, and the classical baseline.</p>
         </div>
 
-        <div class="output-ledger" data-reveal>
-          <div class="ledger-header">
-            <span>Classification</span><span>Research output</span><span>Focus</span><span>Access</span>
-          </div>
-          <article class="ledger-row">
-            <div><span class="ledger-chip chip-live"><i></i> Public system</span><small>Continuously updated</small></div>
-            <div><h3>Quantum Research Scout</h3><p>Strategic evidence and intelligence platform</p></div>
-            <div><p>Signals, procurement, patents, missions, forecasts</p></div>
-            <a href="https://raybeecham.github.io/quantum-research-scout/">Open ↗</a>
-          </article>
-          <article class="ledger-row">
-            <div><span class="ledger-chip">Public benchmark</span><small>Research use only</small></div>
-            <div><h3>Quantum Oncology Benchmark</h3><p>Classical and quantum evaluation protocol</p></div>
-            <div><p>Leakage resistance, uncertainty, provenance</p></div>
-            <a href="https://github.com/raybeecham/quantum-oncology-benchmark">Open ↗</a>
-          </article>
-          <article class="ledger-row">
-            <div><span class="ledger-chip chip-private">Private R&amp;D</span><small>Active development</small></div>
-            <div><h3>Technology Decision Assurance Framework</h3><p>Technology-independent deterministic decision model</p></div>
-            <div><p>Rulebooks, evidence governance, decision records</p></div>
-            <span class="ledger-boundary">Pre-release</span>
-          </article>
-          <article class="ledger-row">
-            <div><span class="ledger-chip chip-working">Working research</span><small>Architecture assessment</small></div>
-            <div><h3>Quantum Hardware Architecture Assessment</h3><p>Hardware-aware readiness methodology</p></div>
-            <div><p>Routing, error provenance, FT and crypto resources</p></div>
-            <span class="ledger-boundary">Private</span>
-          </article>
-          <article class="ledger-row">
-            <div><span class="ledger-chip chip-defensive">Defensive lab</span><small>Authorized targets only</small></div>
-            <div><h3>Quantum Attack and Defense Lab</h3><p>Classical and hybrid TLS experimentation</p></div>
-            <div><p>Observed negotiation, timing, HNDL, migration</p></div>
-            <span class="ledger-boundary">Private</span>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-principles" id="principles">
-      <div class="shell principles-shell">
-        <div class="principles-intro" data-reveal>
-          <p class="eyebrow">Engineering principles</p>
-          <h2>The guardrails are part of the system.</h2>
-          <p>
-            Trustworthy engineering is defined not only by what a platform can calculate, but also by what it refuses to infer,
-            what evidence it rejects, how it preserves uncertainty, and where it stops.
-          </p>
-        </div>
-
-        <div class="principle-grid">
-          <article data-reveal><span>01</span><h3>Evidence before claims</h3><p>Provenance, limitations, contradictions, and unresolved unknowns stay visible.</p></article>
-          <article data-reveal><span>02</span><h3>Mission before technology</h3><p>Start with the decision context and success criteria, not a preferred platform or vendor.</p></article>
-          <article data-reveal><span>03</span><h3>Baselines before advantage</h3><p>Compare experimental methods against credible classical alternatives under shared conditions.</p></article>
-          <article data-reveal><span>04</span><h3>Reproducibility by design</h3><p>Version configurations, preserve metadata, test contracts, and emit machine-readable artifacts.</p></article>
-          <article data-reveal><span>05</span><h3>Human accountability</h3><p>Decision support informs a responsible owner. It does not inherit authorization.</p></article>
-          <article data-reveal><span>06</span><h3>Security boundaries matter</h3><p>Protect credentials, constrain targets, fail closed, and distinguish lab evidence from production assurance.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-about" id="about">
-      <div class="shell about-shell">
-        <div class="about-main" data-reveal>
-          <p class="eyebrow">About</p>
-          <h2>Engineer, researcher, veteran, and systems builder.</h2>
-          <p>
-            I work at the intersection of cybersecurity, cryptography, quantum technology, cloud security,
-            and federal technology strategy. My strongest work begins where a difficult technical problem meets
-            an equally difficult evidence, governance, or decision problem.
-          </p>
-          <div class="about-actions">
-            <a class="button button-primary" href="https://github.com/raybeecham">Explore GitHub <span>↗</span></a>
-            <a class="button button-secondary" href="https://linkedin.com/in/RaymondBeecham">Connect on LinkedIn <span>↗</span></a>
-          </div>
-        </div>
-
-        <div class="about-panels">
-          <article class="about-panel" data-reveal>
-            <span class="panel-label">Technical stack</span>
-            <div class="stack-cloud">
-              <span>PQC</span><span>ML-KEM</span><span>TLS 1.3</span><span>HTTP/3</span><span>PKI</span><span>OpenSSL</span>
-              <span>Python</span><span>FastAPI</span><span>Streamlit</span><span>Docker</span><span>GitHub Actions</span>
-              <span>Qiskit</span><span>Qrisp</span><span>QUBO</span><span>Quantum kernels</span><span>CodeQL</span><span>AWS</span>
+        <div class="quantum-lab" data-quantum-explorer data-reveal>
+          <div class="architecture-tabs" role="tablist" aria-label="Quantum architecture families" data-architecture-tabs></div>
+          <div class="quantum-lab-grid">
+            <div class="chip-stage" aria-hidden="true">
+              <div class="chip-orbit chip-orbit-a"></div><div class="chip-orbit chip-orbit-b"></div>
+              <div class="quantum-chip" data-quantum-chip>
+                <div class="chip-layer chip-layer-top"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                <div class="chip-layer chip-layer-mid"></div><div class="chip-layer chip-layer-bottom"></div>
+              </div>
+              <div class="chip-caption"><span data-architecture-family>GATE MODEL</span><strong data-architecture-name>Superconducting Lattice</strong></div>
             </div>
-          </article>
-          <article class="about-panel credentials-panel" data-reveal>
-            <span class="panel-label">Selected credentials</span>
-            <ul>
-              <li>GIAC Certified Intrusion Analyst (GCIA)</li>
-              <li>AWS Solutions Architect, Associate</li>
-              <li>ISC2 Systems Security Certified Practitioner</li>
-              <li>Q-CTRL Quantum Professional</li>
-              <li>SandboxAQ AQtive Guard Practitioner</li>
-              <li>D-Wave Quantum Programming, Core</li>
-            </ul>
-          </article>
-          <article class="about-panel education-panel" data-reveal>
-            <span class="panel-label">Education</span>
-            <p><strong>M.S., Information Systems</strong><br>Cybersecurity concentration<br>Texas A&amp;M University-Central Texas</p>
-            <p><strong>B.B.A., Computer Information Systems</strong><br>Texas State University</p>
-          </article>
+
+            <div class="architecture-readout">
+              <div class="readout-head"><span class="micro-label">ARCHITECTURE SNAPSHOT</span><strong data-architecture-id>SUPERCONDUCTING</strong></div>
+              <dl class="architecture-facts">
+                <div><dt>Native operations</dt><dd data-architecture-native></dd></div>
+                <div><dt>Connectivity</dt><dd data-architecture-connectivity></dd></div>
+                <div><dt>Primary strength</dt><dd data-architecture-strength></dd></div>
+                <div><dt>Primary constraint</dt><dd data-architecture-constraint></dd></div>
+                <div><dt>Error correction</dt><dd data-architecture-ec></dd></div>
+              </dl>
+              <div class="architecture-meters" data-architecture-meters></div>
+            </div>
+          </div>
+
+          <div class="quantum-detail-grid">
+            <article><span class="micro-label">BEST-FIT EXPERIMENTS</span><ul data-architecture-workloads></ul></article>
+            <article><span class="micro-label">QUESTIONS BEFORE SELECTION</span><ol data-architecture-questions></ol></article>
+            <article class="quantum-boundary"><span class="micro-label">COMPARABILITY BOUNDARY</span><p>Qualitative architecture views are not provider rankings. Backend snapshots, compiled circuits, execution mode, cost, queueing, error provenance, and shared workload metrics remain required.</p></article>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="contact-section">
-      <div class="contact-orbit" aria-hidden="true"></div>
-      <div class="shell contact-panel" data-reveal>
-        <div>
-          <p class="eyebrow">Connect</p>
-          <h2>Inspect the work. Challenge the reasoning. Build the next system.</h2>
-          <p>The portfolio is designed for people evaluating the code, evidence, architecture, assumptions, limitations, and decisions the systems support.</p>
+    <section class="module-section timeline-section" id="timeline">
+      <div class="shell">
+        <div class="section-heading" data-reveal>
+          <div><p class="eyebrow">Research timeline</p><h2>Not a résumé. A chain of systems becoming an operating method.</h2></div>
+          <p>Each milestone adds a missing layer: discovery, intelligence, bounded experimentation, deterministic decisions, or a public environment that connects them.</p>
         </div>
-        <div class="contact-links">
-          <a href="https://github.com/raybeecham"><span>GitHub</span><strong>@raybeecham</strong><i>↗</i></a>
-          <a href="https://linkedin.com/in/RaymondBeecham"><span>LinkedIn</span><strong>Ray Beecham</strong><i>↗</i></a>
+
+        <div class="timeline-shell" data-timeline data-reveal>
+          <div class="timeline-rail" data-timeline-rail></div>
+          <article class="timeline-inspector" data-timeline-inspector></article>
         </div>
+      </div>
+    </section>
+
+    <section class="module-section lab-section" id="lab">
+      <div class="shell">
+        <div class="section-heading" data-reveal>
+          <div><p class="eyebrow">Open lab index</p><h2>Enter any system directly.</h2></div>
+          <p>The lab index keeps every public repository and bounded private research program visible after mission filtering. Public links open the underlying evidence.</p>
+        </div>
+        <div class="lab-grid" data-lab-grid data-reveal></div>
+      </div>
+    </section>
+
+    <section class="module-section profile-section" id="about">
+      <div class="shell profile-layout">
+        <div class="profile-copy" data-reveal>
+          <p class="eyebrow">Principal researcher</p>
+          <h2>Ray Beecham</h2>
+          <p class="profile-lead">Quantum security engineer, U.S. Navy veteran, and systems builder working across post-quantum cryptography, applied quantum computing, cybersecurity, cloud security, AI systems engineering, and federal technology strategy.</p>
+          <p>The public work is designed to be inspected: source code, architectures, evidence, assumptions, limits, reproducibility controls, and accountable decision boundaries.</p>
+          <div class="profile-actions"><a class="button button-primary" href="https://github.com/raybeecham">Explore GitHub ↗</a><a class="button button-secondary" href="https://linkedin.com/in/RaymondBeecham">Connect on LinkedIn ↗</a></div>
+        </div>
+        <div class="profile-console" data-reveal>
+          <div><span>FOCUS</span><strong>PQC · QUANTUM · DECISION ASSURANCE</strong></div>
+          <div><span>METHOD</span><strong>EVIDENCE BEFORE CLAIMS</strong></div>
+          <div><span>STACK</span><strong>PYTHON · JS · DOCKER · CLOUD · QISKIT</strong></div>
+          <div><span>EDUCATION</span><strong>M.S. INFORMATION SYSTEMS · B.B.A. CIS</strong></div>
+          <div><span>CREDENTIALS</span><strong>GCIA · AWS SAA · SSCP · Q-CTRL · D-WAVE</strong></div>
+          <div><span>AUTHORITY MODEL</span><strong>HUMAN ACCOUNTABILITY RETAINED</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-grid" aria-hidden="true"></div>
+      <div class="shell contact-layout" data-reveal>
+        <div><p class="eyebrow">Exit environment</p><h2>Inspect the evidence. Challenge the reasoning. Build the next system.</h2><p>EvidenceOS is a public research interface, not an employer or client system. Project outputs are research artifacts and decision support, not procurement authorization, medical advice, policy approval, or operational command.</p></div>
+        <div class="contact-actions"><a href="https://github.com/raybeecham"><span>GitHub</span><strong>@raybeecham</strong><i>↗</i></a><a href="https://linkedin.com/in/RaymondBeecham"><span>LinkedIn</span><strong>Ray Beecham</strong><i>↗</i></a><button type="button" data-open-terminal><span>Terminal</span><strong>Open command interface</strong><i>&gt;_</i></button></div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="shell footer-grid">
-      <div class="footer-brand">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="6"></circle><ellipse cx="26" cy="26" rx="21" ry="9"></ellipse><ellipse cx="26" cy="26" rx="21" ry="9" transform="rotate(60 26 26)"></ellipse><ellipse cx="26" cy="26" rx="21" ry="9" transform="rotate(120 26 26)"></ellipse></svg>
-        </span>
-        <div><strong>Ray Beecham</strong><p>Quantum security, applied research, and evidence-driven decision systems.</p></div>
-      </div>
-      <p class="footer-note">Personal research and open-source work. Views are my own. Outputs are research artifacts and decision support, not employer or client positions, procurement authorization, medical advice, or operational approval.</p>
-      <a class="back-to-top" href="#top">Back to top <span>↑</span></a>
+  <footer class="os-footer">
+    <div class="shell footer-layout">
+      <div><strong>EvidenceOS</strong><p>Interactive mission research environment by Ray Beecham.</p></div>
+      <p>Personal research and open-source work. Views are my own. Live public evidence fails closed to source links.</p>
+      <a href="#top">Return to mission selector ↑</a>
     </div>
   </footer>
 
-  <script src="assets/site.js" defer></script>
-  <script src="assets/portfolio-data.js" defer></script>
-  <script src="assets/tdaf-demo.js" defer></script>
+  <section class="terminal" id="terminal" role="dialog" aria-modal="true" aria-labelledby="terminal-title" hidden data-terminal>
+    <div class="terminal-window">
+      <header><div><i></i><i></i><i></i></div><strong id="terminal-title">EvidenceOS Command Interface</strong><button type="button" aria-label="Close terminal" data-close-terminal>×</button></header>
+      <div class="terminal-output" aria-live="polite" data-terminal-output></div>
+      <form class="terminal-form" data-terminal-form>
+        <label for="terminal-input">evidenceos@ray:~$</label>
+        <input id="terminal-input" name="command" type="text" autocomplete="off" spellcheck="false" aria-label="Terminal command">
+      </form>
+      <footer><span>Type <code>help</code></span><span>Shortcut <kbd>`</kbd></span><span>Escape closes</span></footer>
+    </div>
+  </section>
 
+  <noscript><div class="noscript-message">EvidenceOS uses JavaScript for mission routing, the system graph, decision replay, globe, architecture explorer, live public evidence, and terminal. The core project links remain available in the GitHub profile README.</div></noscript>
+
+  <script src="assets/evidence-os-data.js" defer></script>
+  <script src="assets/evidence-os-globe.js" defer></script>
+  <script src="assets/evidence-os-terminal.js" defer></script>
+  <script src="assets/evidence-os.js" defer></script>
 </body>
 </html>

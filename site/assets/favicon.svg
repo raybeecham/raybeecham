@@ -1,10 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <defs><linearGradient id="g" x1="8" y1="8" x2="56" y2="56"><stop stop-color="#62f2ff"/><stop offset=".52" stop-color="#8b5cf6"/><stop offset="1" stop-color="#b8f45d"/></linearGradient></defs>
-  <rect width="64" height="64" rx="16" fill="#070b18"/>
+  <defs>
+    <linearGradient id="g" x1="7" y1="6" x2="58" y2="58"><stop stop-color="#62f2ff"/><stop offset=".52" stop-color="#9f7cff"/><stop offset="1" stop-color="#b8f45d"/></linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="#03050d"/>
+  <path d="M12 13h40v38H12z" fill="none" stroke="#62f2ff" stroke-opacity=".22"/>
   <circle cx="32" cy="32" r="5" fill="url(#g)"/>
-  <g fill="none" stroke="url(#g)" stroke-width="2.4" opacity=".95">
-    <ellipse cx="32" cy="32" rx="24" ry="10"/>
-    <ellipse cx="32" cy="32" rx="24" ry="10" transform="rotate(60 32 32)"/>
-    <ellipse cx="32" cy="32" rx="24" ry="10" transform="rotate(120 32 32)"/>
+  <g fill="none" stroke="url(#g)" stroke-width="2.1">
+    <ellipse cx="32" cy="32" rx="23" ry="9"/>
+    <ellipse cx="32" cy="32" rx="23" ry="9" transform="rotate(60 32 32)"/>
+    <ellipse cx="32" cy="32" rx="23" ry="9" transform="rotate(120 32 32)"/>
   </g>
+  <path d="M14 14h9M14 14v9M50 14h-9M50 14v9M14 50h9M14 50v-9M50 50h-9M50 50v-9" fill="none" stroke="#b8f45d" stroke-width="1.7"/>
 </svg>

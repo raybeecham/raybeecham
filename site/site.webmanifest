@@ -1,10 +1,17 @@
 {
-  "name": "Ray Beecham Research Portfolio",
-  "short_name": "Ray Beecham",
-  "description": "Quantum security, applied quantum systems, and evidence-driven decision assurance.",
+  "name": "EvidenceOS by Ray Beecham",
+  "short_name": "EvidenceOS",
+  "description": "Interactive research environment for quantum security, post-quantum migration, quantum technology evaluation, and accountable mission decisions.",
   "start_url": "/raybeecham/",
   "display": "standalone",
-  "background_color": "#050816",
-  "theme_color": "#050816",
-  "icons": []
+  "background_color": "#03050d",
+  "theme_color": "#03050d",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
 }

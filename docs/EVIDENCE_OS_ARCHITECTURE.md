@@ -138,6 +138,31 @@ The Quantum Computer Explorer uses original, representative physical schematics 
 
 The JSON Decision Record remains canonical. The human-readable decision brief is rendered from the same scenario and record so a non-specialist can understand the recommendation, rationale, next action, controls, unknowns, and accountable authority boundary. The brief does not create a second decision entity.
 
+## Experience refinement v2
+
+### Research-network density
+
+The public network can be expanded through `site/assets/evidence-os-network-expansion.js`. New nodes must use public sources, avoid client-specific identifiers, remain non-operational, and add meaningful standards, public-program, security, research, or architecture diversity. Density is controlled through mission and category lenses, a visible-node directory, and source-level inspection rather than by showing every marker at equal prominence.
+
+### Quantum interaction console
+
+The Quantum Computer Explorer supports four synchronized views:
+
+- Physical, with accessible component hotspots;
+- Control flow, showing preparation, interaction, and measurement pathways;
+- Bottlenecks, exposing connectivity, implementation, and error-correction constraints;
+- Mission fit, treating workloads as experiment hypotheses rather than provider recommendations.
+
+A comparison drawer places two architecture families side by side. All profile bars remain qualitative and cannot be described as measured scores, current backend data, or provider rankings.
+
+### Decision-trace termination
+
+The Decision Replay spine is rendered as discrete stage-to-stage segments. The final segment terminates at the Decide marker and must never extend into unused layout space.
+
+### Final action hub
+
+The principal-researcher section establishes identity and method without duplicating external profile buttons. The final section routes visitors into decision replay, the research network, the quantum lab, public source code, the terminal, or one professional contact channel.
+
 ## Local validation
 
 ```bash

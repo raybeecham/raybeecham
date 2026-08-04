@@ -20,10 +20,13 @@ HTML_FILES = (INDEX, NOT_FOUND)
 REQUIRED_ASSETS = (
     SITE / "assets" / "evidence-os.css",
     SITE / "assets" / "evidence-os-refinements.css",
+    SITE / "assets" / "evidence-os-experience-v2.css",
     SITE / "assets" / "evidence-os-data.js",
     SITE / "assets" / "evidence-os-public-data.js",
+    SITE / "assets" / "evidence-os-network-expansion.js",
     SITE / "assets" / "evidence-os.js",
     SITE / "assets" / "evidence-os-refinements.js",
+    SITE / "assets" / "evidence-os-experience-v2.js",
     SITE / "assets" / "evidence-os-globe.js",
     SITE / "assets" / "evidence-os-terminal.js",
     SITE / "assets" / "favicon.svg",
@@ -256,6 +259,7 @@ def validate_contract(errors: list[str]) -> None:
         ROOT / "README.md",
         INDEX,
         SITE / "assets" / "evidence-os-data.js",
+        SITE / "assets" / "evidence-os-network-expansion.js",
         ROOT / "docs" / "EVIDENCE_OS_ARCHITECTURE.md",
     ]
     public_text = "\n".join(
@@ -306,10 +310,13 @@ def validate_budgets(errors: list[str]) -> None:
         INDEX: 80_000,
         SITE / "assets" / "evidence-os.css": 95_000,
         SITE / "assets" / "evidence-os-refinements.css": 85_000,
+        SITE / "assets" / "evidence-os-experience-v2.css": 75_000,
         SITE / "assets" / "evidence-os-data.js": 75_000,
         SITE / "assets" / "evidence-os-public-data.js": 35_000,
+        SITE / "assets" / "evidence-os-network-expansion.js": 45_000,
         SITE / "assets" / "evidence-os.js": 80_000,
         SITE / "assets" / "evidence-os-refinements.js": 90_000,
+        SITE / "assets" / "evidence-os-experience-v2.js": 95_000,
         SITE / "assets" / "evidence-os-globe.js": 60_000,
         SITE / "assets" / "evidence-os-terminal.js": 35_000,
     }
@@ -317,8 +324,8 @@ def validate_budgets(errors: list[str]) -> None:
         if path.is_file() and path.stat().st_size > limit:
             errors.append(f"{path.relative_to(ROOT)} exceeds {limit:,}-byte budget ({path.stat().st_size:,})")
     total_js = sum(path.stat().st_size for path in (SITE / "assets").glob("*.js"))
-    if total_js > 320_000:
-        errors.append(f"JavaScript total exceeds 320,000-byte budget ({total_js:,})")
+    if total_js > 400_000:
+        errors.append(f"JavaScript total exceeds 400,000-byte budget ({total_js:,})")
 
 
 def main() -> int:

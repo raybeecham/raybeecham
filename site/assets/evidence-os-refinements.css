@@ -1,0 +1,776 @@
+/* EvidenceOS refinement layer
+   Representative architecture schematics, research-network intelligence,
+   decision-record presentation, and alignment corrections. */
+
+/* --------------------------------------------------------------------------
+   Decision Replay
+   -------------------------------------------------------------------------- */
+.replay-trace {
+  --replay-spine-x: 58px;
+}
+
+.replay-trace::before {
+  left: var(--replay-spine-x);
+  width: 1px;
+  opacity: .46;
+  box-shadow: 0 0 14px rgba(var(--mission-rgb), .32);
+}
+
+.replay-step,
+.replay-step.is-active,
+.replay-step.is-complete {
+  transform: none;
+}
+
+.replay-step.is-active {
+  box-shadow: 0 0 0 1px rgba(var(--mission-rgb), .08), 0 14px 34px rgba(0, 0, 0, .17);
+}
+
+.replay-step-index {
+  box-shadow: 0 0 0 4px var(--bg-panel-strong), 0 0 16px rgba(var(--mission-rgb), .22);
+}
+
+.replay-record {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.replay-record .record-head {
+  margin-bottom: 0;
+}
+
+.record-human {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  background:
+    linear-gradient(145deg, rgba(var(--mission-rgb), .075), transparent 55%),
+    var(--surface);
+}
+
+.record-human.is-waiting {
+  min-height: 210px;
+  place-content: center;
+  text-align: center;
+}
+
+.record-human.is-waiting .record-human-glyph {
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 4px;
+  border: 1px solid var(--line-strong);
+  border-radius: 18px;
+  color: var(--mission);
+  font-family: var(--mono);
+  font-size: 1.2rem;
+  box-shadow: 0 0 24px rgba(var(--mission-rgb), .12);
+}
+
+.record-human-label {
+  color: var(--mission);
+  font-family: var(--mono);
+  font-size: .54rem;
+  font-weight: 700;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+
+.record-human-result {
+  display: grid;
+  gap: 7px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.record-human-result strong {
+  color: var(--text-strong);
+  font-size: 1.02rem;
+  line-height: 1.35;
+}
+
+.record-human-result p,
+.record-human-block p {
+  margin: 0;
+  color: var(--muted-strong);
+  font-size: .75rem;
+  line-height: 1.62;
+}
+
+.record-human-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.record-human-block {
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: rgba(255, 255, 255, .018);
+}
+
+.record-human-block.is-wide {
+  grid-column: 1 / -1;
+}
+
+.record-human-block > span,
+.record-evidence-stat span {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: .48rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.record-evidence-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.record-evidence-stat {
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.record-evidence-stat strong {
+  color: var(--text-strong);
+  font-family: var(--mono);
+  font-size: .86rem;
+}
+
+.record-evidence-stat.good strong { color: var(--lime); }
+.record-evidence-stat.warn strong { color: var(--amber); }
+.record-evidence-stat.bad strong { color: var(--red); }
+
+.record-token-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.record-token-list li {
+  padding: 5px 7px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted-strong);
+  background: var(--surface);
+  font-family: var(--mono);
+  font-size: .48rem;
+}
+
+.record-derived-note {
+  margin: 0;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: .5rem;
+  line-height: 1.55;
+}
+
+.record-json-disclosure {
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  background: rgba(0, 0, 0, .07);
+  overflow: hidden;
+}
+
+.record-json-disclosure summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  color: var(--muted-strong);
+  font-family: var(--mono);
+  font-size: .56rem;
+  letter-spacing: .05em;
+  cursor: pointer;
+  list-style: none;
+}
+
+.record-json-disclosure summary::-webkit-details-marker { display: none; }
+.record-json-disclosure summary::after {
+  content: "+";
+  color: var(--mission);
+  font-size: .9rem;
+}
+.record-json-disclosure[open] summary::after { content: "−"; }
+
+.record-json-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 12px 10px;
+}
+
+.record-copy-button {
+  min-height: 32px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--muted-strong);
+  font-family: var(--mono);
+  font-size: .5rem;
+}
+
+.record-copy-button:hover,
+.record-copy-button:focus-visible {
+  border-color: var(--mission);
+  color: var(--text-strong);
+}
+
+.replay-record .record-json-disclosure pre {
+  min-height: 230px;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Research Network
+   -------------------------------------------------------------------------- */
+.globe-toolbar {
+  align-items: flex-start;
+  padding: 16px 18px;
+  background: linear-gradient(90deg, rgba(var(--mission-rgb), .035), transparent);
+}
+
+.globe-filters {
+  justify-content: flex-end;
+}
+
+.globe-filters button {
+  display: inline-grid;
+  grid-template-columns: 7px auto auto;
+  gap: 7px;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 11px;
+}
+
+.globe-filters button i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--category-color, var(--mission));
+  box-shadow: 0 0 10px color-mix(in srgb, var(--category-color, var(--mission)) 75%, transparent);
+}
+
+.globe-filters button span {
+  font-size: .54rem;
+}
+
+.globe-filters button strong {
+  display: grid;
+  place-items: center;
+  min-width: 22px;
+  height: 22px;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, .04);
+  color: var(--category-color, var(--mission));
+  font-size: .49rem;
+}
+
+.globe-filters button.is-active {
+  border-color: var(--category-color, var(--mission));
+  background: color-mix(in srgb, var(--category-color, var(--mission)) 10%, transparent);
+  box-shadow: 0 0 22px color-mix(in srgb, var(--category-color, var(--mission)) 9%, transparent);
+}
+
+.network-overview {
+  display: grid;
+  grid-template-columns: 120px 150px minmax(0, 1fr);
+  gap: 10px;
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(0, 0, 0, .055);
+}
+
+.network-overview > div {
+  padding: 10px 11px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.network-overview span {
+  display: block;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: .46rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.network-overview strong {
+  display: block;
+  margin-top: 5px;
+  color: var(--text-strong);
+  font-size: .68rem;
+}
+
+.network-overview p {
+  margin: 5px 0 0;
+  font-size: .64rem;
+  line-height: 1.52;
+}
+
+.research-globe {
+  min-height: 540px;
+  height: min(62vw, 610px);
+  background:
+    radial-gradient(circle at center, rgba(var(--mission-rgb), .09), transparent 54%),
+    linear-gradient(180deg, rgba(255, 255, 255, .008), transparent);
+}
+
+.network-directory {
+  padding: 14px 15px 15px;
+  border-top: 1px solid var(--line);
+  background: rgba(0, 0, 0, .045);
+}
+
+.network-directory-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+.network-directory-head strong {
+  color: var(--muted-strong);
+  font-family: var(--mono);
+  font-size: .55rem;
+}
+
+.network-directory-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  max-height: 196px;
+  overflow: auto;
+}
+
+.network-node-button {
+  position: relative;
+  display: grid;
+  grid-template-columns: 9px minmax(0, 1fr);
+  gap: 8px;
+  align-items: start;
+  width: 100%;
+  min-height: 58px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  text-align: left;
+}
+
+.network-node-button:hover,
+.network-node-button:focus-visible,
+.network-node-button.is-selected {
+  border-color: var(--node-color, var(--mission));
+  background: color-mix(in srgb, var(--node-color, var(--mission)) 8%, transparent);
+}
+
+.network-node-button > i {
+  width: 7px;
+  height: 7px;
+  margin-top: 5px;
+  border-radius: 50%;
+  background: var(--node-color, var(--mission));
+  box-shadow: 0 0 9px color-mix(in srgb, var(--node-color, var(--mission)) 70%, transparent);
+}
+
+.network-node-button strong {
+  display: block;
+  color: var(--text-strong);
+  font-size: .64rem;
+  line-height: 1.3;
+}
+
+.network-node-button small {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: .45rem;
+  line-height: 1.35;
+}
+
+.earth-inspector {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background:
+    linear-gradient(145deg, rgba(var(--mission-rgb), .04), transparent 45%),
+    var(--bg-panel);
+}
+
+.earth-inspector .earth-signal {
+  position: relative;
+  width: 84px;
+  height: 84px;
+}
+
+.earth-inspector .earth-signal::before,
+.earth-inspector .earth-signal::after {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  opacity: .44;
+}
+
+.earth-inspector .earth-signal::after {
+  inset: 31px;
+  background: currentColor;
+  box-shadow: 0 0 15px currentColor;
+  opacity: .75;
+}
+
+.earth-category-summary {
+  display: grid;
+  gap: 12px;
+}
+
+.earth-category-summary h3,
+.earth-node-title {
+  margin: 8px 0 2px;
+}
+
+.earth-category-summary p,
+.earth-node-summary {
+  margin-bottom: 0;
+  font-size: .78rem;
+}
+
+.earth-category-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.earth-category-stats div {
+  padding: 11px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.earth-category-stats span {
+  display: block;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: .46rem;
+}
+
+.earth-category-stats strong {
+  display: block;
+  margin-top: 4px;
+  color: var(--text-strong);
+  font-size: .7rem;
+}
+
+.earth-related {
+  display: grid;
+  gap: 7px;
+  margin-top: 20px;
+}
+
+.earth-related > span {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: .48rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.earth-related button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 9px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--surface);
+  color: var(--muted-strong);
+  font-size: .65rem;
+  text-align: left;
+}
+
+.earth-related button:hover,
+.earth-related button:focus-visible {
+  border-color: var(--node-color, var(--mission));
+  color: var(--text-strong);
+}
+
+.earth-boundary-note {
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: .49rem;
+  line-height: 1.55;
+}
+
+/* --------------------------------------------------------------------------
+   Quantum Architecture Explorer
+   -------------------------------------------------------------------------- */
+.quantum-lab-grid {
+  grid-template-columns: minmax(430px, .96fr) minmax(0, 1.04fr);
+}
+
+.chip-stage.is-refined {
+  display: block;
+  min-height: 650px;
+  padding: 24px;
+  perspective: none;
+}
+
+.chip-stage.is-refined .quantum-chip,
+.chip-stage.is-refined .chip-orbit {
+  display: none;
+}
+
+.architecture-visual-shell {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-rows: auto minmax(360px, 1fr) auto;
+  width: 100%;
+  height: 100%;
+  min-height: 580px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 50% 46%, color-mix(in srgb, var(--architecture-accent, var(--mission)) 13%, transparent), transparent 48%),
+    rgba(0, 0, 0, .08);
+  overflow: hidden;
+}
+
+.architecture-visual-shell::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(color-mix(in srgb, var(--architecture-accent, var(--mission)) 6%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--architecture-accent, var(--mission)) 6%, transparent) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: radial-gradient(circle at center, black, transparent 78%);
+  pointer-events: none;
+}
+
+.architecture-visual-head {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 13px 15px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(0, 0, 0, .08);
+}
+
+.architecture-visual-head span,
+.architecture-visual-head strong {
+  font-family: var(--mono);
+  font-size: .5rem;
+  letter-spacing: .09em;
+}
+
+.architecture-visual-head span { color: var(--architecture-accent, var(--mission)); }
+.architecture-visual-head strong { color: var(--muted); }
+
+.architecture-schematic {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  padding: 10px;
+}
+
+.architecture-schematic .schematic-surface {
+  fill: rgba(7, 13, 28, .72);
+  stroke: color-mix(in srgb, var(--architecture-accent, var(--mission)) 38%, transparent);
+  stroke-width: 1.2;
+}
+
+html[data-theme="light"] .architecture-schematic .schematic-surface {
+  fill: rgba(232, 241, 248, .86);
+}
+
+.architecture-schematic .schematic-line {
+  fill: none;
+  stroke: var(--architecture-accent, var(--mission));
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: .78;
+  filter: drop-shadow(0 0 5px color-mix(in srgb, var(--architecture-accent, var(--mission)) 36%, transparent));
+}
+
+.architecture-schematic .schematic-line.muted {
+  stroke: var(--muted);
+  opacity: .28;
+  filter: none;
+}
+
+.architecture-schematic .schematic-node {
+  fill: color-mix(in srgb, var(--architecture-accent, var(--mission)) 18%, var(--bg-panel-strong));
+  stroke: var(--architecture-accent, var(--mission));
+  stroke-width: 1.4;
+  filter: drop-shadow(0 0 6px color-mix(in srgb, var(--architecture-accent, var(--mission)) 42%, transparent));
+}
+
+.architecture-schematic .schematic-core {
+  fill: var(--architecture-accent, var(--mission));
+  filter: drop-shadow(0 0 8px color-mix(in srgb, var(--architecture-accent, var(--mission)) 75%, transparent));
+}
+
+.architecture-schematic .schematic-label {
+  fill: var(--text-strong);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .04em;
+}
+
+.architecture-schematic .schematic-label.muted {
+  fill: var(--muted);
+  font-size: 8px;
+}
+
+.architecture-schematic .schematic-beam {
+  fill: url(#beamGradient);
+  opacity: .38;
+}
+
+.architecture-schematic .schematic-pulse {
+  animation: schematicPulse 3.4s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.architecture-schematic .schematic-travel {
+  animation: schematicTravel 4.8s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.architecture-visual-meta {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1.25fr repeat(3, minmax(0, .75fr));
+  border-top: 1px solid var(--line);
+  background: var(--bg-panel);
+}
+
+.architecture-visual-meta > div {
+  padding: 12px 13px;
+  border-right: 1px solid var(--line);
+}
+
+.architecture-visual-meta > div:last-child { border-right: 0; }
+.architecture-visual-meta > div:first-child { grid-row: span 2; }
+
+.architecture-visual-meta span {
+  display: block;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: .45rem;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.architecture-visual-meta strong,
+.architecture-visual-meta p {
+  display: block;
+  margin: 5px 0 0;
+  color: var(--text-strong);
+  font-size: .61rem;
+  line-height: 1.45;
+}
+
+.architecture-visual-meta p {
+  color: var(--muted-strong);
+  font-size: .61rem;
+}
+
+.architecture-qualitative-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 10px 11px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(var(--mission-rgb), .035);
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: .49rem;
+  line-height: 1.55;
+}
+
+.architecture-qualitative-note strong {
+  color: var(--architecture-accent, var(--mission));
+  white-space: nowrap;
+}
+
+@keyframes schematicPulse {
+  0%, 100% { opacity: .55; transform: scale(.9); }
+  50% { opacity: 1; transform: scale(1.12); }
+}
+
+@keyframes schematicTravel {
+  0%, 100% { opacity: .28; transform: translateX(-4px); }
+  50% { opacity: 1; transform: translateX(8px); }
+}
+
+/* --------------------------------------------------------------------------
+   Responsive refinement behavior
+   -------------------------------------------------------------------------- */
+@media (max-width: 1040px) {
+  .network-directory-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .quantum-lab-grid { grid-template-columns: 1fr; }
+  .chip-stage.is-refined { border-right: 0; border-bottom: 1px solid var(--line); }
+}
+
+@media (max-width: 760px) {
+  .record-human-grid,
+  .record-evidence-stats,
+  .earth-category-stats { grid-template-columns: 1fr; }
+  .network-overview { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .network-overview > div:last-child { grid-column: 1 / -1; }
+  .network-directory-list { grid-template-columns: 1fr; max-height: 250px; }
+  .globe-toolbar { display: grid; }
+  .globe-filters { justify-content: flex-start; }
+  .architecture-visual-meta { grid-template-columns: 1fr 1fr; }
+  .architecture-visual-meta > div:first-child { grid-column: 1 / -1; grid-row: auto; }
+  .architecture-visual-meta > div:nth-child(2n) { border-right: 0; }
+  .chip-stage.is-refined { min-height: 620px; padding: 14px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .architecture-schematic .schematic-pulse,
+  .architecture-schematic .schematic-travel {
+    animation: none !important;
+  }
+}

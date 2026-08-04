@@ -17,6 +17,7 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/evidence-os.css">
+  <link rel="stylesheet" href="assets/evidence-os-refinements.css">
   <title>EvidenceOS | Ray Beecham</title>
   <script>
     (() => {
@@ -68,7 +69,7 @@
       <a href="#mission-control">Control</a>
       <a href="#situation-room">Situation</a>
       <a href="#decision-replay">Replay</a>
-      <a href="#research-earth">Earth</a>
+      <a href="#research-earth">Network</a>
       <a href="#quantum-explorer">Quantum</a>
       <a href="#timeline">Timeline</a>
     </nav>
@@ -133,7 +134,7 @@
       </div>
 
       <div class="hero-system-rail" aria-label="EvidenceOS modules">
-        <span>MISSION CONTROL</span><i></i><span>DECISION REPLAY</span><i></i><span>LIVE RESEARCH EARTH</span><i></i><span>QUANTUM EXPLORER</span><i></i><span>CYBER SITUATION ROOM</span><i></i><span>RESEARCH TIMELINE</span><i></i><span>COMMAND TERMINAL</span>
+        <span>MISSION CONTROL</span><i></i><span>DECISION REPLAY</span><i></i><span>RESEARCH NETWORK</span><i></i><span>QUANTUM EXPLORER</span><i></i><span>CYBER SITUATION ROOM</span><i></i><span>RESEARCH TIMELINE</span><i></i><span>COMMAND TERMINAL</span>
       </div>
     </section>
 
@@ -227,7 +228,7 @@
       <div class="shell">
         <div class="section-heading" data-reveal>
           <div><p class="eyebrow">Decision replay</p><h2>Watch a technology decision execute like a packet trace.</h2></div>
-          <p>Evidence enters, admission boundaries fire, deterministic rules evaluate, a record is produced, and human authority remains visible at the end of the chain.</p>
+          <p>Evidence enters, admission boundaries fire, deterministic rules evaluate, and two synchronized outputs appear: a human-readable decision brief and the canonical JSON decision record. Human authority remains visible at the end of the chain.</p>
         </div>
 
         <div class="replay-shell" data-decision-replay data-reveal>
@@ -255,8 +256,8 @@
     <section class="module-section earth-section" id="research-earth">
       <div class="shell">
         <div class="section-heading" data-reveal>
-          <div><p class="eyebrow">Live research earth</p><h2>A global map of standards, government, research, and quantum industry signals.</h2></div>
-          <p>Rotate the globe and inspect public organizations relevant to the selected mission. This is an illustrative research network, not a live operational or geopolitical tracking system.</p>
+          <div><p class="eyebrow">Research network</p><h2>A living map of the public quantum and security ecosystem.</h2></div>
+          <p>Change the network lens, inspect the visible-node directory, rotate to a source, and follow how standards, multi-agency public programs, security communities, research institutions, and technology providers relate to the selected mission. The network is illustrative, curated, and non-operational.</p>
         </div>
 
         <div class="earth-layout">
@@ -288,7 +289,7 @@
         <div class="quantum-lab" data-quantum-explorer data-reveal>
           <div class="architecture-tabs" role="tablist" aria-label="Quantum architecture families" data-architecture-tabs></div>
           <div class="quantum-lab-grid">
-            <div class="chip-stage" aria-hidden="true">
+            <div class="chip-stage" role="img" aria-live="polite" aria-label="Representative physical schematic of the selected quantum computing architecture">
               <div class="chip-orbit chip-orbit-a"></div><div class="chip-orbit chip-orbit-b"></div>
               <div class="quantum-chip" data-quantum-chip>
                 <div class="chip-layer chip-layer-top"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
@@ -395,8 +396,10 @@
   <noscript><div class="noscript-message">EvidenceOS uses JavaScript for mission routing, the system graph, decision replay, globe, architecture explorer, live public evidence, and terminal. The core project links remain available in the GitHub profile README.</div></noscript>
 
   <script src="assets/evidence-os-data.js" defer></script>
+  <script src="assets/evidence-os-public-data.js" defer></script>
   <script src="assets/evidence-os-globe.js" defer></script>
   <script src="assets/evidence-os-terminal.js" defer></script>
   <script src="assets/evidence-os.js" defer></script>
+  <script src="assets/evidence-os-refinements.js" defer></script>
 </body>
 </html>

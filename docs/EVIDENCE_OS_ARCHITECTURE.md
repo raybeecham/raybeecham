@@ -24,7 +24,7 @@ The interface organizes public and bounded research around mission context, evid
 | Mission Control | Shows how public systems, private R&D, laboratories, benchmarks, and decision methods connect |
 | Cyber Situation Room | Combines mission brief, public repository evidence, research signals, controls, and decision-engine health |
 | Decision Replay | Executes bounded technology decisions through Observe, Admit, Evaluate, Record, and Decide stages |
-| Research Earth | Presents an illustrative global network of public standards, government, research, security, and vendor organizations |
+| Research Network | Presents an illustrative global network of public standards, government, research, security, and vendor organizations |
 | Quantum Computer Explorer | Compares generic architecture families through workload fit, native operations, routing, constraints, and error-correction questions |
 | Research Timeline | Shows how individual tools evolved into an evidence-first operating method |
 | Command Terminal | Provides keyboard-first navigation, mission routing, system discovery, and deliberate easter eggs |
@@ -123,6 +123,20 @@ The application supports:
 - high-contrast dark and light themes;
 - `prefers-reduced-motion` across boot, particles, orbits, rail, chip, and reveals;
 - usable content when dynamic effects are unavailable.
+
+## Refinement contracts
+
+### Research Network
+
+The Research Network is a curated public-source map. Public-sector nodes must represent multi-agency or multi-country programs rather than a single client-specific organization. Presence in the network does not imply a client relationship, endorsement, partnership, facility knowledge, personnel tracking, or operational monitoring.
+
+### Architecture schematics
+
+The Quantum Computer Explorer uses original, representative physical schematics to explain what each generic architecture family looks like. Schematics are vendor-neutral, not to scale, and do not depict a specific provider backend. Qualitative profile bars support discussion and are not benchmark scores or rankings.
+
+### Decision-record presentation
+
+The JSON Decision Record remains canonical. The human-readable decision brief is rendered from the same scenario and record so a non-specialist can understand the recommendation, rationale, next action, controls, unknowns, and accountable authority boundary. The brief does not create a second decision entity.
 
 ## Local validation
 

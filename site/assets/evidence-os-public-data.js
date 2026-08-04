@@ -123,12 +123,6 @@
     lab: "Shows every public node in the curated network without implying operational monitoring."
   });
 
-  // Runtime defense: a public portfolio must not expose a single client-specific
-  // organization marker. The source data is also validated and sanitized in CI.
-  const excludedIds = new Set(["doe", "nist", "nsa", "darpa"]);
-  for (let index = data.earthMarkers.length - 1; index >= 0; index -= 1) {
-    if (excludedIds.has(data.earthMarkers[index].id)) data.earthMarkers.splice(index, 1);
-  }
 
   window.EvidenceOSRefinementData = Object.freeze({
     categoryMeta,

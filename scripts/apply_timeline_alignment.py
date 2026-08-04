@@ -36,8 +36,8 @@ def main() -> None:
     )
     validator = replace_once(
         validator,
-        '        SITE / "assets" / "evidence-os-experience-v2.css": 80_000,\n',
-        '        SITE / "assets" / "evidence-os-experience-v2.css": 80_000,\n'
+        '        SITE / "assets" / "evidence-os-experience-v2.css": 75_000,\n',
+        '        SITE / "assets" / "evidence-os-experience-v2.css": 75_000,\n'
         '        SITE / "assets" / "evidence-os-timeline-alignment.css": 15_000,\n',
         "timeline CSS budget",
     )

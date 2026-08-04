@@ -1,4 +1,4 @@
-name: Validate and deploy research portfolio
+name: Validate and deploy EvidenceOS
 
 on:
   push:
@@ -30,7 +30,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Validate portfolio structure and assets
+      - name: Validate EvidenceOS structure and assets
         shell: bash
         run: |
           set -euo pipefail
@@ -59,11 +59,11 @@ jobs:
         with:
           enablement: true
 
-      - name: Upload static site
+      - name: Upload EvidenceOS static site
         uses: actions/upload-pages-artifact@v4
         with:
           path: site
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy EvidenceOS to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

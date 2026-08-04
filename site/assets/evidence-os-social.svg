@@ -15,7 +15,7 @@
     <text x="72" y="310" fill="#edf9ff" font-size="51" font-weight="700">Do not read the portfolio.</text>
     <text x="72" y="374" fill="url(#accent)" font-size="51" font-weight="700">Enter the decision environment.</text>
     <text x="72" y="460" fill="#aab8d3" font-size="25">Quantum security · PQC migration · quantum evaluation · research intelligence</text>
-    <text x="72" y="540" fill="#b8f45d" font-size="21" font-weight="700">MISSION CONTROL  ·  DECISION REPLAY  ·  RESEARCH EARTH  ·  QUANTUM EXPLORER</text>
+    <text x="72" y="540" fill="#b8f45d" font-size="21" font-weight="700">MISSION CONTROL  ·  DECISION REPLAY  ·  RESEARCH NETWORK  ·  QUANTUM EXPLORER</text>
   </g>
   <g transform="translate(980 315)">
     <circle r="52" fill="url(#accent)" filter="url(#glow)"/>

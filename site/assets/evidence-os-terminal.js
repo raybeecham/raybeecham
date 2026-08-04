@@ -115,7 +115,7 @@
     "  control | graph             open mission control",
     "  situation                   open cyber situation room",
     "  tdaf | replay               run decision replay",
-    "  earth                       open research earth",
+    "  network | earth             open research network",
     "  chip | architectures        open quantum explorer",
     "  timeline                    open research timeline",
     "  systems | ls                list research systems",
@@ -170,7 +170,7 @@
     if (head === "control" || head === "graph") return navigate("#mission-control", "mission control");
     if (head === "situation") return navigate("#situation-room", "cyber situation room");
     if (head === "tdaf" || head === "replay") return navigate("#decision-replay", "decision replay");
-    if (head === "earth" || head === "globe") return navigate("#research-earth", "research earth");
+    if (head === "network" || head === "earth" || head === "globe") return navigate("#research-earth", "research network");
     if (head === "chip" || head === "architectures") return navigate("#quantum-explorer", "quantum computer explorer");
     if (head === "timeline") return navigate("#timeline", "research timeline");
 

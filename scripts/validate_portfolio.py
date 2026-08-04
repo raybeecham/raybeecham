@@ -255,7 +255,7 @@ def validate_contract(errors: list[str]) -> None:
     public_paths = [
         ROOT / "README.md",
         INDEX,
-        data_text and SITE / "assets" / "evidence-os-data.js",
+        SITE / "assets" / "evidence-os-data.js",
         ROOT / "docs" / "EVIDENCE_OS_ARCHITECTURE.md",
     ]
     public_text = "\n".join(

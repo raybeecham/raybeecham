@@ -701,7 +701,7 @@
       date: "August 2026",
       title: "EvidenceOS turns the portfolio into an operating environment",
       category: "platform",
-      summary: "Mission selection, system graph, decision replay, research earth, architecture explorer, situation room, timeline, and terminal converge into one public experience.",
+      summary: "Mission selection, system graph, decision replay, research network, architecture explorer, situation room, timeline, and terminal converge into one public experience.",
       evidence: ["Mission-based navigation", "Interactive decision systems", "Public-safe data", "Accessible static architecture"],
       link: "#mission-control"
     },

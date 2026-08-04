@@ -341,7 +341,7 @@
 
     const disclosure = document.createElement("details");
     disclosure.className = "record-json-disclosure";
-    disclosure.open = true;
+    disclosure.open = false;
     const disclosureSummary = document.createElement("summary");
     disclosureSummary.textContent = "Inspect canonical decision-record JSON";
     const toolbar = document.createElement("div");

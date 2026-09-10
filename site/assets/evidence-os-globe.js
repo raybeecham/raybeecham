@@ -226,11 +226,43 @@
     ctx.fill();
     ctx.shadowBlur = 0;
 
-    if (selected || point.rotated.z > 0.58) {
-      ctx.fillStyle = palette.text;
-      ctx.font = `${selected ? 700 : 600} ${selected ? 12 : 10}px ui-monospace, monospace`;
-      ctx.fillText(marker.name, point.x + 10, point.y - 9);
-    }
+  };
+
+  // Labels are drawn in a second pass so that crowded regions of the globe stay
+  // readable: the selected marker always wins, then front-most markers claim
+  // space, and anything that would overlap an already-placed label is dropped.
+  const drawMarkerLabels = (points, palette) => {
+    const placed = [];
+    const candidates = points
+      .filter((point) => point.marker.id === state.selected || point.rotated.z > 0.58)
+      .sort((a, b) => {
+        if (a.marker.id === state.selected) return 1;
+        if (b.marker.id === state.selected) return -1;
+        return a.rotated.z - b.rotated.z;
+      });
+
+    candidates.forEach((point) => {
+      const selected = point.marker.id === state.selected;
+      ctx.font = `${selected ? 700 : 600} ${selected ? 12 : 10.5}px ui-monospace, monospace`;
+      const width = ctx.measureText(point.marker.name).width;
+      const box = { x: point.x + 10, y: point.y - 19, w: width, h: 14 };
+      const collides = placed.some((other) =>
+        box.x < other.x + other.w + 6 &&
+        box.x + box.w + 6 > other.x &&
+        box.y < other.y + other.h + 3 &&
+        box.y + box.h + 3 > other.y
+      );
+      if (collides && !selected) return;
+      placed.push(box);
+
+      // A soft plate keeps the label legible over the globe body and links.
+      ctx.fillStyle = palette.labelPlate;
+      ctx.beginPath();
+      ctx.roundRect(box.x - 5, box.y - 1, box.w + 10, box.h + 4, 4);
+      ctx.fill();
+      ctx.fillStyle = selected ? palette.text : palette.muted;
+      ctx.fillText(point.marker.name, box.x, point.y - 9);
+    });
   };
 
   const updateTargetRotation = () => {
@@ -256,13 +288,15 @@
       rim: "rgba(98, 242, 255, 0.34)",
       grid: "rgba(112, 169, 202, 0.14)",
       text: "#eaf8ff",
-      muted: "#91a0bd"
+      muted: "#b3c2da",
+      labelPlate: "rgba(3, 8, 20, 0.72)"
     } : {
       fill: "rgba(236, 244, 250, 0.94)",
       rim: "rgba(8, 125, 159, 0.30)",
       grid: "rgba(31, 93, 130, 0.13)",
       text: "#10243b",
-      muted: "#60728b"
+      muted: "#44586f",
+      labelPlate: "rgba(255, 255, 255, 0.82)"
     };
 
     updateTargetRotation();
@@ -293,6 +327,7 @@
     const points = projectedMarkers(radius, centerX, centerY);
     drawNetworkLinks(points);
     points.forEach((point) => drawMarker(point, time, palette));
+    drawMarkerLabels(points, palette);
 
     state.points = points.map((point) => ({ marker: point.marker, x: point.x, y: point.y, radius: 17 + (point.marker.id === state.selected ? 6 : 0), depth: point.depth }));
 

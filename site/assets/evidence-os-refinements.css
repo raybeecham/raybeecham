@@ -74,7 +74,7 @@
 .record-human-label {
   color: var(--mission);
   font-family: var(--mono);
-  font-size: .54rem;
+  font-size: var(--fs-micro);
   font-weight: 700;
   letter-spacing: .11em;
   text-transform: uppercase;
@@ -97,7 +97,7 @@
 .record-human-block p {
   margin: 0;
   color: var(--muted-strong);
-  font-size: .75rem;
+  font-size: var(--fs-label);
   line-height: 1.62;
 }
 
@@ -124,7 +124,7 @@
   margin-bottom: 6px;
   color: var(--muted);
   font-family: var(--mono);
-  font-size: .48rem;
+  font-size: var(--fs-micro);
   letter-spacing: .08em;
   text-transform: uppercase;
 }
@@ -145,7 +145,7 @@
 .record-evidence-stat strong {
   color: var(--text-strong);
   font-family: var(--mono);
-  font-size: .86rem;
+  font-size: var(--fs-body-sm);
 }
 
 .record-evidence-stat.good strong { color: var(--lime); }
@@ -168,14 +168,14 @@
   color: var(--muted-strong);
   background: var(--surface);
   font-family: var(--mono);
-  font-size: .48rem;
+  font-size: var(--fs-micro);
 }
 
 .record-derived-note {
   margin: 0;
   color: var(--muted);
   font-family: var(--mono);
-  font-size: .5rem;
+  font-size: var(--fs-micro);
   line-height: 1.55;
 }
 
@@ -194,7 +194,7 @@
   padding: 12px 14px;
   color: var(--muted-strong);
   font-family: var(--mono);
-  font-size: .56rem;
+  font-size: var(--fs-micro);
   letter-spacing: .05em;
   cursor: pointer;
   list-style: none;
@@ -204,7 +204,7 @@
 .record-json-disclosure summary::after {
   content: "+";
   color: var(--mission);
-  font-size: .9rem;
+  font-size: var(--fs-body-sm);
 }
 .record-json-disclosure[open] summary::after { content: "−"; }
 
@@ -222,7 +222,7 @@
   background: var(--surface);
   color: var(--muted-strong);
   font-family: var(--mono);
-  font-size: .5rem;
+  font-size: var(--fs-micro);
 }
 
 .record-copy-button:hover,
@@ -241,14 +241,22 @@
 /* --------------------------------------------------------------------------
    Research Network
    -------------------------------------------------------------------------- */
+/* The lens label sits above its own full-width filter row so six pills fit on
+   one line instead of orphaning the last one. */
 .globe-toolbar {
-  align-items: flex-start;
+  display: grid;
+  gap: 12px;
+  align-items: start;
   padding: 16px 18px;
   background: linear-gradient(90deg, rgba(var(--mission-rgb), .035), transparent);
 }
 
+.globe-toolbar > .micro-label {
+  white-space: nowrap;
+}
+
 .globe-filters {
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .globe-filters button {
@@ -269,7 +277,7 @@
 }
 
 .globe-filters button span {
-  font-size: .54rem;
+  font-size: var(--fs-micro);
 }
 
 .globe-filters button strong {
@@ -280,7 +288,7 @@
   border-radius: 7px;
   background: rgba(255, 255, 255, .04);
   color: var(--category-color, var(--mission));
-  font-size: .49rem;
+  font-size: var(--fs-micro);
 }
 
 .globe-filters button.is-active {
@@ -309,7 +317,7 @@
   display: block;
   color: var(--muted);
   font-family: var(--mono);
-  font-size: .46rem;
+  font-size: var(--fs-micro);
   letter-spacing: .08em;
   text-transform: uppercase;
 }
@@ -318,12 +326,12 @@
   display: block;
   margin-top: 5px;
   color: var(--text-strong);
-  font-size: .68rem;
+  font-size: var(--fs-label);
 }
 
 .network-overview p {
   margin: 5px 0 0;
-  font-size: .64rem;
+  font-size: var(--fs-micro);
   line-height: 1.52;
 }
 
@@ -352,7 +360,7 @@
 .network-directory-head strong {
   color: var(--muted-strong);
   font-family: var(--mono);
-  font-size: .55rem;
+  font-size: var(--fs-micro);
 }
 
 .network-directory-list {
@@ -397,7 +405,7 @@
 .network-node-button strong {
   display: block;
   color: var(--text-strong);
-  font-size: .64rem;
+  font-size: var(--fs-micro);
   line-height: 1.3;
 }
 
@@ -406,7 +414,7 @@
   margin-top: 4px;
   color: var(--muted);
   font-family: var(--mono);
-  font-size: .45rem;
+  font-size: var(--fs-micro);
   line-height: 1.35;
 }
 
@@ -455,7 +463,7 @@
 .earth-category-summary p,
 .earth-node-summary {
   margin-bottom: 0;
-  font-size: .78rem;
+  font-size: var(--fs-label);
 }
 
 .earth-category-stats {
@@ -476,14 +484,14 @@
   display: block;
   color: var(--muted);
   font-family: var(--mono);
-  font-size: .46rem;
+  font-size: var(--fs-micro);
 }
 
 .earth-category-stats strong {
   display: block;
   margin-top: 4px;
   color: var(--text-strong);
-  font-size: .7rem;
+  font-size: var(--fs-label);
 }
 
 .earth-related {
@@ -495,7 +503,7 @@
 .earth-related > span {
   color: var(--muted);
   font-family: var(--mono);
-  font-size: .48rem;
+  font-size: var(--fs-micro);
   letter-spacing: .08em;
   text-transform: uppercase;
 }
@@ -509,7 +517,7 @@
   border-radius: 9px;
   background: var(--surface);
   color: var(--muted-strong);
-  font-size: .65rem;
+  font-size: var(--fs-micro);
   text-align: left;
 }
 
@@ -525,7 +533,7 @@
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-family: var(--mono);
-  font-size: .49rem;
+  font-size: var(--fs-micro);
   line-height: 1.55;
 }
 
@@ -591,7 +599,7 @@
 .architecture-visual-head span,
 .architecture-visual-head strong {
   font-family: var(--mono);
-  font-size: .5rem;
+  font-size: var(--fs-micro);
   letter-spacing: .09em;
 }
 
@@ -695,7 +703,7 @@ html[data-theme="light"] .architecture-schematic .schematic-surface {
   display: block;
   color: var(--muted);
   font-family: var(--mono);
-  font-size: .45rem;
+  font-size: var(--fs-micro);
   letter-spacing: .07em;
   text-transform: uppercase;
 }
@@ -705,13 +713,13 @@ html[data-theme="light"] .architecture-schematic .schematic-surface {
   display: block;
   margin: 5px 0 0;
   color: var(--text-strong);
-  font-size: .61rem;
+  font-size: var(--fs-micro);
   line-height: 1.45;
 }
 
 .architecture-visual-meta p {
   color: var(--muted-strong);
-  font-size: .61rem;
+  font-size: var(--fs-micro);
 }
 
 .architecture-qualitative-note {
@@ -725,7 +733,7 @@ html[data-theme="light"] .architecture-schematic .schematic-surface {
   background: rgba(var(--mission-rgb), .035);
   color: var(--muted);
   font-family: var(--mono);
-  font-size: .49rem;
+  font-size: var(--fs-micro);
   line-height: 1.55;
 }
 

@@ -536,7 +536,7 @@
     eyebrow.className = "eyebrow";
     eyebrow.textContent = "Choose the next evidence path";
     const heading = document.createElement("h2");
-    heading.textContent = "Do not exit with a résumé. Continue through the system.";
+    heading.textContent = "Continue through the system.";
     const copy = document.createElement("p");
     copy.textContent = "Move directly into the decision logic, research network, architecture lab, public source code, terminal, or professional contact channel that best matches what you came to evaluate.";
     const boundary = document.createElement("p");

@@ -83,7 +83,7 @@
   min-height: 34px;
   padding: 0 10px;
   border-radius: 9px;
-  font-size: .51rem;
+  font-size: var(--fs-micro);
   letter-spacing: .04em;
 }
 
@@ -100,7 +100,7 @@
   padding: 0 12px;
   border-radius: 9px;
   color: var(--architecture-accent, var(--mission));
-  font-size: .52rem;
+  font-size: var(--fs-micro);
   font-weight: 700;
   white-space: nowrap;
 }
@@ -141,7 +141,7 @@
   border-radius: 50%;
   background: color-mix(in srgb, var(--architecture-accent, var(--mission)) 15%, var(--bg-panel-strong));
   color: var(--text-strong);
-  font-size: .48rem;
+  font-size: var(--fs-micro);
   font-weight: 800;
   box-shadow:
     0 0 0 5px color-mix(in srgb, var(--architecture-accent, var(--mission)) 7%, transparent),
@@ -163,7 +163,7 @@
   background: var(--bg-panel-strong);
   color: var(--muted-strong);
   font-family: var(--mono);
-  font-size: .44rem;
+  font-size: var(--fs-micro);
   font-weight: 600;
   line-height: 1.25;
   opacity: 0;
@@ -243,13 +243,13 @@
   display: block;
   color: var(--architecture-accent, var(--mission));
   font-family: var(--mono);
-  font-size: .43rem;
+  font-size: var(--fs-micro);
 }
 
 .quantum-control-steps strong {
   display: block;
   margin-top: 3px;
-  font-size: .56rem;
+  font-size: var(--fs-micro);
 }
 
 .quantum-constraint-grid {
@@ -280,14 +280,14 @@
 
 .quantum-constraint-card span {
   color: var(--amber);
-  font-size: .47rem;
+  font-size: var(--fs-micro);
 }
 
 .quantum-constraint-card strong {
   display: block;
   margin-top: 9px;
   color: var(--text-strong);
-  font-size: .7rem;
+  font-size: var(--fs-label);
   line-height: 1.35;
 }
 
@@ -318,14 +318,14 @@
 .quantum-workload-chip span {
   display: block;
   color: var(--lime);
-  font-size: .45rem;
+  font-size: var(--fs-micro);
 }
 
 .quantum-workload-chip strong {
   display: block;
   margin-top: 6px;
   color: var(--text-strong);
-  font-size: .68rem;
+  font-size: var(--fs-label);
   line-height: 1.35;
 }
 
@@ -345,7 +345,7 @@
 .quantum-inspection-card span {
   color: var(--architecture-accent, var(--mission));
   font-family: var(--mono);
-  font-size: .48rem;
+  font-size: var(--fs-micro);
   font-weight: 700;
   letter-spacing: .09em;
   text-transform: uppercase;
@@ -353,12 +353,12 @@
 
 .quantum-inspection-card strong {
   color: var(--text-strong);
-  font-size: .86rem;
+  font-size: var(--fs-body-sm);
 }
 
 .quantum-inspection-card p {
   margin: 0;
-  font-size: .72rem;
+  font-size: var(--fs-label);
   line-height: 1.58;
 }
 
@@ -388,7 +388,7 @@
 }
 
 .quantum-compare-head strong {
-  font-size: .86rem;
+  font-size: var(--fs-body-sm);
 }
 
 .quantum-compare-controls {
@@ -400,7 +400,7 @@
 .quantum-compare-controls label {
   color: var(--muted);
   font-family: var(--mono);
-  font-size: .49rem;
+  font-size: var(--fs-micro);
 }
 
 .quantum-compare-controls select {
@@ -411,7 +411,7 @@
   background: var(--bg-panel-strong);
   color: var(--text-strong);
   font-family: var(--mono);
-  font-size: .55rem;
+  font-size: var(--fs-micro);
 }
 
 .quantum-compare-close {
@@ -441,7 +441,7 @@
   color: var(--muted);
   background: rgba(0, 0, 0, .045);
   font-family: var(--mono);
-  font-size: .49rem;
+  font-size: var(--fs-micro);
   text-transform: uppercase;
 }
 
@@ -449,12 +449,12 @@
   display: block;
   margin-bottom: 5px;
   color: var(--text-strong);
-  font-size: .7rem;
+  font-size: var(--fs-label);
 }
 
 .quantum-compare-grid .compare-value p {
   margin: 0;
-  font-size: .66rem;
+  font-size: var(--fs-micro);
   line-height: 1.5;
 }
 
@@ -483,7 +483,7 @@
 
 .compare-meter span {
   font-family: var(--mono);
-  font-size: .5rem;
+  font-size: var(--fs-micro);
 }
 
 /* --------------------------------------------------------------------------
@@ -503,7 +503,7 @@
   background: var(--surface);
   color: var(--muted-strong);
   font-family: var(--mono);
-  font-size: .5rem;
+  font-size: var(--fs-micro);
   letter-spacing: .04em;
 }
 
@@ -552,27 +552,27 @@
   color: var(--path-color, var(--mission));
   background: color-mix(in srgb, var(--path-color, var(--mission)) 7%, transparent);
   font-family: var(--mono);
-  font-size: .55rem;
+  font-size: var(--fs-micro);
 }
 
 .next-path-card strong {
   display: block;
   margin-bottom: 5px;
   color: var(--text-strong);
-  font-size: .76rem;
+  font-size: var(--fs-label);
 }
 
 .next-path-card small {
   display: block;
   color: var(--muted);
-  font-size: .62rem;
+  font-size: var(--fs-micro);
   line-height: 1.4;
 }
 
 .next-path-card > i {
   color: var(--path-color, var(--mission));
   font-style: normal;
-  font-size: .9rem;
+  font-size: var(--fs-body-sm);
 }
 
 .next-path-card.is-terminal {
@@ -583,7 +583,7 @@
   margin: 18px 0 0;
   color: var(--muted);
   font-family: var(--mono);
-  font-size: .53rem;
+  font-size: var(--fs-micro);
   line-height: 1.55;
 }
 

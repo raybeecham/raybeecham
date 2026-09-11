@@ -24,11 +24,9 @@ REQUIRED_ASSETS = (
     SITE / "assets" / "evidence-os-timeline-alignment.css",
     SITE / "assets" / "evidence-os-data.js",
     SITE / "assets" / "evidence-os-public-data.js",
-    SITE / "assets" / "evidence-os-network-expansion.js",
     SITE / "assets" / "evidence-os.js",
     SITE / "assets" / "evidence-os-refinements.js",
     SITE / "assets" / "evidence-os-experience-v2.js",
-    SITE / "assets" / "evidence-os-globe.js",
     SITE / "assets" / "evidence-os-terminal.js",
     SITE / "assets" / "favicon.svg",
     SITE / "assets" / "evidence-os-social.svg",
@@ -38,7 +36,6 @@ REQUIRED_SECTIONS = {
     "mission-control",
     "situation-room",
     "decision-replay",
-    "research-earth",
     "quantum-explorer",
     "timeline",
     "lab",
@@ -260,7 +257,6 @@ def validate_contract(errors: list[str]) -> None:
         ROOT / "README.md",
         INDEX,
         SITE / "assets" / "evidence-os-data.js",
-        SITE / "assets" / "evidence-os-network-expansion.js",
         ROOT / "docs" / "EVIDENCE_OS_ARCHITECTURE.md",
     ]
     public_text = "\n".join(
@@ -290,7 +286,6 @@ def validate_contract(errors: list[str]) -> None:
     required_terms = (
         "MISSION CONTROL",
         "DECISION REPLAY",
-        "RESEARCH NETWORK",
         "QUANTUM EXPLORER",
         "EvidenceOS Command Interface",
     )
@@ -315,11 +310,9 @@ def validate_budgets(errors: list[str]) -> None:
         SITE / "assets" / "evidence-os-timeline-alignment.css": 15_000,
         SITE / "assets" / "evidence-os-data.js": 75_000,
         SITE / "assets" / "evidence-os-public-data.js": 35_000,
-        SITE / "assets" / "evidence-os-network-expansion.js": 45_000,
         SITE / "assets" / "evidence-os.js": 80_000,
         SITE / "assets" / "evidence-os-refinements.js": 90_000,
         SITE / "assets" / "evidence-os-experience-v2.js": 95_000,
-        SITE / "assets" / "evidence-os-globe.js": 60_000,
         SITE / "assets" / "evidence-os-terminal.js": 35_000,
     }
     for path, limit in budgets.items():
@@ -349,7 +342,7 @@ def main() -> int:
     print(f"  CSS bytes: {sum(path.stat().st_size for path in (SITE / 'assets').glob('*.css')):,}")
     print(f"  JavaScript bytes: {sum(path.stat().st_size for path in (SITE / 'assets').glob('*.js')):,}")
     print(f"  mission pathways: 5")
-    print(f"  interactive modules: 7")
+    print(f"  interactive modules: 6")
     return 0
 
 

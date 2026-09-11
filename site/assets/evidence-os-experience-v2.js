@@ -548,7 +548,7 @@
     grid.className = "next-path-grid";
     [
       { index: "01", title: "Replay a decision", description: "Inspect evidence admission, rules, unknowns, and the accountable authority boundary.", href: "#decision-replay", color: "#b8f45d" },
-      { index: "02", title: "Traverse the research network", description: "Change the mission lens and inspect public standards, programs, research, security, and industry nodes.", href: "#research-earth", color: "#62f2ff" },
+      { index: "02", title: "Read the situation room", description: "Live public repository evidence, mission controls, research signals, and decision-system health in one picture.", href: "#situation-room", color: "#62f2ff" },
       { index: "03", title: "Interrogate an architecture", description: "Switch physical, control, bottleneck, mission-fit, and comparison views in the quantum lab.", href: "#quantum-explorer", color: "#9f7cff" },
       { index: "04", title: "Inspect the source", description: "Open the public repositories and evaluate the implementation evidence directly.", href: "https://github.com/raybeecham", color: "#5f9dff" },
       { index: "05", title: "Open the command interface", description: "Route missions and modules through the keyboard-first EvidenceOS terminal.", color: "#ffbe68", terminal: true },

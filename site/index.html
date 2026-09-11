@@ -68,10 +68,10 @@
     </a>
 
     <nav class="os-nav" id="site-nav" aria-label="Mission modules" data-nav>
+      <a href="#lab">Systems</a>
       <a href="#mission-control">Control</a>
       <a href="#situation-room">Situation</a>
       <a href="#decision-replay">Replay</a>
-      <a href="#research-earth">Network</a>
       <a href="#quantum-explorer">Quantum</a>
       <a href="#timeline">Timeline</a>
     </nav>
@@ -100,7 +100,7 @@
       <button class="icon-button" type="button" aria-label="Close mission selector" data-close-missions>×</button>
     </div>
     <div class="drawer-missions" data-drawer-missions></div>
-    <p class="drawer-note">Mission selection changes the system graph, brief, situation room, research earth, and recommended evidence path. It does not hide the underlying projects.</p>
+    <p class="drawer-note">Mission selection changes the system graph, brief, situation room, and recommended evidence path. It does not hide the underlying projects.</p>
   </aside>
   <div class="drawer-backdrop" hidden data-drawer-backdrop></div>
 
@@ -119,7 +119,7 @@
           <h1>Post-quantum security decisions, <span>traceable to the evidence.</span></h1>
           <p class="hero-lead" data-mission-objective>Turn fragmented quantum, PQC, government, patent, and market signals into a traceable intelligence picture.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#mission-control"><span>Launch mission control</span><span aria-hidden="true">→</span></a>
+            <a class="button button-primary" href="#lab"><span>See the systems</span><span aria-hidden="true">→</span></a>
             <button class="button button-secondary" type="button" data-open-missions><span>Change mission</span><span aria-hidden="true">⌁</span></button>
           </div>
           <div class="hero-command-hint"><span>Try the terminal</span><code>`</code><span>then type</span><code>help</code></div>
@@ -136,7 +136,17 @@
       </div>
 
       <div class="hero-system-rail" aria-label="EvidenceOS modules">
-        <span>MISSION CONTROL</span><i></i><span>DECISION REPLAY</span><i></i><span>RESEARCH NETWORK</span><i></i><span>QUANTUM EXPLORER</span><i></i><span>CYBER SITUATION ROOM</span><i></i><span>RESEARCH TIMELINE</span><i></i><span>COMMAND TERMINAL</span>
+        <span>MISSION CONTROL</span><i></i><span>DECISION REPLAY</span><i></i><span>QUANTUM EXPLORER</span><i></i><span>CYBER SITUATION ROOM</span><i></i><span>RESEARCH TIMELINE</span><i></i><span>COMMAND TERMINAL</span>
+      </div>
+    </section>
+
+    <section class="module-section lab-section" id="lab">
+      <div class="shell">
+        <div class="section-heading" data-reveal>
+          <div><p class="eyebrow">Systems</p><h2>What I have built, and what each one proves.</h2></div>
+          <p>Every system below is either running in public or documented to the same standard. Each card states what it demonstrates and, just as importantly, what it cannot claim. Open the source and check.</p>
+        </div>
+        <div class="lab-grid" data-lab-grid data-reveal></div>
       </div>
     </section>
 
@@ -229,13 +239,14 @@
     <section class="module-section replay-section" id="decision-replay">
       <div class="shell">
         <div class="section-heading" data-reveal>
-          <div><p class="eyebrow">Decision replay</p><h2>Watch a technology decision execute like a packet trace.</h2></div>
-          <p>Evidence enters, admission boundaries fire, deterministic rules evaluate, and two synchronized outputs appear: a human-readable decision brief and the canonical JSON decision record. Human authority remains visible at the end of the chain.</p>
+          <div><p class="eyebrow">Decision replay</p><h2>One rulebook. Three technologies. Three different answers.</h2></div>
+          <p>The same deterministic pipeline runs on all three cases below and returns proceed, experiment, and defer. That the verdicts differ is the point: the rules are fixed, so the evidence decides. Pick one to trace it stage by stage.</p>
         </div>
 
         <div class="replay-shell" data-decision-replay data-reveal>
+          <div class="replay-outcomes" data-replay-outcomes aria-label="Three decisions, one rulebook"></div>
           <div class="replay-toolbar">
-            <div class="scenario-tabs" role="tablist" aria-label="Decision scenarios" data-scenario-tabs></div>
+            <p class="replay-hint">Select a case above to trace it stage by stage.</p>
             <div class="replay-controls">
               <button type="button" data-replay-start>▶ Play</button>
               <button type="button" data-replay-pause>Ⅱ Pause</button>
@@ -251,32 +262,6 @@
               <p class="record-boundary">Decision support only. Procurement, deployment, clinical, and operational authority remain outside the system.</p>
             </aside>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="module-section earth-section" id="research-earth">
-      <div class="shell">
-        <div class="section-heading" data-reveal>
-          <div><p class="eyebrow">Research network</p><h2>A living map of the public quantum and security ecosystem.</h2></div>
-          <p>Change the network lens, inspect the visible-node directory, rotate to a source, and follow how standards, multi-agency public programs, security communities, research institutions, and technology providers relate to the selected mission. The network is illustrative, curated, and non-operational.</p>
-        </div>
-
-        <div class="earth-layout">
-          <div class="globe-panel" data-reveal>
-            <div class="globe-toolbar">
-              <span class="micro-label">RESEARCH NETWORK</span>
-              <div class="globe-filters" data-globe-filters></div>
-            </div>
-            <canvas class="research-globe" width="760" height="620" aria-label="Interactive globe showing public quantum and security research organizations" data-research-globe></canvas>
-            <div class="globe-instructions"><span>Drag to rotate</span><span>Scroll to zoom</span><span>Select a marker</span></div>
-          </div>
-          <aside class="earth-inspector" data-earth-inspector data-reveal>
-            <span class="earth-signal" aria-hidden="true"></span>
-            <p class="micro-label">EARTH NODE</p>
-            <h3>Select a research marker.</h3>
-            <p>Location, mission relevance, category, and a direct public source will appear here.</p>
-          </aside>
         </div>
       </div>
     </section>
@@ -336,16 +321,6 @@
       </div>
     </section>
 
-    <section class="module-section lab-section" id="lab">
-      <div class="shell">
-        <div class="section-heading" data-reveal>
-          <div><p class="eyebrow">Open lab index</p><h2>Enter any system directly.</h2></div>
-          <p>The lab index keeps every public repository and bounded private research program visible after mission filtering. Public links open the underlying evidence.</p>
-        </div>
-        <div class="lab-grid" data-lab-grid data-reveal></div>
-      </div>
-    </section>
-
     <section class="module-section profile-section" id="about">
       <div class="shell profile-layout">
         <div class="profile-copy" data-reveal>
@@ -399,8 +374,6 @@
 
   <script src="assets/evidence-os-data.js" defer></script>
   <script src="assets/evidence-os-public-data.js" defer></script>
-  <script src="assets/evidence-os-network-expansion.js" defer></script>
-  <script src="assets/evidence-os-globe.js" defer></script>
   <script src="assets/evidence-os-terminal.js" defer></script>
   <script src="assets/evidence-os.js" defer></script>
   <script src="assets/evidence-os-refinements.js" defer></script>

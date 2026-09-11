@@ -14,8 +14,8 @@
     .replace(/\b\w/g, (character) => character.toUpperCase());
 
   const selectedScenario = () => {
-    const selected = qs("[data-scenario-tabs] [aria-selected='true']");
-    return data.decisionScenarios[selected?.dataset.scenario || "pqc"] || data.decisionScenarios.pqc;
+    const selected = qs("[data-replay-outcomes] .is-active");
+    return data.decisionScenarios[selected?.dataset.outcome || "pqc"] || data.decisionScenarios.pqc;
   };
 
   const svgFrame = (title, description, body) => `
@@ -456,7 +456,7 @@
 
     const observer = new MutationObserver(renderFromPre);
     observer.observe(pre, { childList: true, characterData: true, subtree: true });
-    qs("[data-scenario-tabs]")?.addEventListener("click", () => window.setTimeout(renderFromPre, 0));
+    qs("[data-replay-outcomes]")?.addEventListener("click", () => window.setTimeout(renderFromPre, 0));
     renderFromPre();
   };
 

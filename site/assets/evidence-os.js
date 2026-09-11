@@ -165,7 +165,7 @@
     const status = qs("[data-boot-status]", screen);
     const skip = qs("[data-skip-boot]", screen);
     const visited = sessionStorage.getItem("evidenceos-booted") === "1";
-    const interval = reduceMotion.matches ? 10 : visited ? 110 : 330;
+    const interval = reduceMotion.matches ? 10 : visited ? 80 : 210;
     let step = 0;
     let timer = 0;
 
@@ -353,6 +353,20 @@
 
   const graphCoordinates = (position) => ({ x: 65 + position.x * 8.7, y: 45 + position.y * 5.65 });
 
+  // Greedy word wrap into at most two lines, so node labels stay whole.
+  const wrapLabel = (text, max) => {
+    if (text.length <= max) return [text];
+    const words = text.split(" ");
+    const lines = [""];
+    words.forEach((word) => {
+      const current = lines[lines.length - 1];
+      const candidate = current ? `${current} ${word}` : word;
+      if (candidate.length <= max || !current || lines.length >= 2) lines[lines.length - 1] = candidate;
+      else lines.push(word);
+    });
+    return lines.filter(Boolean);
+  };
+
   const renderGraph = () => {
     const edgeLayer = qs("[data-graph-edges]");
     const nodeLayer = qs("[data-graph-nodes]");
@@ -400,12 +414,20 @@
       status.setAttribute("cx", system.id === "tdaf" ? "26" : "23");
       status.setAttribute("cy", system.id === "tdaf" ? "-26" : "-22");
       status.setAttribute("r", "4");
+      // Long names wrap onto a second line rather than being sliced mid-word.
+      const lines = wrapLabel(system.short, 17);
       const title = document.createElementNS("http://www.w3.org/2000/svg", "text");
-      title.setAttribute("y", "3");
-      title.textContent = system.short.length > 18 ? system.short.slice(0, 18) : system.short;
+      title.setAttribute("y", lines.length > 1 ? "-4" : "3");
+      lines.forEach((line, index) => {
+        const span = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
+        span.setAttribute("x", "0");
+        span.setAttribute("dy", index === 0 ? "0" : "14");
+        span.textContent = line;
+        title.append(span);
+      });
       const type = document.createElementNS("http://www.w3.org/2000/svg", "text");
       type.setAttribute("class", "node-type");
-      type.setAttribute("y", "17");
+      type.setAttribute("y", lines.length > 1 ? "24" : "17");
       type.textContent = system.type.toUpperCase();
       group.append(core, ring, status, title, type);
       group.addEventListener("click", () => selectSystem(system.id));

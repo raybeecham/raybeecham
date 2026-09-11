@@ -2,7 +2,9 @@
    Every milestone uses one marker center and one discrete connector segment. */
 
 .timeline-rail {
-  --timeline-marker-x: 66px;
+  /* Marker sits in the gutter between the date column and the milestone copy,
+     wide enough that dates like "August 2026" never run into it. */
+  --timeline-marker-x: 108px;
   --timeline-marker-y: 35px;
 }
 
@@ -14,8 +16,8 @@
 }
 
 .timeline-item {
-  grid-template-columns: 72px minmax(0, 1fr);
-  gap: 18px;
+  grid-template-columns: 86px minmax(0, 1fr);
+  gap: 20px;
   isolation: isolate;
 }
 
@@ -63,7 +65,7 @@
   margin-top: 10px;
   color: var(--timeline-color, var(--mission));
   font-family: var(--mono);
-  font-size: .45rem;
+  font-size: var(--fs-micro);
   font-weight: 700;
   letter-spacing: .08em;
 }
@@ -71,7 +73,7 @@
 .timeline-item > span:first-child {
   align-self: start;
   justify-self: start;
-  width: 48px;
+  width: 86px;
   padding-top: 1px;
   text-align: right;
   white-space: nowrap;
@@ -93,18 +95,18 @@
 
 @media (max-width: 680px) {
   .timeline-rail {
-    --timeline-marker-x: 54px;
-    padding-inline: 16px;
+    --timeline-marker-x: 88px;
+    padding-inline: 14px;
   }
 
   .timeline-item {
-    grid-template-columns: 58px minmax(0, 1fr);
+    grid-template-columns: 74px minmax(0, 1fr);
     gap: 12px;
     padding-inline: 8px;
   }
 
   .timeline-item > span:first-child {
-    width: 38px;
-    font-size: .49rem;
+    width: 74px;
+    font-size: var(--fs-micro);
   }
 }

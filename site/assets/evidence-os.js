@@ -253,7 +253,10 @@
         entry.target.classList.add("is-visible");
         current.unobserve(entry.target);
       });
-    }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+      // threshold 0: reveal as soon as any part enters. A ratio threshold is
+      // unreachable for sections taller than the viewport, which left tall
+      // grids permanently invisible on phones.
+    }, { threshold: 0, rootMargin: "0px 0px -50px 0px" });
     items.forEach((item) => observer.observe(item));
   };
 
@@ -612,22 +615,33 @@
   const buildReplay = () => {
     const shell = qs("[data-decision-replay]");
     if (!shell) return;
-    const tabs = qs("[data-scenario-tabs]", shell);
     const start = qs("[data-replay-start]", shell);
     const pause = qs("[data-replay-pause]", shell);
     const reset = qs("[data-replay-reset]", shell);
-    if (!tabs) return;
-    tabs.textContent = "";
-    Object.values(data.decisionScenarios).forEach((scenario) => {
-      const button = document.createElement("button");
-      button.type = "button";
-      button.setAttribute("role", "tab");
-      button.setAttribute("aria-selected", String(scenario.id === state.replayScenario));
-      button.dataset.scenario = scenario.id;
-      button.textContent = scenario.label;
-      button.addEventListener("click", () => setReplayScenario(scenario.id));
-      tabs.append(button);
-    });
+    // The three scenarios run the same rulebook and reach different answers.
+    // Showing the verdicts together makes that the point of the module rather
+    // than three passes through an identical five-stage animation.
+    const outcomes = qs("[data-replay-outcomes]", shell);
+    if (outcomes) {
+      outcomes.textContent = "";
+      Object.values(data.decisionScenarios).forEach((scenario) => {
+        const card = document.createElement("button");
+        card.type = "button";
+        card.className = `replay-outcome tone-${scenario.resultTone}`;
+        card.dataset.outcome = scenario.id;
+        const label = document.createElement("span");
+        label.textContent = scenario.label;
+        const verdict = document.createElement("strong");
+        verdict.textContent = scenario.result;
+        card.append(label, verdict);
+        card.addEventListener("click", () => {
+          setReplayScenario(scenario.id);
+          startReplay();
+        });
+        outcomes.append(card);
+      });
+    }
+
     start?.addEventListener("click", startReplay);
     pause?.addEventListener("click", pauseReplay);
     reset?.addEventListener("click", resetReplay);
@@ -638,7 +652,7 @@
     if (!data.decisionScenarios[scenarioId]) return;
     resetReplay(false);
     state.replayScenario = scenarioId;
-    qsa("[data-scenario]").forEach((button) => button.setAttribute("aria-selected", String(button.dataset.scenario === scenarioId)));
+    qsa("[data-outcome]").forEach((card) => card.classList.toggle("is-active", card.dataset.outcome === scenarioId));
     const scenario = data.decisionScenarios[scenarioId];
     const context = qs("[data-replay-context]");
     const result = qs("[data-replay-result]");
@@ -858,6 +872,25 @@
       heading.textContent = system.name;
       const summary = document.createElement("p");
       summary.textContent = system.summary;
+
+      // What it demonstrates, stated as claims a reader can go and check.
+      const proves = document.createElement("ul");
+      proves.className = "lab-proves";
+      (system.capabilities || []).slice(0, 4).forEach((capability) => {
+        const item = document.createElement("li");
+        item.textContent = capability;
+        proves.append(item);
+      });
+
+      // The limit is shown with equal weight; it is the point of the method.
+      const boundary = document.createElement("p");
+      boundary.className = "lab-boundary";
+      const boundaryLabel = document.createElement("span");
+      boundaryLabel.textContent = "DOES NOT CLAIM";
+      const boundaryText = document.createElement("em");
+      boundaryText.textContent = system.boundary;
+      boundary.append(boundaryLabel, boundaryText);
+
       const footer = document.createElement("footer");
       if (system.liveUrl) footer.append(safeLink(system.liveUrl, system.liveUrl.startsWith("#") ? "Open module →" : "Live system ↗"));
       if (system.repoUrl) footer.append(safeLink(system.repoUrl, "Repository ↗"));
@@ -867,7 +900,7 @@
         boundary.textContent = "Public description only";
         footer.append(boundary);
       }
-      card.append(header, heading, summary, footer);
+      card.append(header, heading, summary, proves, boundary, footer);
       grid.append(card);
     });
   };

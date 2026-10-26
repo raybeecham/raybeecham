@@ -10,6 +10,20 @@
 
 I build evidence-driven security tools, research systems, and hands-on quantum experiments. My work connects **post-quantum cryptography, cryptographic discovery, applied AI, and technology evaluation**, with traceable evidence and human review built into the workflow.
 
+## Professional experience
+
+### Accenture Federal Services
+
+**Quantum Security &amp; Cryptographic Engineering**
+
+Focus: post-quantum readiness, crypto-agility, technical assessment, and applied quantum research.
+
+- Contribute to federal PQC readiness assessments across PKI, cloud, data, networking, and mobile systems, translating technical evidence into structured assessment deliverables.
+- Led a PQC vendor pilot and coordinated quantum/PQC partner evaluations, technical demonstrations, and recurring research briefings.
+- Authored NIST standards analyses and review comments, and delivered stakeholder briefings and a webinar on federal cryptographic inventory requirements.
+- Co-authored published guidance on operationalizing cryptographic risk for PQC migration in federal systems.
+- Developed hands-on quantum demonstrations and self-paced hardware workshop materials; developing AI-assisted evidence review and interactive quantum learning prototypes.
+
 ## Selected public work
 
 ### [Frontier Signal](https://github.com/raybeecham/quantum-research-scout)

@@ -4,7 +4,8 @@
 State lives in assets/qpu-run.json: the latest completed run, plus any job that
 is still queued. Each invocation does one step:
 
-  * a queued job exists  -> collect it if finished, otherwise leave it alone
+  * a queued job exists  -> collect it if finished, otherwise leave it alone;
+                            if still queued after 3 days, cancel and resubmit
   * last run < 7 days old -> nothing to do
   * otherwise             -> submit a new job, then wait briefly for it
 
@@ -37,6 +38,7 @@ STATE = ROOT / "assets" / "qpu-run.json"
 SHOTS = 1024
 REPLAY = 8                      # shots replayed by the banner's output bits
 RUN_EVERY = timedelta(days=7)
+STALE_AFTER = timedelta(days=3)  # a queued job older than this is cancelled and resubmitted
 FINISHED_BAD = {"ERROR", "CANCELLED"}
 
 # SamplerV2 is deprecated in qiskit-ibm-runtime 0.50+, but its successor does
@@ -148,6 +150,24 @@ def submit(svc, state: dict) -> None:
     print(f"Submitted job {job.job_id()} to {backend.name}")
 
 
+def replace_stale(svc, state: dict) -> bool:
+    """Cancel a job queued longer than STALE_AFTER and resubmit to the least busy device."""
+    pending = state["pending"]
+    age = datetime.now(timezone.utc) - datetime.fromisoformat(pending["submitted_at"])
+    if age < STALE_AFTER:
+        return False
+    job = svc.job(pending["job_id"])
+    if job.status() not in {"QUEUED", "INITIALIZING"}:
+        return False
+    job.cancel()
+    print(f"::warning::Job {pending['job_id']} queued on {pending['backend']} for {age.days} days; "
+          "cancelled and resubmitting")
+    state["pending"] = None
+    submit(svc, state)
+    save_state(state)
+    return True
+
+
 def is_due(state: dict) -> bool:
     latest = state.get("latest")
     if not latest or latest.get("simulated"):
@@ -175,6 +195,8 @@ def main() -> int:
 
     svc = service()
     changed = False
+    if state.get("pending") and replace_stale(svc, state):
+        changed = True
     if not state.get("pending") and (args.force or is_due(state)):
         submit(svc, state)
         save_state(state)  # record the job id before waiting, in case the runner dies

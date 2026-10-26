@@ -3,7 +3,7 @@
   <img src="assets/profile-banner.svg" alt="Ray Beecham. Security, quantum, and applied AI. Evidence before claims. Mission before technology." width="100%">
 </picture>
 <!-- QPU-RUN:START -->
-<sub>The circuit in the banner is scheduled to run weekly on IBM Quantum hardware; until the first run lands, its output bits replay simulated shots (fake_torino noise model). [Run data](assets/qpu-run.json)</sub>
+<sub>The circuit in the banner ran on IBM Quantum <b>ibm_fez</b> on Oct 26, 2026; its output bits replay 8 of 1,024 measured shots (most common outcome <code>0000</code>, 30%). [Run data](assets/qpu-run.json)</sub>
 <!-- QPU-RUN:END -->
 
 **Turning technical evidence into decisions people can explain.**

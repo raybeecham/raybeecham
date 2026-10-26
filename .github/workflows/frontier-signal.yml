@@ -1,0 +1,58 @@
+name: Refresh Frontier Signal feed
+
+on:
+  schedule:
+    # UTC 05:30 daily, after the quantum-research-scout primary run (00:00)
+    # and its catch-up runs (00:17, 02:17, 04:17) have had a chance to publish.
+    - cron: "30 5 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/update_frontier_signal.py"
+      - ".github/workflows/frontier-signal.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: frontier-signal-readme
+  cancel-in-progress: false
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Inject latest signals into README
+        run: python scripts/update_frontier_signal.py
+
+      - name: Validate public portfolio rules
+        run: python scripts/validate_portfolio.py
+
+      - name: Commit README if it changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "README already current"
+          else
+            git commit -m "Refresh Frontier Signal feed"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

@@ -7,15 +7,68 @@
 
 I build security tools, research systems, and hands-on quantum experiments. My work connects **post-quantum cryptography, cryptographic discovery, applied AI, and technology evaluation**, with traceable evidence and human review built into the workflow.
 
-[Professional experience](#user-content-professional-experience) · [Public projects](#user-content-public-projects) · [Background](#user-content-background) · [LinkedIn](https://linkedin.com/in/RaymondBeecham)
+[Live signal](#user-content-live-signal) · [Public projects](#user-content-public-projects) · [Professional experience](#user-content-professional-experience) · [Background](#user-content-background) · [EvidenceOS](https://raybeecham.github.io/raybeecham/) · [LinkedIn](https://linkedin.com/in/RaymondBeecham)
+
+<a id="live-signal"></a>
+## <img src="assets/signal-mark.svg" width="28" height="28" alt=""> Live from the research desk
+
+<!-- FRONTIER-SIGNAL:START -->
+**Rising this week:** ↗ Quantum Hardware · ↗ Quantum Software / Tooling · ↗ Quantum Sensing · ↗ AI Security
+
+- → **QEC / Fault Tolerance** · [Alice & Bob Reports Phase 1 Results of France’s PROQCIMA Quantum Program](https://quantumcomputingreport.com/alice-bob-reports-phase-1-results-of-frances-proqcima-quantum-program) <sub>Quantum Computing Report, Oct 21</sub>
+- ↗ **Quantum Hardware** · [China’s Tuoyuan Targets Neutral-Atom Quantum Computing](https://thequantuminsider.com/2026/10/19/chinas-tuoyuan-targets-neutral-atom-quantum-computing) <sub>The Quantum Insider, Oct 19</sub>
+- → **PQC / Crypto Agility** · [How to evaluate a post-quantum cryptography provider: 10 questions to ask](https://pqshield.com/post-quantum-cryptography-provider) <sub>PQShield, Oct 23</sub>
+
+<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-10-26 00:54 UTC · headlines are not reviewed or endorsed.</sub>
+<!-- FRONTIER-SIGNAL:END -->
+
+<a id="public-projects"></a>
+## <img src="assets/projects-mark.svg" width="28" height="28" alt=""> Public projects
+
+Personal research and open-source work, separate from my professional engagements.
+
+### [Frontier Signal](https://github.com/raybeecham/quantum-research-scout)
+**Research intelligence** · [Open the desk →](https://raybeecham.github.io/quantum-research-scout/)
+
+Source-linked briefings across cybersecurity, PQC, quantum computing, AI, and cloud. Notebooks and investigation workspaces keep evidence, interpretation, uncertainty, and human review visible. The feed above comes straight from its daily evidence ledger.
+
+### [PQC Readiness War Room](https://github.com/raybeecham/pqc-readiness-war-room)
+**Security engineering** · [Try the demo →](https://pqc-readiness-war-room.raybeecham2009.workers.dev/)
+
+An edge demo explaining observable TLS and HTTPS posture while keeping missing PQC and crypto-agility evidence visible. Modern transport signals do not establish ML-KEM support or enterprise migration readiness.
+
+### [Quantum Oncology Benchmark](https://github.com/raybeecham/quantum-oncology-benchmark)
+**Reproducible research**
+
+Strong classical baselines and quantum-kernel experiments with training-only preprocessing, shared partitions, provenance, and statistical checks. The classical reference evaluation is complete; quantum nested cross-validation is planned. Research only, with no quantum-advantage or clinical-validation claim.
+
+<details>
+<summary><strong>More from the workbench</strong>: crypto inventory, AI systems handbook, PKI labs, Chrono</summary>
+
+- **[Crypto Inventory Demo](https://github.com/raybeecham/crypto-inventory-demo)** · CodeQL discovery for Java and Python, TLS configuration, and runtime observations. Normalized inventory, risk summary, and CI enforcement for critical findings.
+- **[AI Systems Engineering Handbook](https://github.com/raybeecham/claude-certified-associate-foundations)** · Original scenario-based study materials and a vendor-neutral playbook for designing, evaluating, securing, and governing AI workflows. Unofficial learning resource.
+- **[Modern Practical PKI](https://github.com/raybeecham/modern-practical-pki)** · Docker and OpenSSL exercises in encoding, hashing, randomness, ASN.1, and key generation. Later certificate and TLS chapters are planned.
+- **[Chrono](https://github.com/raybeecham/Chrono)** · An OpenAI Build Week historical prototype: a reconstructed 1998 desktop, period-aware AI dialogue, anachronism detection, and a deterministic offline fallback.
+
+</details>
+
+**[Explore EvidenceOS →](https://raybeecham.github.io/raybeecham/)** My interactive portfolio, with mission routing, sample decision replay, a research network, and quantum-architecture exploration.
+
+## <img src="assets/principles-mark.svg" width="28" height="28" alt=""> Engineering principles
+
+**Evidence before claims. Strong baselines before conclusions.**
+
+Preserve provenance. Make uncertainty visible. Design for reproducibility. Keep security boundaries explicit and decisions accountable to people. A model, score, or prototype supports a decision; it does not authorize deployment or operational action.
 
 <a id="professional-experience"></a>
 ## <img src="assets/experience-mark.svg" width="28" height="28" alt=""> Professional experience
 
-### Accenture Federal Services
-**Quantum Security &amp; Cryptographic Engineering**
+**Accenture Federal Services** · Quantum Security &amp; Cryptographic Engineering
 
-Focus: post-quantum readiness, crypto-agility, technical assessment, and applied quantum research.
+Post-quantum readiness, crypto-agility, technical assessment, and applied quantum research: cryptographic-inventory reviews, NIST guidance commentary, a co-authored PQC risk whitepaper, vendor pilots, and hybrid quantum-classical experiments on real hardware.
+
+<details>
+<summary><strong>Six workstreams in detail</strong></summary>
 
 #### 01 / PQC readiness &amp; crypto-agility
 - Support federal PQC readiness through cryptographic-inventory reviews, discrepancy resolution, and migration-evidence assessment.
@@ -41,61 +94,7 @@ Focus: post-quantum readiness, crypto-agility, technical assessment, and applied
 - Developed self-paced quantum workshop materials connecting Python, machine inspection, hardware selection, and small circuit experiments with explanations and troubleshooting.
 - Continue developing interactive quantum learning tools and practical colleague demonstrations that distinguish simulation, hardware execution, and experimental limitations.
 
-<a id="public-projects"></a>
-## <img src="assets/projects-mark.svg" width="28" height="28" alt=""> Public projects
-
-Personal research and open-source work, separate from my professional engagements.
-
-### [Frontier Signal](https://github.com/raybeecham/quantum-research-scout)
-**Research intelligence** · [Open the desk →](https://raybeecham.github.io/quantum-research-scout/)
-
-Source-linked briefings across cybersecurity, PQC, quantum computing, AI, and cloud. Notebooks and investigation workspaces keep evidence, interpretation, uncertainty, and human review visible.
-
-<details>
-<summary>Inside the project</summary>
-
-Briefings lead with developments and useful next questions. Research tools support source review, saved readings, and ongoing investigations. Formerly Quantum Research Scout; existing repository and site URLs remain unchanged.
-
 </details>
-
-### [PQC Readiness War Room](https://github.com/raybeecham/pqc-readiness-war-room)
-**Security engineering** · [Try the demo →](https://pqc-readiness-war-room.raybeecham2009.workers.dev/)
-
-An edge demo explaining observable TLS and HTTPS posture while keeping missing PQC and crypto-agility evidence visible. Modern transport signals do not establish ML-KEM support or enterprise migration readiness.
-
-<details>
-<summary>Inside the project</summary>
-
-The Cloudflare Worker separates observed, derived, and unknown signals. An evidence ledger, target comparisons, and validation plan connect posture observations to the evidence still needed for a readiness decision.
-
-</details>
-
-### [Quantum Oncology Benchmark](https://github.com/raybeecham/quantum-oncology-benchmark)
-**Reproducible research**
-
-Strong classical baselines and quantum-kernel experiments with training-only preprocessing, shared partitions, provenance, and statistical checks. The classical reference evaluation is complete; quantum nested cross-validation is planned. Research only, with no quantum-advantage or clinical-validation claim.
-
-<details>
-<summary>Methods and research boundaries</summary>
-
-The framework preserves dataset and partition fingerprints, model configurations, prediction evidence, calibration diagnostics, and resource accounting.
-
-</details>
-
-### More from the workbench
-
-- **[Crypto Inventory Demo](https://github.com/raybeecham/crypto-inventory-demo)** · CodeQL discovery for Java and Python, TLS configuration, and runtime observations. Normalized inventory, risk summary, and CI enforcement for critical findings.
-- **[AI Systems Engineering Handbook](https://github.com/raybeecham/claude-certified-associate-foundations)** · Original scenario-based study materials and a vendor-neutral playbook for designing, evaluating, securing, and governing AI workflows. Unofficial learning resource.
-- **[Modern Practical PKI](https://github.com/raybeecham/modern-practical-pki)** · Docker and OpenSSL exercises in encoding, hashing, randomness, ASN.1, and key generation. Later certificate and TLS chapters are planned.
-- **[Chrono](https://github.com/raybeecham/Chrono)** · An OpenAI Build Week historical prototype: a reconstructed 1998 desktop, period-aware AI dialogue, anachronism detection, and a deterministic offline fallback.
-
-**[Explore EvidenceOS →](https://raybeecham.github.io/raybeecham/)** My interactive portfolio, with mission routing, sample decision replay, a research network, and quantum-architecture exploration.
-
-## <img src="assets/principles-mark.svg" width="28" height="28" alt=""> Engineering principles
-
-**Evidence before claims. Strong baselines before conclusions.**
-
-Preserve provenance. Make uncertainty visible. Design for reproducibility. Keep security boundaries explicit and decisions accountable to people. A model, score, or prototype supports a decision; it does not authorize deployment or operational action.
 
 <details>
 <summary><strong>Tools and methods</strong></summary>

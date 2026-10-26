@@ -16,8 +16,9 @@ on:
 permissions:
   contents: read
 
+# Shared with the IBM Quantum banner workflow: both commit README.md.
 concurrency:
-  group: frontier-signal-readme
+  group: profile-readme-commits
   cancel-in-progress: false
 
 env:

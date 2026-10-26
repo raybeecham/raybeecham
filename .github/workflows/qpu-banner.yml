@@ -1,0 +1,77 @@
+name: Run banner circuit on IBM Quantum
+
+on:
+  schedule:
+    # Daily check; the script submits at most once every 7 days and uses the
+    # other days to collect a job that was still queued on the open plan.
+    - cron: "45 6 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/qpu_banner_run.py"
+      - "scripts/build_banner.py"
+      - "scripts/requirements-qpu.txt"
+      - ".github/workflows/qpu-banner.yml"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Submit a new hardware job even if the last run is under 7 days old"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+# Shared with the Frontier Signal workflow: both commit README.md.
+concurrency:
+  group: profile-readme-commits
+  cancel-in-progress: false
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scripts/requirements-qpu.txt
+
+      - name: Install Qiskit
+        run: python -m pip install -r scripts/requirements-qpu.txt
+
+      - name: Submit or collect the hardware run
+        env:
+          IBM_QUANTUM_TOKEN: ${{ secrets.IBM_QUANTUM_TOKEN }}
+          IBM_QUANTUM_INSTANCE: ${{ secrets.IBM_QUANTUM_INSTANCE }}
+        run: python scripts/qpu_banner_run.py --wait-minutes 25 ${{ inputs.force && '--force' || '' }}
+
+      - name: Render banners and README note
+        run: python scripts/build_banner.py
+
+      - name: Validate public portfolio rules
+        run: python scripts/validate_portfolio.py
+
+      - name: Commit run data and banners if they changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/qpu-run.json assets/profile-banner.svg assets/profile-banner-mobile.svg README.md
+          if git diff --cached --quiet; then
+            echo "Nothing new from the quantum run"
+          else
+            git commit -m "Record banner circuit run on IBM Quantum"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

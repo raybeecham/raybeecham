@@ -168,11 +168,11 @@ def readme_line(run: dict | None) -> str:
         return ""
     if run["simulated"]:
         return (f"<sub>The circuit in the banner is scheduled to run weekly on IBM Quantum hardware; until the first run lands, "
-                f"its output bits replay simulated shots ({run['backend']} noise model). [Run data](assets/qpu-run.json)</sub>")
+                f"its output bits replay simulated shots ({run['backend']} noise model). <a href=\"assets/qpu-run.json\">Run data</a></sub>")
     top = run["top_outcome"]
     return (f"<sub>The circuit in the banner ran on IBM Quantum <b>{run['backend']}</b> on {run_date(run)}; its output bits replay "
             f"{len(run['replay'])} of {run['shots']:,} measured shots (most common outcome <code>{top['bits']}</code>, "
-            f"{top['share']:.0%}). [Run data](assets/qpu-run.json)</sub>")
+            f"{top['share']:.0%}). <a href=\"assets/qpu-run.json\">Run data</a></sub>")
 
 
 def main() -> int:

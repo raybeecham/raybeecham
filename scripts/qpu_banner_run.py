@@ -77,7 +77,8 @@ def save_state(state: dict) -> None:
     STATE.write_text(json.dumps(state, indent=2) + "\n", encoding="utf-8", newline="\n")
 
 
-def summarize(pub_result, backend: str, job_id: str | None, submitted_at: str, simulated: bool) -> dict:
+def summarize(pub_result, backend: str, job_id: str | None, submitted_at: str, simulated: bool,
+              completed_at: str | None = None) -> dict:
     # Qiskit bitstrings are little-endian (c3 c2 c1 c0); store them as q0 q1 q2 q3
     # so character i is the bit measured on wire i of the banner.
     shots = [s[::-1] for s in pub_result.data.c.get_bitstrings()]
@@ -88,7 +89,7 @@ def summarize(pub_result, backend: str, job_id: str | None, submitted_at: str, s
         "simulated": simulated,
         "job_id": job_id,
         "submitted_at": submitted_at,
-        "completed_at": now(),
+        "completed_at": completed_at or now(),
         "shots": len(shots),
         "bit_order": "q0q1q2q3 (character i is qubit i)",
         "top_outcome": {"bits": top, "share": round(top_count / len(shots), 4)},
@@ -126,16 +127,40 @@ def service():
     )
 
 
+def finished_at(job) -> str:
+    """When the device finished the job (not when we collected it); falls back to now."""
+    try:
+        stamp = job.metrics()["timestamps"]["finished"]
+        return datetime.fromisoformat(stamp.replace("Z", "+00:00")).astimezone(timezone.utc).replace(microsecond=0).isoformat()
+    except Exception:  # noqa: BLE001 - metrics are best effort
+        return now()
+
+
+def find_job(svc, state: dict):
+    """Look up the pending job; drop it from state if IBM no longer has it."""
+    job_id = state["pending"]["job_id"]
+    try:
+        return svc.job(job_id)
+    except Exception as exc:  # noqa: BLE001 - the runtime raises several "not found" types
+        if "not found" not in str(exc).lower() and "notfound" not in type(exc).__name__.lower():
+            raise
+        print(f"::warning::Job {job_id} no longer exists at IBM; it will be resubmitted")
+        state["pending"] = None
+        return None
+
+
 def collect(svc, state: dict, wait_minutes: float) -> bool:
     """Try to finish the pending job. Returns True if the state file changed."""
     pending = state["pending"]
-    job = svc.job(pending["job_id"])
+    job = find_job(svc, state)
+    if job is None:
+        return True
     deadline = time.monotonic() + wait_minutes * 60
     while True:
         status = job.status()
         if status == "DONE":
             state["latest"] = summarize(job.result()[0], pending["backend"], pending["job_id"],
-                                        pending["submitted_at"], simulated=False)
+                                        pending["submitted_at"], simulated=False, completed_at=finished_at(job))
             state["pending"] = None
             print(f"Collected job {pending['job_id']} from {pending['backend']}")
             return True
@@ -165,7 +190,11 @@ def replace_stale(svc, state: dict) -> bool:
     age = datetime.now(timezone.utc) - datetime.fromisoformat(pending["submitted_at"])
     if age < STALE_AFTER:
         return False
-    job = svc.job(pending["job_id"])
+    job = find_job(svc, state)
+    if job is None:
+        submit(svc, state)
+        save_state(state)
+        return True
     if job.status() not in {"QUEUED", "INITIALIZING"}:
         return False
     job.cancel()

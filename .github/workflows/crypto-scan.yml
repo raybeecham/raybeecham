@@ -16,9 +16,10 @@ on:
 permissions:
   contents: read
 
-# Shared with the other workflows that commit README.md.
+# Own group: a group shared across workflows lets GitHub cancel queued runs.
+# Each workflow edits its own README markers and rebases before pushing.
 concurrency:
-  group: profile-readme-commits
+  group: crypto-scan
   cancel-in-progress: false
 
 env:

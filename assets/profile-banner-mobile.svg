@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="340" viewBox="0 0 520 340" role="img" aria-labelledby="title desc">
+<title id="title">Ray Beecham | Security, quantum, and applied AI</title>
+<desc id="desc">A cyan and violet orbital circuit surrounds a shield checkmark on a navy dotted field.</desc>
+<defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#071321"/><stop offset="1" stop-color="#18253e"/></linearGradient>
+<linearGradient id="flow"><stop stop-color="#59ead8"/><stop offset=".55" stop-color="#6ab8ff"/><stop offset="1" stop-color="#b5a0ff"/></linearGradient>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#c3d9ed" opacity=".12"/></pattern>
+</defs>
+<rect width="520" height="340" rx="16" fill="url(#bg)"/>
+<rect width="520" height="340" rx="16" fill="url(#grid)"/>
+<path d="M16 2H504" stroke="url(#flow)" stroke-width="4"/>
+<g font-family="Segoe UI,Arial,sans-serif"><text x="32" y="81" font-size="52" font-weight="700" fill="#f0f6fc">Ray Beecham</text><text x="34" y="120" font-size="22" font-weight="600" fill="#7eeadd">SECURITY / QUANTUM / AI</text></g><g transform="translate(260 249) scale(.57)"><g fill="none" stroke="url(#flow)">
+<circle r="119" stroke-width="1" opacity=".28"/><circle r="95" stroke-width="1" stroke-dasharray="3 10" opacity=".45"/>
+<ellipse rx="116" ry="44" transform="rotate(-38)" stroke-width="2"/>
+<ellipse rx="116" ry="44" transform="rotate(38)" stroke-width="2" opacity=".8"/>
+<path d="M-42-34L0-58L42-34V26L0 54L-42 26Z" fill="#0b1c30" stroke-width="2"/>
+<path d="M-21-5L-6 11L23-20" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M-174-80H-143L-113-50M174 80H143L113 50M-174 80H-143L-113 50M174-80H143L113-50" opacity=".7"/>
+</g><g fill="#69e8dd"><circle cx="-91" cy="-73" r="5"/><circle cx="91" cy="73" r="5"/><circle cx="-174" cy="-80" r="3"/></g><g fill="#b5a0ff"><circle cx="91" cy="-73" r="5"/><circle cx="-91" cy="73" r="5"/><circle cx="174" cy="80" r="3"/></g></g>
+</svg>

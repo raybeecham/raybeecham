@@ -1,113 +1,72 @@
-<div align="center">
+<p align="center">
+  <img src="assets/profile-banner.svg" alt="Ray Beecham. Security, quantum, and evidence. Evidence before claims. Mission before technology." width="100%">
+</p>
 
 # Ray Beecham
 
-**Quantum Security · Crypto-Agility · Applied Quantum Systems · Technology Decision Assurance**
+**Post-quantum security · Applied AI · Quantum research · Technology evaluation**
 
-U.S. Navy Veteran · Federal Cybersecurity · Post-Quantum Cryptography · Cloud & DevSecOps
+[Explore EvidenceOS](https://raybeecham.github.io/raybeecham/) · [Read Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) · [LinkedIn](https://linkedin.com/in/RaymondBeecham)
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ray%20Beecham-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/RaymondBeecham)
-[![GitHub](https://img.shields.io/badge/GitHub-%40raybeecham-181717?logo=github&logoColor=white)](https://github.com/raybeecham)
-[![EvidenceOS](https://img.shields.io/badge/EvidenceOS-Launch%20Mission%20Control-087D9F?logo=githubpages&logoColor=white)](https://raybeecham.github.io/raybeecham/)
-[![Quantum Research Scout](https://img.shields.io/badge/Quantum%20Research%20Scout-Live-2ea44f?logo=github)](https://raybeecham.github.io/quantum-research-scout/)
-[![PQC Readiness War Room](https://img.shields.io/badge/PQC%20Readiness%20War%20Room-Live-F38020?logo=cloudflare&logoColor=white)](https://pqc-readiness-war-room.raybeecham2009.workers.dev/)
+I build evidence-driven security tools, research systems, and hands-on quantum experiments. My work connects **post-quantum cryptography, cryptographic discovery, applied AI, and technology evaluation**, with traceable evidence and human review built into the workflow.
 
-</div>
+## Selected public work
 
-<p align="center">
-  <a href="https://raybeecham.github.io/raybeecham/">
-    <img src="docs/assets/evidence-os-banner.svg" alt="Launch EvidenceOS, Ray Beecham's interactive mission research environment" width="100%">
-  </a>
-</p>
+### [Frontier Signal](https://github.com/raybeecham/quantum-research-scout)
+**Emerging-technology intelligence** · [Open the desk →](https://raybeecham.github.io/quantum-research-scout/)
 
-<p align="center">
-  <strong><a href="https://raybeecham.github.io/raybeecham/">Launch EvidenceOS →</a></strong><br>
-  <sub>Select a mission, traverse the system graph, replay deterministic decisions, rotate the research globe, compare quantum architectures, or press <code>`</code> and type <code>help</code>.</sub>
-</p>
+Source-linked briefings across cybersecurity, PQC, quantum computing, AI, and cloud. Research notebooks and investigation workspaces keep evidence, interpretation, uncertainty, and human review visible. Formerly Quantum Research Scout; the repository and site URLs remain the same.
 
-I build evidence-driven systems for **post-quantum migration, cryptographic discovery, transport visibility, quantum workload evaluation, and emerging-technology decision assurance**.
+### [Quantum Oncology Benchmark](https://github.com/raybeecham/quantum-oncology-benchmark)
+**Reproducible research and careful comparisons**
 
-My current work is centered on a practical question:
+A framework for comparing strong classical baselines with quantum-kernel methods, with training-only preprocessing, shared partitions, provenance, and statistical checks. The classical reference evaluation is complete; quantum nested cross-validation is planned. Research only, with no quantum-advantage or clinical-validation claim.
 
-> How do we turn complex technical evidence into a decision that is explainable, reproducible, appropriately bounded, and useful to a real mission owner?
+### [PQC Readiness War Room](https://github.com/raybeecham/pqc-readiness-war-room)
+**Cryptographic modernization, with explicit unknowns** · [Try the demo →](https://pqc-readiness-war-room.raybeecham2009.workers.dev/)
 
-That means preserving what was observed, what was inferred, what remains unknown, which rules produced a result, and what still requires accountable human judgment.
+An edge demo that explains observable TLS and HTTPS posture and makes missing PQC and crypto-agility evidence visible. Modern transport signals do not establish ML-KEM support or enterprise migration readiness.
 
-## EvidenceOS
+### [Crypto Inventory Demo](https://github.com/raybeecham/crypto-inventory-demo)
+**From discovery to a reviewable inventory**
 
-The profile website is no longer a conventional project gallery. It is an interactive, mission-driven research environment.
+CodeQL-based Java and Python cryptographic discovery, combined with TLS configuration and runtime observations. Produces a normalized inventory and risk summary, with CI enforcement for critical findings.
 
-| Module | What it does |
-|---|---|
-| **Mission Router** | Reconfigures the environment for enterprise security, PQC migration, quantum evaluation, research intelligence, or open-lab exploration |
-| **Mission Control** | Shows how the public systems, private R&D, laboratories, benchmarks, and decision methods connect |
-| **Cyber Situation Room** | Combines mission brief, public repository evidence, strategic signals, controls, and decision-system health |
-| **Decision Replay** | Executes sample decisions through Observe → Admit → Evaluate → Record → Decide |
-| **Research Network** | Maps public standards, government, research, security, and quantum-industry organizations |
-| **Quantum Explorer** | Compares architecture families through connectivity, native operations, routing, constraints, and workload fit |
-| **Command Terminal** | Provides keyboard-first mission routing, system navigation, public links, and a few deliberate easter eggs |
+## Learning, playbooks, and experiments
 
-## Current Research Programs
+- **[AI Systems Engineering Handbook](https://github.com/raybeecham/claude-certified-associate-foundations)**: Original scenario-based study materials and a vendor-neutral playbook for designing, evaluating, securing, and governing AI workflows. Unofficial learning resource.
+- **[Modern Practical PKI](https://github.com/raybeecham/modern-practical-pki)**: A Docker and OpenSSL learning lab covering encoding, hashing, randomness, ASN.1, and key generation. Later certificate and TLS chapters are planned.
+- **[Chrono](https://github.com/raybeecham/Chrono)**: An OpenAI Build Week historical prototype with a reconstructed 1998 desktop, period-aware AI dialogue, anachronism detection, and a deterministic offline fallback.
+- **[EvidenceOS](https://raybeecham.github.io/raybeecham/)**: My interactive portfolio and research environment, with mission routing, sample decision replay, a research network, and quantum-architecture exploration.
 
-| Program | What I am building |
-|---|---|
-| **Technology Decision Assurance Framework (TDAF)** | A mission-first, deterministic framework for evaluating whether an emerging technology should be considered for a specific problem. It separates the mission problem, evidence, rulebook, computed result, decision record, and organizational decision. Quantum suitability is the first technology module. |
-| **PQC and Crypto-Agility Engineering** | Practical methods for cryptographic inventory, CBOM-style reporting, TLS 1.3 and HTTP/3 visibility, hybrid ML-KEM testing, harvest-now-decrypt-later risk analysis, certificate agility, and phased migration planning. |
-| **Applied Quantum Systems** | Hardware-aware benchmarking, quantum-kernel evaluation, QUBO and Hamiltonian optimization, grid-resilience planning, fraud-detection experiments, and workload-to-platform suitability analysis. |
-| **Research and AI Systems Engineering** | Evidence pipelines, strategic signal tracking, temporal intelligence, testable forecasts, governed agent workflows, output evaluation, and reusable engineering playbooks. |
+My interests include evidence-driven security and hands-on quantum learning.
 
-## Featured Public Projects
+## How I build
 
-| Project | Purpose |
-|---|---|
-| **[Quantum Research Scout](https://github.com/raybeecham/quantum-research-scout)** · [Live dashboard](https://raybeecham.github.io/quantum-research-scout/) | Evidence-first intelligence for quantum technology, PQC, federal missions, procurement, patents, organizations, and strategic forecasts. The system preserves provenance, labels inference, quarantines weak evidence, and publishes daily, weekly, and monthly intelligence. |
-| **[Quantum Oncology Benchmark](https://github.com/raybeecham/quantum-oncology-benchmark)** | A reproducible framework for comparing strong classical baselines with quantum-kernel methods on oncology research tasks. It emphasizes leakage prevention, shared partitions, confidence intervals, pairwise provenance, resource accounting, and explicit limits on quantum-advantage claims. |
-| **[PQC Readiness War Room](https://github.com/raybeecham/pqc-readiness-war-room)** · [Live demo](https://pqc-readiness-war-room.raybeecham2009.workers.dev/) | A Cloudflare Worker that explains observable TLS modernization and HTTPS posture while keeping ML-KEM support, crypto discovery, vendor readiness, and enterprise migration readiness explicitly unverified until evidence exists. |
-| **[Crypto Inventory Demo](https://github.com/raybeecham/crypto-inventory-demo)** | A CodeQL-based cryptographic discovery pipeline for Java, Python, TLS configuration, and runtime observations. It produces a normalized inventory, risk summary, and CI enforcement for critical cryptographic findings. |
-| **[Claude Foundations and AI Systems Engineering Handbook](https://github.com/raybeecham/claude-certified-associate-foundations)** | Scenario-based certification preparation combined with a vendor-neutral method for designing reliable, secure, evaluated, and human-governed AI workflows. |
-| **[Modern Practical PKI](https://github.com/raybeecham/modern-practical-pki)** | An incremental Docker-based OpenSSL lab that moves from encoding, hashing, ASN.1, and key generation toward certificate authorities, certificates, revocation, TLS, HSMs, and broader PKI operations. |
-| **[Chrono](https://github.com/raybeecham/Chrono)** | An AI-powered historical simulation built during OpenAI Build Week, featuring a reconstructed 1998 desktop, period-aware dialogue, structured temporal-contamination detection, and a deterministic offline fallback. |
+**Evidence before claims. Strong baselines before conclusions.**
 
-## Additional Active R&D
+I preserve provenance, make uncertainty visible, and design experiments for reproducibility. Security boundaries and human accountability are part of the workflow. A model, score, or prototype supports a decision; it does not authorize deployment or operational action.
 
-Some work is still private or being prepared for a future public release:
+<details>
+<summary><strong>Tools and methods</strong></summary>
 
-- A local defensive lab that measures classical and hybrid post-quantum TLS handshakes, records only observed negotiation data, and produces transparent HNDL risk and migration outputs.
-- A hardware-architecture assessment method covering circuit fidelity, routing behavior, error provenance, fault-tolerance readiness, and cryptographic resource projections.
-- Hybrid quantum-classical optimization pipelines for federal energy-resilience exercises and highly imbalanced fraud-detection workloads.
-- An emerging vendor-neutral quantum workload advisor for deciding whether a controlled experiment is justified before comparing providers.
+- **Security:** PQC, cryptographic inventory, TLS, PKI, OpenSSL, CodeQL, crypto-agility.
+- **Software:** Python, TypeScript, JavaScript, Docker, GitHub Actions, Cloudflare Workers.
+- **Research and AI:** Qiskit, quantum kernels, classical baselines, statistical evaluation, provenance, structured outputs, and human-reviewed workflows.
 
-## Engineering Principles
+</details>
 
-- **Evidence before claims:** Source provenance, limitations, conflicts, and unknowns remain visible.
-- **Mission before technology:** Start with the problem and decision context, not a preferred platform or vendor.
-- **Classical baselines before quantum conclusions:** Quantum results are compared against credible classical methods under shared evaluation conditions.
-- **Reproducibility by default:** Versioned configurations, schemas, deterministic outputs, CI, tests, and machine-readable artifacts are part of the design.
-- **Human accountability:** A model, score, benchmark, or framework result supports a decision. It does not authorize procurement, deployment, clinical action, or operational control.
-- **Security boundaries matter:** Tools fail closed, protect credentials, avoid unauthorized scanning, and distinguish lab evidence from production assurance.
+<details>
+<summary><strong>Background, credentials, and education</strong></summary>
 
-## Technical Stack
-
-| Area | Tools and methods |
-|---|---|
-| **Security and Cryptography** | PQC, ML-KEM, TLS 1.3, HTTP/3 and QUIC, PKI, OpenSSL, CodeQL, CBOM concepts, Wireshark, tshark, cryptographic inventory, Zero Trust |
-| **Software and Automation** | Python, TypeScript and JavaScript, FastAPI, Streamlit, Next.js, Cloudflare Workers, Docker, GitHub Actions, SQLite, REST APIs, JSON Schema |
-| **Quantum and Optimization** | Qiskit, Qrisp, D-Wave Ocean, quantum kernels, QUBO, Hamiltonian optimization, circuit benchmarking, hardware-aware compilation and routing analysis |
-| **Data and AI** | pandas, NumPy, scikit-learn, statistical evaluation, provenance tracking, structured outputs, agent workflows, retrieval and evidence pipelines |
-| **Cloud and Federal Strategy** | AWS, cloud security, DevSecOps, NIST and FIPS alignment, federal modernization, mission assurance, technology evaluation, acquisition-support analysis |
-
-## Credentials and Education
+U.S. Navy veteran with interests spanning federal cybersecurity, cloud, DevSecOps, and applied quantum systems.
 
 **Selected credentials:** GIAC Certified Intrusion Analyst (GCIA), AWS Certified Solutions Architect - Associate, ISC2 Systems Security Certified Practitioner (SSCP), CompTIA Security+, Q-CTRL Quantum Professional, SandboxAQ AQtive Guard Certified Practitioner, and D-Wave Quantum Programming - Core.
 
 **Education:** M.S. in Information Systems with a cybersecurity concentration from Texas A&M University-Central Texas, and B.B.A. in Computer Information Systems from Texas State University.
 
-## Connect
-
-- [Launch EvidenceOS](https://raybeecham.github.io/raybeecham/)
-- [LinkedIn](https://linkedin.com/in/RaymondBeecham)
-- [GitHub](https://github.com/raybeecham)
+</details>
 
 ---
 
-<sub>These are personal research and open-source projects. Views are my own. Project outputs are decision support and research artifacts, not employer or client positions, procurement authorization, medical advice, or operational approval.</sub>
+<sub>Personal research, learning, and open-source work. Views are my own. Prototypes and research outputs are decision support, not employer or client positions, procurement authorization, clinical advice, or operational approval.</sub>

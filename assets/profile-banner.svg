@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">Ray Beecham | Security, quantum, and evidence</title>
+  <desc id="desc">A deep navy field with cyan quantum orbits and a connected shield. Evidence before claims. Mission before technology.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#081322"/><stop offset="1" stop-color="#142d43"/></linearGradient>
+    <linearGradient id="accent"><stop stop-color="#6ee7e0"/><stop offset="1" stop-color="#97b5ff"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#b5d9f0" stroke-opacity=".055"/></pattern>
+  </defs>
+  <rect width="1200" height="300" rx="16" fill="url(#bg)"/>
+  <rect width="1200" height="300" rx="16" fill="url(#grid)"/>
+  <rect x="52" y="48" width="48" height="4" rx="2" fill="#6ee7e0"/>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <text x="52" y="119" font-size="52" font-weight="700" fill="#f0f6fc">Ray Beecham</text>
+    <text x="54" y="165" font-size="25" fill="#a9f1ec">SECURITY / QUANTUM / EVIDENCE</text>
+    <text x="54" y="226" font-size="22" fill="#c4d2e2">Evidence before claims. Mission before technology.</text>
+  </g>
+  <g transform="translate(970 150)" fill="none" stroke="url(#accent)">
+    <ellipse rx="156" ry="58" transform="rotate(-32)" stroke-width="1.5" opacity=".6"/>
+    <ellipse rx="156" ry="58" transform="rotate(32)" stroke-width="1.5" opacity=".6"/>
+    <ellipse rx="137" ry="70" transform="rotate(90)" stroke-width="1" opacity=".3"/>
+    <path d="M0-57L48-37V10C48 41 19 61 0 72C-19 61-48 41-48 10V-37Z" fill="#0e2235" stroke-width="2"/>
+    <path d="M-22 5L-7 20L24-14" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g fill="#81e8e2"><circle cx="1102" cy="78" r="5"/><circle cx="838" cy="78" r="4"/><circle cx="970" cy="287" r="4"/></g>
+  <path d="M52 267H696" stroke="#6ee7e0" stroke-opacity=".25"/>
+</svg>

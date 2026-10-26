@@ -1,0 +1,108 @@
+name: Crypto self-scan
+
+on:
+  schedule:
+    # Sundays 07:30 UTC.
+    - cron: "30 7 * * 0"
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/crypto_self_scan.py"
+      - "scripts/crypto_scan_repo.sh"
+      - ".github/workflows/crypto-scan.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Shared with the other workflows that commit README.md.
+concurrency:
+  group: profile-readme-commits
+  cancel-in-progress: false
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - name: Checkout profile
+        uses: actions/checkout@v6
+
+      - name: Checkout scanner
+        uses: actions/checkout@v6
+        with:
+          repository: raybeecham/crypto-inventory-demo
+          path: tool
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      # Only used to provision the CodeQL CLI; no analysis is uploaded.
+      - name: Provision CodeQL
+        id: codeql
+        uses: github/codeql-action/init@v4
+        with:
+          languages: python
+          build-mode: none
+
+      - name: Scan public repositories
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CODEQL: ${{ steps.codeql.outputs.codeql-path }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          "$CODEQL" pack install tool/queries-python --no-strict-mode
+          SEARCH_PATH="$(dirname "$CODEQL")/qlpacks:$HOME/.codeql/packages:tool/queries-python"
+
+          # Own, non-archived, non-fork repos. The scanner itself ships deliberately
+          # weak fixtures, and skills-* are GitHub course templates.
+          repos=$(gh api "users/raybeecham/repos?per_page=100&type=owner" --jq '.[]
+            | select(.fork | not) | select(.archived | not) | select(.size > 0)
+            | select(.name != "crypto-inventory-demo") | select(.name | startswith("skills-") | not)
+            | .name')
+
+          export CODEQL SEARCH_PATH
+          failed=0
+          for repo in $repos; do
+            echo "::group::$repo"
+            if ! bash scripts/crypto_scan_repo.sh "$repo"; then
+              echo "::warning::Crypto scan failed for $repo; it is left out of this report"
+              rm -rf "scan/$repo"
+              failed=$((failed + 1))
+            fi
+            echo "::endgroup::"
+          done
+          echo "Repositories that failed to scan: $failed"
+
+      - name: Write report and README line
+        run: python scripts/crypto_self_scan.py scan
+
+      - name: Validate public portfolio rules
+        run: python scripts/validate_portfolio.py
+
+      - name: Publish summary
+        run: cat reports/crypto-inventory.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit report if it changed
+        if: github.ref == 'refs/heads/main'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md reports/crypto-inventory.md reports/crypto-inventory.json
+          if git diff --cached --quiet; then
+            echo "Crypto inventory unchanged"
+          else
+            git commit -m "Refresh crypto self-scan"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

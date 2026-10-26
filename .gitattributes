@@ -1,0 +1,2 @@
+# Signed key material must stay byte-for-byte identical.
+keys/** -text

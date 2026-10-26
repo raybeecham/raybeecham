@@ -1,0 +1,4 @@
+I, Ray Beecham (github.com/raybeecham), control the ML-DSA-65 key below.
+Public key: keys/ml-dsa-65.pub.pem
+SHA-256 fingerprint (DER SubjectPublicKeyInfo): 59d862867ccd2c01648d80bc14c386a1d7f9eaebe747dbbfabbca69f7737afe5
+Published: 2026-10-26

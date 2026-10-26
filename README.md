@@ -63,6 +63,9 @@ Strong classical baselines and quantum-kernel experiments with training-only pre
 
 Preserve provenance. Make uncertainty visible. Design for reproducibility. Keep security boundaries explicit and decisions accountable to people. A model, score, or prototype supports a decision; it does not authorize deployment or operational action.
 
+<!-- CRYPTO-SCAN:START -->
+<!-- CRYPTO-SCAN:END -->
+
 <a id="professional-experience"></a>
 ## <img src="assets/experience-mark.svg" width="28" height="28" alt=""> Professional experience
 
@@ -120,6 +123,19 @@ U.S. Navy veteran with interests spanning federal cybersecurity, cloud, DevSecOp
 
 </details>
 
+<details>
+<summary><strong>For codebreakers</strong></summary>
+
+```
+DCDM PELL, KHTYCZXQEFZ. XLCEMGSY CMYELF KEQCNA. LQS IQ HD FJVDUXJV
+TJ LBGFEHEJXUWIIF QHE UXDNJWG JBF EHHX TCIULQWLYNJWG.
+```
+
+A classical cipher from 1553 guards this one. Its key is the smallest unit of quantum information.
+
+</details>
+
+🔏 **Quantum-safe contact:** my ML-DSA-65 public key is fingerprint `59d86286…7737afe5`. [Key, signed statement, and how to verify it](keys/README.md).
 
 ---
 

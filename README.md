@@ -7,7 +7,7 @@
 
 I build security tools, research systems, and hands-on quantum experiments. My work connects **post-quantum cryptography, cryptographic discovery, applied AI, and technology evaluation**, with traceable evidence and human review built into the workflow.
 
-[Professional experience](#professional-experience) · [Public projects](#public-projects) · [Background](#background) · [LinkedIn](https://linkedin.com/in/RaymondBeecham)
+[Professional experience](#user-content-professional-experience) · [Public projects](#user-content-public-projects) · [Background](#user-content-background) · [LinkedIn](https://linkedin.com/in/RaymondBeecham)
 
 <a id="professional-experience"></a>
 ## <img src="assets/experience-mark.svg" width="28" height="28" alt=""> Professional experience

@@ -3,12 +3,12 @@
   <img src="assets/profile-banner.svg" alt="Ray Beecham. Security, quantum, and applied AI. Evidence before claims. Mission before technology." width="100%">
 </picture>
 <!-- QPU-RUN:START -->
-<sub>The circuit in the banner ran on IBM Quantum <b>ibm_fez</b> on Oct 26, 2026; its output bits replay 8 of 1,024 measured shots (most common outcome <code>0000</code>, 30%). <a href="assets/qpu-run.json">Run data</a></sub>
+<sub>The circuit in the banner ran on IBM Quantum <b>ibm_fez</b> on Oct 26, 2026; its output bits replay 8 of 1,024 measured shots (most common outcome <code>0000</code>, 33%). <a href="assets/qpu-run.json">Run data</a></sub>
 <details><summary><sub>How is this different from a simulation?</sub></summary>
 
 <img src="assets/qpu-chart.svg" alt="Bar chart comparing noiseless probabilities with the measured shots" width="100%">
 
-<sub>Job <code>dbfpv8om94ac738u4i8g</code>. Noiseless values come from a statevector simulation of the same circuit.</sub>
+<sub>Job <code>dbfqc3vgdj9s73bc8o20</code>. Noiseless values come from a statevector simulation of the same circuit.</sub>
 </details>
 <!-- QPU-RUN:END -->
 

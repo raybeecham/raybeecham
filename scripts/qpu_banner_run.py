@@ -94,7 +94,16 @@ def summarize(pub_result, backend: str, job_id: str | None, submitted_at: str, s
         "top_outcome": {"bits": top, "share": round(top_count / len(shots), 4)},
         "counts": dict(sorted(counts.items(), key=lambda kv: (-kv[1], kv[0]))),
         "replay": shots[:REPLAY],
+        "ideal": ideal_distribution(),
     }
+
+
+def ideal_distribution() -> dict[str, float]:
+    """Noiseless outcome probabilities for the banner circuit, keyed q0q1q2q3."""
+    from qiskit.quantum_info import Statevector
+
+    probs = Statevector(banner_circuit().remove_final_measurements(inplace=False)).probabilities_dict()
+    return {bits[::-1]: round(p, 6) for bits, p in sorted(probs.items()) if p > 1e-9}
 
 
 def run_fake(name: str) -> dict:

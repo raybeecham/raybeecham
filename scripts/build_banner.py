@@ -163,16 +163,74 @@ def description(run: dict | None) -> str:
     return f"{base} and shows the next of {len(run['replay'])} {source}."
 
 
+def off_ideal(run: dict) -> tuple[int, float]:
+    """Shots on outcomes a noiseless machine can never produce."""
+    shots = sum(c for bits, c in run["counts"].items() if run["ideal"].get(bits, 0) == 0)
+    return shots, shots / run["shots"]
+
+
+def chart(run: dict) -> str:
+    """Grouped bars: noiseless probability vs measured share for all 16 outcomes."""
+    w, h, left, right, top, base = 800, 330, 56, 24, 92, 262
+    measured = {bits: c / run["shots"] for bits, c in run["counts"].items()}
+    outcomes = sorted({f"{n:04b}" for n in range(16)},
+                      key=lambda b: (-run["ideal"].get(b, 0), -measured.get(b, 0), b))
+    peak = max([*run["ideal"].values(), *measured.values()])
+    scale = (base - top) / (peak * 1.08)
+    slot = (w - left - right) / len(outcomes)
+    bar = slot * 0.34
+    source = f"{run['backend']} (simulated noise model)" if run["simulated"] else f"IBM Quantum {run['backend']}"
+    bars, labels = [], []
+    for i, bits in enumerate(outcomes):
+        x = left + i * slot + slot / 2
+        ideal, real = run["ideal"].get(bits, 0), measured.get(bits, 0)
+        if ideal:
+            bars.append(f'<rect x="{x - bar - 1:.1f}" y="{base - ideal * scale:.1f}" width="{bar:.1f}" height="{ideal * scale:.1f}" '
+                        f'rx="2" fill="none" stroke="{VIOLET}" stroke-width="1.5"/>')
+        if real:
+            color = TEAL if ideal else AMBER
+            bars.append(f'<rect x="{x + 1:.1f}" y="{base - real * scale:.1f}" width="{bar:.1f}" height="{real * scale:.1f}" rx="2" fill="{color}"/>')
+        labels.append(f'<text x="{x:.1f}" y="{base + 18}" text-anchor="middle" fill="{MUTED if not ideal else "#9aa8c3"}">{bits}</text>')
+    grid = "".join(
+        f'<path d="M{left} {base - v * scale:.1f}H{w - right}" stroke="{WIRE}" stroke-dasharray="2 4"/>'
+        f'<text x="{left - 8}" y="{base - v * scale + 4:.1f}" text-anchor="end" fill="{MUTED}">{v:.0%}</text>'
+        for v in (0.1, 0.2, 0.3, 0.4) if v <= peak * 1.08)
+    shots, share = off_ideal(run)
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-labelledby="ct cd">
+<title id="ct">Ideal vs. measured outcomes for the banner circuit</title>
+<desc id="cd">Noiseless probabilities next to {run['shots']:,} shots measured on {source}. {shots} shots ({share:.0%}) landed on outcomes a perfect machine never produces.</desc>
+<rect width="{w}" height="{h}" rx="12" fill="#060a14"/><rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="11.5" fill="none" stroke="#1c2540"/>
+<text x="24" y="36" font-family="{SANS}" font-size="17" font-weight="600" fill="#f3f6ff">Perfect machine vs. {source}</text>
+<text x="24" y="60" font-family="{SANS}" font-size="13" fill="#9aa8c3">{run['shots']:,} shots · {run_date(run)} · outcomes q0q1q2q3</text>
+<g font-family="{SANS}" font-size="12" fill="#9aa8c3">
+<rect x="{w - 330}" y="27" width="12" height="12" rx="2" fill="none" stroke="{VIOLET}" stroke-width="1.5"/><text x="{w - 312}" y="37">Noiseless</text>
+<rect x="{w - 240}" y="27" width="12" height="12" rx="2" fill="{TEAL}"/><text x="{w - 222}" y="37">Measured</text>
+<rect x="{w - 150}" y="27" width="12" height="12" rx="2" fill="{AMBER}"/><text x="{w - 132}" y="37">Impossible if noiseless</text></g>
+<g font-family="{MONO}" font-size="11">{grid}</g>
+<path d="M{left} {base}H{w - right}" stroke="#3a4766"/>
+{"".join(bars)}
+<g font-family="{MONO}" font-size="11">{"".join(labels)}</g>
+<text x="24" y="{h - 18}" font-family="{SANS}" font-size="13" fill="#cfd8ff"><tspan fill="{AMBER}" font-weight="700">{shots} of {run['shots']:,} shots ({share:.0%})</tspan> landed on outcomes a perfect machine never produces{": the noise signature of real hardware." if not run["simulated"] else " (simulated noise)."}</text>
+</svg>
+"""
+
+
 def readme_line(run: dict | None) -> str:
     if not run:
         return ""
+    proof = ""
+    if run.get("ideal"):
+        question = "How is this different from a simulation?" if not run["simulated"] else "What will change with real hardware?"
+        proof = (f"\n<details><summary><sub>{question}</sub></summary>\n\n"
+                 f"<img src=\"assets/qpu-chart.svg\" alt=\"Bar chart comparing noiseless probabilities with the measured shots\" width=\"100%\">\n\n"
+                 f"<sub>Job <code>{run['job_id'] or 'local simulation'}</code>. Noiseless values come from a statevector simulation of the same circuit.</sub>\n</details>")
     if run["simulated"]:
         return (f"<sub>The circuit in the banner is scheduled to run weekly on IBM Quantum hardware; until the first run lands, "
-                f"its output bits replay simulated shots ({run['backend']} noise model). <a href=\"assets/qpu-run.json\">Run data</a></sub>")
+                f"its output bits replay simulated shots ({run['backend']} noise model). <a href=\"assets/qpu-run.json\">Run data</a></sub>{proof}")
     top = run["top_outcome"]
     return (f"<sub>The circuit in the banner ran on IBM Quantum <b>{run['backend']}</b> on {run_date(run)}; its output bits replay "
             f"{len(run['replay'])} of {run['shots']:,} measured shots (most common outcome <code>{top['bits']}</code>, "
-            f"{top['share']:.0%}). <a href=\"assets/qpu-run.json\">Run data</a></sub>")
+            f"{top['share']:.0%}). <a href=\"assets/qpu-run.json\">Run data</a></sub>{proof}")
 
 
 def main() -> int:
@@ -201,6 +259,8 @@ def main() -> int:
 
     (ROOT / "assets" / "profile-banner.svg").write_text(desktop, encoding="utf-8", newline="\n")
     (ROOT / "assets" / "profile-banner-mobile.svg").write_text(mobile, encoding="utf-8", newline="\n")
+    if run and run.get("ideal"):
+        (ROOT / "assets" / "qpu-chart.svg").write_text(chart(run), encoding="utf-8", newline="\n")
 
     readme = README.read_text(encoding="utf-8")
     if readme.count(START) == 1 and readme.count(END) == 1:

@@ -22,13 +22,13 @@ I build security tools, research systems, and hands-on quantum experiments. My w
 ## <img src="assets/signal-mark.svg" width="28" height="28" alt=""> Live from the research desk
 
 <!-- FRONTIER-SIGNAL:START -->
-**Rising this week:** ↗ Quantum Software / Tooling · ↗ Quantum Networking · ↗ Quantum Sensing · ↗ AI Security
+**Rising this week:** ↗ Quantum Hardware · ↗ Quantum Networking · ↗ Quantum Sensing
 
 - → **PQC / Crypto Agility** · [IDEMIA and KT Deploy Quantum-Resistant SIMs Supporting Dual NIST and KpqC Algorithms for South Korean Military Networks](https://quantumcomputingreport.com/idemia-and-kt-deploy-quantum-resistant-sims-supporting-dual-nist-and-kpqc-algorithms-for-south-korean-military-networks) <sub>Quantum Computing Report, Oct 26</sub>
-- → **Quantum Hardware** · [GOTT Funds NPL Project to Scale Trapped-Ion Quantum Technology](https://thequantuminsider.com/2026/10/21/gott-funds-npl-project-to-scale-trapped-ion-quantum-technology) <sub>The Quantum Insider, Oct 21</sub>
+- ↗ **Quantum Hardware** · [GOTT Funds NPL Project to Scale Trapped-Ion Quantum Technology](https://thequantuminsider.com/2026/10/21/gott-funds-npl-project-to-scale-trapped-ion-quantum-technology) <sub>The Quantum Insider, Oct 21</sub>
 - ↘ **QEC / Fault Tolerance** · [Decoding quantum errors with NVIDIA Ising Decoding on AWS](https://aws.amazon.com/blogs/quantum-computing/decoding-quantum-errors-with-nvidia-ising-decoding-on-aws) <sub>AWS Quantum Technologies Blog, Oct 21</sub>
 
-<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-10-27 03:23 UTC · headlines are not reviewed or endorsed.</sub>
+<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-10-28 03:34 UTC · headlines are not reviewed or endorsed.</sub>
 <!-- FRONTIER-SIGNAL:END -->
 
 <a id="public-projects"></a>

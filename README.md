@@ -22,13 +22,13 @@ I build security tools, research systems, and hands-on quantum experiments. My w
 ## <img src="assets/signal-mark.svg" width="28" height="28" alt=""> Live from the research desk
 
 <!-- FRONTIER-SIGNAL:START -->
-**Rising this week:** ↗ Quantum Networking · ↗ Quantum Sensing
+**Rising this week:** ↗ Quantum Networking · ↗ Quantum Sensing · ↗ AI Security
 
 - → **PQC / Crypto Agility** · [IDEMIA and KT Deploy Quantum-Resistant SIMs Supporting Dual NIST and KpqC Algorithms for South Korean Military Networks](https://quantumcomputingreport.com/idemia-and-kt-deploy-quantum-resistant-sims-supporting-dual-nist-and-kpqc-algorithms-for-south-korean-military-networks) <sub>Quantum Computing Report, Oct 26</sub>
-- ↗ **Quantum Networking** · [IonQ Receives $7.5 Million from AFRL for Quantum Networking](https://thequantuminsider.com/2026/10/28/ionq-7-5-million-afrl-full-stack-quantum-networking) <sub>The Quantum Insider, Oct 28</sub>
-- → **Quantum Hardware** · [Long-lived defects trap qubit energy, study finds](https://quantumzeitgeist.com/karlsruhe-technology-long-lived-defects-trap) <sub>Quantum Zeitgeist, Oct 28</sub>
+- ↗ **Quantum Networking** · [SeQUeNCe.DQC: Full-stack Simulation of Distributed Quantum Computing](https://arxiv.org/abs/2610.39476v1) <sub>arXiv Quantum Computing, Oct 29</sub>
+- → **Quantum Hardware** · [Alice & Bob Estimates 22,593 Qubits to Break RSA-2048](https://thequantuminsider.com/2026/10/29/alice-bob-22593-qubits-break-rsa-2048) <sub>The Quantum Insider, Oct 29</sub>
 
-<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-10-29 03:59 UTC · headlines are not reviewed or endorsed.</sub>
+<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-10-30 03:59 UTC · headlines are not reviewed or endorsed.</sub>
 <!-- FRONTIER-SIGNAL:END -->
 
 <a id="public-projects"></a>

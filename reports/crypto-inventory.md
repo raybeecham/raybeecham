@@ -1,10 +1,10 @@
 # Crypto self-scan
 
-Weekly cryptographic inventory of my own public repositories, produced with [crypto-inventory-demo](https://github.com/raybeecham/crypto-inventory-demo) (CodeQL for Python plus a TLS configuration scan). Last scan: **Oct 26, 2026**.
+Weekly cryptographic inventory of my own public repositories, produced with [crypto-inventory-demo](https://github.com/raybeecham/crypto-inventory-demo) (CodeQL for Python plus a TLS configuration scan). Last scan: **Nov 1, 2026**.
 
 - Repositories scanned: **9**
-- Findings: **41**
-- PQC status: SAFE 40 · NOT_SAFE 0 · UNKNOWN 1
+- Findings: **46**
+- PQC status: SAFE 45 · NOT_SAFE 0 · UNKNOWN 1
 - Harvest-now-decrypt-later exposure: 0
 
 Coverage limits: Python source and text configuration only. JavaScript, TypeScript, Java builds, dependencies, and runtime traffic are not scanned here, so an empty row means "nothing found in scanned files", not "no cryptography". The scanner's own repository is excluded because it ships intentionally weak fixtures.
@@ -17,7 +17,7 @@ Coverage limits: Python source and text configuration only. JavaScript, TypeScri
 | [modern-practical-pki](https://github.com/raybeecham/modern-practical-pki) | 0 | — |
 | [pqc-readiness-war-room](https://github.com/raybeecham/pqc-readiness-war-room) | 0 | — |
 | [quantum-oncology-benchmark](https://github.com/raybeecham/quantum-oncology-benchmark) | 3 | SHA-256 ×3 |
-| [quantum-research-scout](https://github.com/raybeecham/quantum-research-scout) | 38 | SHA-256 ×37 · SHA-1 ×1 |
+| [quantum-research-scout](https://github.com/raybeecham/quantum-research-scout) | 43 | SHA-256 ×42 · SHA-1 ×1 |
 | [raybeecham](https://github.com/raybeecham/raybeecham) | 0 | — |
 | [Test_2](https://github.com/raybeecham/Test_2) | 0 | — |
 
@@ -37,17 +37,22 @@ Coverage limits: Python source and text configuration only. JavaScript, TypeScri
 | quantum-research-scout | [pqc_quantum_research_agent/amendment_intelligence.py:767](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/amendment_intelligence.py#L767) | SHA-256 | LOW | SAFE | Modern hash |
 | quantum-research-scout | [pqc_quantum_research_agent/amendment_intelligence.py:814](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/amendment_intelligence.py#L814) | SHA-256 | LOW | SAFE | Modern hash |
 | quantum-research-scout | [pqc_quantum_research_agent/amendment_intelligence.py:818](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/amendment_intelligence.py#L818) | SHA-256 | LOW | SAFE | Modern hash |
-| quantum-research-scout | [pqc_quantum_research_agent/briefing.py:332](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/briefing.py#L332) | SHA-256 | LOW | SAFE | Modern hash |
+| quantum-research-scout | [pqc_quantum_research_agent/briefing.py:333](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/briefing.py#L333) | SHA-256 | LOW | SAFE | Modern hash |
 | quantum-research-scout | [pqc_quantum_research_agent/claim_ledger.py:459](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/claim_ledger.py#L459) | SHA-256 | LOW | SAFE | Modern hash |
 | quantum-research-scout | [pqc_quantum_research_agent/claim_ledger.py:865](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/claim_ledger.py#L865) | SHA-256 | LOW | SAFE | Modern hash |
 | quantum-research-scout | [pqc_quantum_research_agent/claim_ledger.py:1039](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/claim_ledger.py#L1039) | SHA-256 | LOW | SAFE | Modern hash |
 | quantum-research-scout | [pqc_quantum_research_agent/claim_ledger.py:1129](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/claim_ledger.py#L1129) | SHA-256 | LOW | SAFE | Modern hash |
 | quantum-research-scout | [pqc_quantum_research_agent/claim_ledger.py:1153](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/claim_ledger.py#L1153) | SHA-256 | LOW | SAFE | Modern hash |
-| quantum-research-scout | [pqc_quantum_research_agent/decision_center.py:529](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/decision_center.py#L529) | SHA-256 | LOW | SAFE | Modern hash |
+| quantum-research-scout | [pqc_quantum_research_agent/conferences.py:140](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/conferences.py#L140) | SHA-256 | LOW | SAFE | Modern hash |
+| quantum-research-scout | [pqc_quantum_research_agent/conferences.py:191](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/conferences.py#L191) | SHA-256 | LOW | SAFE | Modern hash |
+| quantum-research-scout | [pqc_quantum_research_agent/conferences.py:205](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/conferences.py#L205) | SHA-256 | LOW | SAFE | Modern hash |
+| quantum-research-scout | [pqc_quantum_research_agent/conferences.py:332](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/conferences.py#L332) | SHA-256 | LOW | SAFE | Modern hash |
+| quantum-research-scout | [pqc_quantum_research_agent/conferences.py:341](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/conferences.py#L341) | SHA-256 | LOW | SAFE | Modern hash |
+| quantum-research-scout | [pqc_quantum_research_agent/decision_center.py:544](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/decision_center.py#L544) | SHA-256 | LOW | SAFE | Modern hash |
 | quantum-research-scout | [pqc_quantum_research_agent/evidence_review.py:180](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/evidence_review.py#L180) | SHA-256 | LOW | SAFE | Modern hash |
-| quantum-research-scout | [pqc_quantum_research_agent/news_intelligence.py:940](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/news_intelligence.py#L940) | SHA-256 | LOW | SAFE | Modern hash |
-| quantum-research-scout | [pqc_quantum_research_agent/news_intelligence.py:989](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/news_intelligence.py#L989) | SHA-256 | LOW | SAFE | Modern hash |
-| quantum-research-scout | [pqc_quantum_research_agent/news_intelligence.py:1316](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/news_intelligence.py#L1316) | SHA-256 | LOW | SAFE | Modern hash |
+| quantum-research-scout | [pqc_quantum_research_agent/news_intelligence.py:966](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/news_intelligence.py#L966) | SHA-256 | LOW | SAFE | Modern hash |
+| quantum-research-scout | [pqc_quantum_research_agent/news_intelligence.py:1015](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/news_intelligence.py#L1015) | SHA-256 | LOW | SAFE | Modern hash |
+| quantum-research-scout | [pqc_quantum_research_agent/news_intelligence.py:1344](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/news_intelligence.py#L1344) | SHA-256 | LOW | SAFE | Modern hash |
 | quantum-research-scout | [pqc_quantum_research_agent/procurement_intelligence.py:295](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/procurement_intelligence.py#L295) | SHA-256 | LOW | SAFE | Modern hash |
 | quantum-research-scout | [pqc_quantum_research_agent/procurement_intelligence.py:788](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/procurement_intelligence.py#L788) | SHA-256 | LOW | SAFE | Modern hash |
 | quantum-research-scout | [pqc_quantum_research_agent/procurement_intelligence.py:1211](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/procurement_intelligence.py#L1211) | SHA-256 | LOW | SAFE | Modern hash |
@@ -62,7 +67,7 @@ Coverage limits: Python source and text configuration only. JavaScript, TypeScri
 | quantum-research-scout | [pqc_quantum_research_agent/story_follow.py:159](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/story_follow.py#L159) | SHA-256 | LOW | SAFE | Modern hash |
 | quantum-research-scout | [pqc_quantum_research_agent/strategic_forecasts.py:825](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/strategic_forecasts.py#L825) | SHA-256 | LOW | SAFE | Modern hash |
 | quantum-research-scout | [pqc_quantum_research_agent/text.py:41](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/pqc_quantum_research_agent/text.py#L41) | SHA-1 | HIGH | UNKNOWN | Broken hash |
-| quantum-research-scout | [scripts/build_dashboard.py:321](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/scripts/build_dashboard.py#L321) | SHA-256 | LOW | SAFE | Modern hash |
+| quantum-research-scout | [scripts/build_dashboard.py:358](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/scripts/build_dashboard.py#L358) | SHA-256 | LOW | SAFE | Modern hash |
 | quantum-research-scout | [scripts/report_schedule.py:75](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/scripts/report_schedule.py#L75) | SHA-256 | LOW | SAFE | Modern hash |
 | quantum-research-scout | [scripts/report_schedule.py:131](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/scripts/report_schedule.py#L131) | SHA-256 | LOW | SAFE | Modern hash |
 | quantum-research-scout | [scripts/sync_feed_issues.py:20](https://github.com/raybeecham/quantum-research-scout/blob/HEAD/scripts/sync_feed_issues.py#L20) | SHA-256 | LOW | SAFE | Modern hash |

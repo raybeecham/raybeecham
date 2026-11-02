@@ -26,9 +26,9 @@ I build security tools, research systems, and hands-on quantum experiments. My w
 
 - → **PQC / Crypto Agility** · [IDEMIA and KT Deploy Quantum-Resistant SIMs Supporting Dual NIST and KpqC Algorithms for South Korean Military Networks](https://quantumcomputingreport.com/idemia-and-kt-deploy-quantum-resistant-sims-supporting-dual-nist-and-kpqc-algorithms-for-south-korean-military-networks) <sub>Quantum Computing Report, Oct 26</sub>
 - ↗ **Quantum Networking** · [OU67-FY26-159-NEW. QUANTUM NETWORK MANAGEMENT AND SIMULATION SUPPORT](https://www.usaspending.gov/award/CONT_AWD_1333ND26FNB670133_1341_1333ND21DNB770022_1341) <sub>USAspending · Quantum Technologies, Oct 31</sub>
-- → **Quantum Hardware** · [Alice & Bob Estimates 22,593 Qubits to Break RSA-2048](https://thequantuminsider.com/2026/10/29/alice-bob-22593-qubits-break-rsa-2048) <sub>The Quantum Insider, Oct 29</sub>
+- → **QEC / Fault Tolerance** · [Researchers Measure Logical Qubit with 0.72% Error Using Quantum Surgery](https://quantumzeitgeist.com/quantum-surgery-logical-qubit-error-measurement) <sub>Quantum Zeitgeist, Nov 1</sub>
 
-<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-11-01 03:53 UTC · headlines are not reviewed or endorsed.</sub>
+<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-11-02 03:53 UTC · headlines are not reviewed or endorsed.</sub>
 <!-- FRONTIER-SIGNAL:END -->
 
 <a id="public-projects"></a>

@@ -22,13 +22,11 @@ I build security tools, research systems, and hands-on quantum experiments. My w
 ## <img src="assets/signal-mark.svg" width="28" height="28" alt=""> Live from the research desk
 
 <!-- FRONTIER-SIGNAL:START -->
-**Rising this week:** ↗ Quantum Networking · ↗ AI Security
+- → **PQC / Crypto Agility** · [Zirah: A Post-Quantum True Random Number Generator Hardware Signer With an Avalanche Noise](https://arxiv.org/abs/2611.08200) <sub>arXiv RSS cs.CR, Nov 5</sub>
+- → **QEC / Fault Tolerance** · [IBM, ORNL, and AMD Deploy Co-Located Quantum Error Correction Platform in Poughkeepsie](https://quantumcomputingreport.com/ibm-ornl-and-amd-deploy-co-located-quantum-error-correction-platform-in-poughkeepsie) <sub>Quantum Computing Report, Nov 5</sub>
+- → **Quantum Networking** · [OU67-FY26-159-NEW. QUANTUM NETWORK MANAGEMENT AND SIMULATION SUPPORT](https://www.usaspending.gov/award/CONT_AWD_1333ND26FNB670133_1341_1333ND21DNB770022_1341) <sub>USAspending · Quantum Technologies, Oct 31</sub>
 
-- → **PQC / Crypto Agility** · [IDEMIA and KT Deploy Quantum-Resistant SIMs Supporting Dual NIST and KpqC Algorithms for South Korean Military Networks](https://quantumcomputingreport.com/idemia-and-kt-deploy-quantum-resistant-sims-supporting-dual-nist-and-kpqc-algorithms-for-south-korean-military-networks) <sub>Quantum Computing Report, Oct 26</sub>
-- ↗ **Quantum Networking** · [OU67-FY26-159-NEW. QUANTUM NETWORK MANAGEMENT AND SIMULATION SUPPORT](https://www.usaspending.gov/award/CONT_AWD_1333ND26FNB670133_1341_1333ND21DNB770022_1341) <sub>USAspending · Quantum Technologies, Oct 31</sub>
-- → **QEC / Fault Tolerance** · [Researchers Measure Logical Qubit with 0.72% Error Using Quantum Surgery](https://quantumzeitgeist.com/quantum-surgery-logical-qubit-error-measurement) <sub>Quantum Zeitgeist, Nov 1</sub>
-
-<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-11-02 03:53 UTC · headlines are not reviewed or endorsed.</sub>
+<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-11-06 07:05 UTC · headlines are not reviewed or endorsed.</sub>
 <!-- FRONTIER-SIGNAL:END -->
 
 <a id="public-projects"></a>

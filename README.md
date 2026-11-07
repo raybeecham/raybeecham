@@ -22,11 +22,13 @@ I build security tools, research systems, and hands-on quantum experiments. My w
 ## <img src="assets/signal-mark.svg" width="28" height="28" alt=""> Live from the research desk
 
 <!-- FRONTIER-SIGNAL:START -->
+**Rising this week:** ↗ Quantum Software / Tooling · ↗ Standards / Government
+
 - → **PQC / Crypto Agility** · [Zirah: A Post-Quantum True Random Number Generator Hardware Signer With an Avalanche Noise](https://arxiv.org/abs/2611.08200) <sub>arXiv RSS cs.CR, Nov 5</sub>
 - → **QEC / Fault Tolerance** · [IBM, ORNL, and AMD Deploy Co-Located Quantum Error Correction Platform in Poughkeepsie](https://quantumcomputingreport.com/ibm-ornl-and-amd-deploy-co-located-quantum-error-correction-platform-in-poughkeepsie) <sub>Quantum Computing Report, Nov 5</sub>
-- → **Quantum Networking** · [OU67-FY26-159-NEW. QUANTUM NETWORK MANAGEMENT AND SIMULATION SUPPORT](https://www.usaspending.gov/award/CONT_AWD_1333ND26FNB670133_1341_1333ND21DNB770022_1341) <sub>USAspending · Quantum Technologies, Oct 31</sub>
+- ↗ **Standards / Government** · [UK Announces New Funding to Support Quantum Technology Commercialisation](https://thequantuminsider.com/2026/11/06/uk-announces-new-funding-to-support-quantum-technology-commercialisation) <sub>The Quantum Insider, Nov 6</sub>
 
-<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-11-06 07:05 UTC · headlines are not reviewed or endorsed.</sub>
+<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-11-07 04:06 UTC · headlines are not reviewed or endorsed.</sub>
 <!-- FRONTIER-SIGNAL:END -->
 
 <a id="public-projects"></a>

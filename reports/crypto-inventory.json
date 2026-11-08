@@ -1,5 +1,5 @@
 {
-  "scanned_on": "Nov 1, 2026",
+  "scanned_on": "Nov 8, 2026",
   "repos": [
     "Chrono",
     "claude-certified-associate-foundations",
@@ -356,7 +356,7 @@
     },
     {
       "file": "pqc_quantum_research_agent/conferences.py",
-      "line": 140,
+      "line": 143,
       "api": "hashlib.sha256",
       "algorithm": "SHA-256",
       "mode": null,
@@ -375,7 +375,7 @@
     },
     {
       "file": "pqc_quantum_research_agent/conferences.py",
-      "line": 191,
+      "line": 194,
       "api": "hashlib.sha256",
       "algorithm": "SHA-256",
       "mode": null,
@@ -394,7 +394,7 @@
     },
     {
       "file": "pqc_quantum_research_agent/conferences.py",
-      "line": 205,
+      "line": 208,
       "api": "hashlib.sha256",
       "algorithm": "SHA-256",
       "mode": null,
@@ -413,7 +413,7 @@
     },
     {
       "file": "pqc_quantum_research_agent/conferences.py",
-      "line": 332,
+      "line": 335,
       "api": "hashlib.sha256",
       "algorithm": "SHA-256",
       "mode": null,
@@ -432,7 +432,7 @@
     },
     {
       "file": "pqc_quantum_research_agent/conferences.py",
-      "line": 341,
+      "line": 345,
       "api": "hashlib.sha256",
       "algorithm": "SHA-256",
       "mode": null,
@@ -489,7 +489,7 @@
     },
     {
       "file": "pqc_quantum_research_agent/news_intelligence.py",
-      "line": 966,
+      "line": 1053,
       "api": "hashlib.sha256",
       "algorithm": "SHA-256",
       "mode": null,
@@ -508,7 +508,7 @@
     },
     {
       "file": "pqc_quantum_research_agent/news_intelligence.py",
-      "line": 1015,
+      "line": 1102,
       "api": "hashlib.sha256",
       "algorithm": "SHA-256",
       "mode": null,
@@ -527,7 +527,7 @@
     },
     {
       "file": "pqc_quantum_research_agent/news_intelligence.py",
-      "line": 1344,
+      "line": 1463,
       "api": "hashlib.sha256",
       "algorithm": "SHA-256",
       "mode": null,

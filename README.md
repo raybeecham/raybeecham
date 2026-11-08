@@ -70,7 +70,7 @@ Strong classical baselines and quantum-kernel experiments with training-only pre
 Preserve provenance. Make uncertainty visible. Design for reproducibility. Keep security boundaries explicit and decisions accountable to people. A model, score, or prototype supports a decision; it does not authorize deployment or operational action.
 
 <!-- CRYPTO-SCAN:START -->
-🧾 **Crypto self-scan** of 9 public repos (Nov 1, 2026): SHA-256 ×45 · SHA-1 ×1 · 0 not quantum-safe · [full report](reports/crypto-inventory.md)
+🧾 **Crypto self-scan** of 9 public repos (Nov 8, 2026): SHA-256 ×45 · SHA-1 ×1 · 0 not quantum-safe · [full report](reports/crypto-inventory.md)
 <!-- CRYPTO-SCAN:END -->
 
 <a id="professional-experience"></a>

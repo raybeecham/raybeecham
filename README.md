@@ -28,7 +28,7 @@ I build security tools, research systems, and hands-on quantum experiments. My w
 - → **QEC / Fault Tolerance** · [IBM, ORNL, and AMD Deploy Co-Located Quantum Error Correction Platform in Poughkeepsie](https://quantumcomputingreport.com/ibm-ornl-and-amd-deploy-co-located-quantum-error-correction-platform-in-poughkeepsie) <sub>Quantum Computing Report, Nov 5</sub>
 - ↗ **Standards / Government** · [UK Announces New Funding to Support Quantum Technology Commercialisation](https://thequantuminsider.com/2026/11/06/uk-announces-new-funding-to-support-quantum-technology-commercialisation) <sub>The Quantum Insider, Nov 6</sub>
 
-<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-11-08 03:53 UTC · headlines are not reviewed or endorsed.</sub>
+<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-11-09 04:06 UTC · headlines are not reviewed or endorsed.</sub>
 <!-- FRONTIER-SIGNAL:END -->
 
 <a id="public-projects"></a>

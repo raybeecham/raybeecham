@@ -22,13 +22,13 @@ I build security tools, research systems, and hands-on quantum experiments. My w
 ## <img src="assets/signal-mark.svg" width="28" height="28" alt=""> Live from the research desk
 
 <!-- FRONTIER-SIGNAL:START -->
-**Rising this week:** ↗ Quantum Software / Tooling · ↗ Standards / Government
+**Rising this week:** ↗ PQC / Crypto Agility · ↗ Quantum Software / Tooling · ↗ Standards / Government
 
-- → **PQC / Crypto Agility** · [Zirah: A Post-Quantum True Random Number Generator Hardware Signer With an Avalanche Noise](https://arxiv.org/abs/2611.08200) <sub>arXiv RSS cs.CR, Nov 5</sub>
-- → **QEC / Fault Tolerance** · [IBM, ORNL, and AMD Deploy Co-Located Quantum Error Correction Platform in Poughkeepsie](https://quantumcomputingreport.com/ibm-ornl-and-amd-deploy-co-located-quantum-error-correction-platform-in-poughkeepsie) <sub>Quantum Computing Report, Nov 5</sub>
-- ↗ **Standards / Government** · [UK Announces New Funding to Support Quantum Technology Commercialisation](https://thequantuminsider.com/2026/11/06/uk-announces-new-funding-to-support-quantum-technology-commercialisation) <sub>The Quantum Insider, Nov 6</sub>
+- ↗ **PQC / Crypto Agility** · [Zirah: A Post-Quantum True Random Number Generator Hardware Signer With an Avalanche Noise](https://arxiv.org/abs/2611.08200) <sub>arXiv RSS cs.CR, Nov 5</sub>
+- ↘ **QEC / Fault Tolerance** · [IBM, ORNL, and AMD Deploy Co-Located Quantum Error Correction Platform in Poughkeepsie](https://quantumcomputingreport.com/ibm-ornl-and-amd-deploy-co-located-quantum-error-correction-platform-in-poughkeepsie) <sub>Quantum Computing Report, Nov 5</sub>
+- ↗ **Standards / Government** · [IonQ and Carahsoft Partner to Bring Quantum Solutions to the Public Sector](https://thequantuminsider.com/2026/11/09/ionq-carahsoft-quantum-technologies-government) <sub>The Quantum Insider, Nov 9</sub>
 
-<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-11-09 04:06 UTC · headlines are not reviewed or endorsed.</sub>
+<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-11-10 05:39 UTC · headlines are not reviewed or endorsed.</sub>
 <!-- FRONTIER-SIGNAL:END -->
 
 <a id="public-projects"></a>

@@ -22,13 +22,13 @@ I build security tools, research systems, and hands-on quantum experiments. My w
 ## <img src="assets/signal-mark.svg" width="28" height="28" alt=""> Live from the research desk
 
 <!-- FRONTIER-SIGNAL:START -->
-**Rising this week:** ↗ PQC / Crypto Agility · ↗ Standards / Government · ↗ Quantum Software / Tooling · ↗ AI Security
+**Rising this week:** ↗ Quantum Hardware · ↗ PQC / Crypto Agility · ↗ Standards / Government · ↗ Quantum Software / Tooling
 
-- ↗ **PQC / Crypto Agility** · [Zirah: A Post-Quantum True Random Number Generator Hardware Signer With an Avalanche Noise](https://arxiv.org/abs/2611.08200) <sub>arXiv RSS cs.CR, Nov 5</sub>
-- → **QEC / Fault Tolerance** · [IBM, ORNL, and AMD Deploy Co-Located Quantum Error Correction Platform in Poughkeepsie](https://quantumcomputingreport.com/ibm-ornl-and-amd-deploy-co-located-quantum-error-correction-platform-in-poughkeepsie) <sub>Quantum Computing Report, Nov 5</sub>
-- ↗ **Quantum Software / Tooling** · [IHRD and Bloq Quantum Partner to Expand Quantum Computing Education in Kerala](https://thequantuminsider.com/2026/11/11/ihrd-bloq-quantum-quantum-computing-education-kerala) <sub>The Quantum Insider, Nov 11</sub>
+- ↗ **PQC / Crypto Agility** · [HKMA and HKUST Launch PQC Toolkit to Accelerate Banking Sector Transition by 2030](https://quantumcomputingreport.com/hkma-and-hkust-launch-pqc-toolkit-to-accelerate-banking-sector-transition-by-2030) <sub>Quantum Computing Report, Nov 7</sub>
+- ↗ **Quantum Hardware** · [Xanadu Reports Revenue Growth as Photonic Partnerships and Government Support Expand](https://thequantuminsider.com/2026/11/12/xanadu-reports-revenue-growth-as-photonic-partnerships-and-government-support-expand) <sub>The Quantum Insider, Nov 12</sub>
+- ↗ **Standards / Government** · [SBIR PHASE II - QUANTUM WAVEGUIDE INFRARED PHOTODETECTOR FOR HETERODYNE SPECTROSCOPY](https://www.usaspending.gov/award/CONT_AWD_80NSSC27C0020_8000_-NONE-_-NONE-) <sub>USAspending · Quantum Technologies, Nov 9</sub>
 
-<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-11-12 05:23 UTC · headlines are not reviewed or endorsed.</sub>
+<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-11-13 04:36 UTC · headlines are not reviewed or endorsed.</sub>
 <!-- FRONTIER-SIGNAL:END -->
 
 <a id="public-projects"></a>

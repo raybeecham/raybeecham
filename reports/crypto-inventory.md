@@ -1,6 +1,6 @@
 # Crypto self-scan
 
-Weekly cryptographic inventory of my own public repositories, produced with [crypto-inventory-demo](https://github.com/raybeecham/crypto-inventory-demo) (CodeQL for Python plus a TLS configuration scan). Last scan: **Nov 8, 2026**.
+Weekly cryptographic inventory of my own public repositories, produced with [crypto-inventory-demo](https://github.com/raybeecham/crypto-inventory-demo) (CodeQL for Python plus a TLS configuration scan). Last scan: **Nov 15, 2026**.
 
 - Repositories scanned: **9**
 - Findings: **46**

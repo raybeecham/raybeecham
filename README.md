@@ -22,13 +22,13 @@ I build security tools, research systems, and hands-on quantum experiments. My w
 ## <img src="assets/signal-mark.svg" width="28" height="28" alt=""> Live from the research desk
 
 <!-- FRONTIER-SIGNAL:START -->
-**Rising this week:** ↗ Quantum Hardware · ↗ Standards / Government · ↗ QEC / Fault Tolerance · ↗ Quantum Software / Tooling · ↗ Quantum Sensing
+**Rising this week:** ↗ Quantum Hardware · ↗ QEC / Fault Tolerance · ↗ Standards / Government · ↗ Quantum Software / Tooling · ↗ AI Security · ↗ Quantum Sensing
 
-- ↗ **QEC / Fault Tolerance** · [Atom Computing Finalizes $100 Million U.S. Department of Commerce R&D Agreement for Fault-Tolerant Quantum Systems](https://quantumcomputingreport.com/atom-computing-finalizes-100-million-u-s-department-of-commerce-rd-agreement-for-fault-tolerant-quantum-systems) <sub>Quantum Computing Report, Nov 13</sub>
+- ↗ **QEC / Fault Tolerance** · [IBM and AMD Open-Source Pelagos GPU Decoder Framework for Large-Scale qLDPC Error Correction Simulations](https://quantumcomputingreport.com/ibm-and-amd-open-source-pelagos-gpu-decoder-framework-for-large-scale-qldpc-error-correction-simulations) <sub>Quantum Computing Report, Nov 16</sub>
+- ↗ **AI Security** · [LLM designs fault-tolerant circuits for quantum error correction](https://quantumzeitgeist.com/fault-tolerant-circuits-llm-designs-error) <sub>Quantum Zeitgeist, Nov 16</sub>
 - ↗ **Quantum Hardware** · [Xanadu Reports Revenue Growth as Photonic Partnerships and Government Support Expand](https://thequantuminsider.com/2026/11/12/xanadu-reports-revenue-growth-as-photonic-partnerships-and-government-support-expand) <sub>The Quantum Insider, Nov 12</sub>
-- ↗ **Standards / Government** · [SBIR PHASE II - QUANTUM WAVEGUIDE INFRARED PHOTODETECTOR FOR HETERODYNE SPECTROSCOPY](https://www.usaspending.gov/award/CONT_AWD_80NSSC27C0020_8000_-NONE-_-NONE-) <sub>USAspending · Quantum Technologies, Nov 9</sub>
 
-<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-11-16 04:15 UTC · headlines are not reviewed or endorsed.</sub>
+<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-11-17 06:05 UTC · headlines are not reviewed or endorsed.</sub>
 <!-- FRONTIER-SIGNAL:END -->
 
 <a id="public-projects"></a>

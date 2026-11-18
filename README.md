@@ -22,13 +22,13 @@ I build security tools, research systems, and hands-on quantum experiments. My w
 ## <img src="assets/signal-mark.svg" width="28" height="28" alt=""> Live from the research desk
 
 <!-- FRONTIER-SIGNAL:START -->
-**Rising this week:** ↗ Quantum Hardware · ↗ QEC / Fault Tolerance · ↗ Standards / Government · ↗ Quantum Software / Tooling · ↗ AI Security · ↗ Quantum Sensing
+**Rising this week:** ↗ Quantum Hardware · ↗ QEC / Fault Tolerance · ↗ Standards / Government · ↗ Quantum Software / Tooling · ↗ Quantum Sensing
 
 - ↗ **QEC / Fault Tolerance** · [IBM and AMD Open-Source Pelagos GPU Decoder Framework for Large-Scale qLDPC Error Correction Simulations](https://quantumcomputingreport.com/ibm-and-amd-open-source-pelagos-gpu-decoder-framework-for-large-scale-qldpc-error-correction-simulations) <sub>Quantum Computing Report, Nov 16</sub>
-- ↗ **AI Security** · [LLM designs fault-tolerant circuits for quantum error correction](https://quantumzeitgeist.com/fault-tolerant-circuits-llm-designs-error) <sub>Quantum Zeitgeist, Nov 16</sub>
+- → **Quantum Networking** · [NEC and IBM Japan link quantum keys with post-quantum security](https://quantumzeitgeist.com/quantum-keys-post-security-nec-japan) <sub>Quantum Zeitgeist, Nov 17</sub>
 - ↗ **Quantum Hardware** · [Xanadu Reports Revenue Growth as Photonic Partnerships and Government Support Expand](https://thequantuminsider.com/2026/11/12/xanadu-reports-revenue-growth-as-photonic-partnerships-and-government-support-expand) <sub>The Quantum Insider, Nov 12</sub>
 
-<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-11-17 06:05 UTC · headlines are not reviewed or endorsed.</sub>
+<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-11-18 05:38 UTC · headlines are not reviewed or endorsed.</sub>
 <!-- FRONTIER-SIGNAL:END -->
 
 <a id="public-projects"></a>

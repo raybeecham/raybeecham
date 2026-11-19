@@ -22,13 +22,13 @@ I build security tools, research systems, and hands-on quantum experiments. My w
 ## <img src="assets/signal-mark.svg" width="28" height="28" alt=""> Live from the research desk
 
 <!-- FRONTIER-SIGNAL:START -->
-**Rising this week:** ↗ Quantum Hardware · ↗ QEC / Fault Tolerance · ↗ Standards / Government · ↗ Quantum Software / Tooling · ↗ Quantum Sensing
+**Rising this week:** ↗ QEC / Fault Tolerance · ↗ Quantum Software / Tooling · ↗ Quantum Sensing
 
-- ↗ **QEC / Fault Tolerance** · [IBM and AMD Open-Source Pelagos GPU Decoder Framework for Large-Scale qLDPC Error Correction Simulations](https://quantumcomputingreport.com/ibm-and-amd-open-source-pelagos-gpu-decoder-framework-for-large-scale-qldpc-error-correction-simulations) <sub>Quantum Computing Report, Nov 16</sub>
+- ↗ **QEC / Fault Tolerance** · [Alice & Bob’s Updated Roadmap Targets 200 Logical Qubits From 3,600 Physical Qubits by 2030](https://thequantuminsider.com/2026/11/18/alice-bobs-updated-roadmap-targets-200-logical-qubits-from-3600-physical-qubits-by-2030) <sub>The Quantum Insider, Nov 18</sub>
+- ↘ **PQC / Crypto Agility** · [NEC and IBM Japan Demonstrate Hybrid QKD and Post-Quantum Cryptography TLS Proxy Architecture](https://quantumcomputingreport.com/nec-and-ibm-japan-demonstrate-hybrid-qkd-and-post-quantum-cryptography-tls-proxy-architecture) <sub>Quantum Computing Report, Nov 16</sub>
 - → **Quantum Networking** · [NEC and IBM Japan link quantum keys with post-quantum security](https://quantumzeitgeist.com/quantum-keys-post-security-nec-japan) <sub>Quantum Zeitgeist, Nov 17</sub>
-- ↗ **Quantum Hardware** · [Xanadu Reports Revenue Growth as Photonic Partnerships and Government Support Expand](https://thequantuminsider.com/2026/11/12/xanadu-reports-revenue-growth-as-photonic-partnerships-and-government-support-expand) <sub>The Quantum Insider, Nov 12</sub>
 
-<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-11-18 05:38 UTC · headlines are not reviewed or endorsed.</sub>
+<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-11-19 05:36 UTC · headlines are not reviewed or endorsed.</sub>
 <!-- FRONTIER-SIGNAL:END -->
 
 <a id="public-projects"></a>

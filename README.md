@@ -25,10 +25,10 @@ I build security tools, research systems, and hands-on quantum experiments. My w
 **Rising this week:** ↗ Quantum Networking · ↗ QEC / Fault Tolerance · ↗ AI Security · ↗ Quantum Sensing
 
 - ↗ **QEC / Fault Tolerance** · [Alice & Bob’s Updated Roadmap Targets 200 Logical Qubits From 3,600 Physical Qubits by 2030](https://thequantuminsider.com/2026/11/18/alice-bobs-updated-roadmap-targets-200-logical-qubits-from-3600-physical-qubits-by-2030) <sub>The Quantum Insider, Nov 18</sub>
-- ↘ **PQC / Crypto Agility** · [Splendor Labs’ blockchain offers quantum-resistant security.](https://quantumzeitgeist.com/quantum-resistant-security-splendor-labs-blockchain) <sub>Quantum Zeitgeist, Nov 20</sub>
+- → **PQC / Crypto Agility** · [Splendor Labs’ blockchain offers quantum-resistant security.](https://quantumzeitgeist.com/quantum-resistant-security-splendor-labs-blockchain) <sub>Quantum Zeitgeist, Nov 20</sub>
 - ↗ **Quantum Networking** · [International Consortium Demonstrates 8,000-km Hybrid QKD and Post-Quantum Network Linking Europe and the U.S. at SC26](https://quantumcomputingreport.com/international-consortium-demonstrates-8000-km-hybrid-qkd-and-post-quantum-network-linking-europe-and-the-u-s-at-sc26) <sub>Quantum Computing Report, Nov 20</sub>
 
-<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-11-22 04:34 UTC · headlines are not reviewed or endorsed.</sub>
+<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-11-23 05:13 UTC · headlines are not reviewed or endorsed.</sub>
 <!-- FRONTIER-SIGNAL:END -->
 
 <a id="public-projects"></a>

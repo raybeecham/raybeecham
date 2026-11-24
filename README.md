@@ -28,7 +28,7 @@ I build security tools, research systems, and hands-on quantum experiments. My w
 - → **PQC / Crypto Agility** · [Splendor Labs’ blockchain offers quantum-resistant security.](https://quantumzeitgeist.com/quantum-resistant-security-splendor-labs-blockchain) <sub>Quantum Zeitgeist, Nov 20</sub>
 - ↗ **Quantum Networking** · [International Consortium Demonstrates 8,000-km Hybrid QKD and Post-Quantum Network Linking Europe and the U.S. at SC26](https://quantumcomputingreport.com/international-consortium-demonstrates-8000-km-hybrid-qkd-and-post-quantum-network-linking-europe-and-the-u-s-at-sc26) <sub>Quantum Computing Report, Nov 20</sub>
 
-<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-11-23 05:13 UTC · headlines are not reviewed or endorsed.</sub>
+<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-11-24 07:58 UTC · headlines are not reviewed or endorsed.</sub>
 <!-- FRONTIER-SIGNAL:END -->
 
 <a id="public-projects"></a>

@@ -22,13 +22,13 @@ I build security tools, research systems, and hands-on quantum experiments. My w
 ## <img src="assets/signal-mark.svg" width="28" height="28" alt=""> Live from the research desk
 
 <!-- FRONTIER-SIGNAL:START -->
-**Rising this week:** ↗ Quantum Networking · ↗ AI Security · ↗ Quantum Sensing
+**Rising this week:** ↗ AI Security · ↗ Quantum Sensing
 
-- ↘ **QEC / Fault Tolerance** · [A scalable dense silicon qubit architecture with logical operations](https://arxiv.org/abs/2611.33590) <sub>arXiv RSS quant-ph, Nov 25</sub>
-- → **PQC / Crypto Agility** · [Splendor Labs’ blockchain offers quantum-resistant security.](https://quantumzeitgeist.com/quantum-resistant-security-splendor-labs-blockchain) <sub>Quantum Zeitgeist, Nov 20</sub>
-- ↗ **Quantum Networking** · [International Consortium Demonstrates 8,000-km Hybrid QKD and Post-Quantum Network Linking Europe and the U.S. at SC26](https://quantumcomputingreport.com/international-consortium-demonstrates-8000-km-hybrid-qkd-and-post-quantum-network-linking-europe-and-the-u-s-at-sc26) <sub>Quantum Computing Report, Nov 20</sub>
+- → **QEC / Fault Tolerance** · [A scalable dense silicon qubit architecture with logical operations](https://arxiv.org/abs/2611.33590) <sub>arXiv RSS quant-ph, Nov 25</sub>
+- → **PQC / Crypto Agility** · [Banks lead UK firms in adopting post-quantum key exchange](https://quantumzeitgeist.com/cdn-providers-post-quantum-key-exchange) <sub>Quantum Zeitgeist, Nov 27</sub>
+- → **Quantum Networking** · [IDEMIA Secure Transactions and IonQ Validate QKD Interoperability with IDEMIA Sphere Cybersecurity Platform](https://quantumcomputingreport.com/idemia-secure-transactions-and-ionq-validate-qkd-interoperability-with-idemia-sphere-cybersecurity-platform) <sub>Quantum Computing Report, Nov 24</sub>
 
-<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-11-27 06:13 UTC · headlines are not reviewed or endorsed.</sub>
+<sub>Machine-selected from the [Frontier Signal](https://raybeecham.github.io/quantum-research-scout/) evidence ledger · updated 2026-11-28 05:52 UTC · headlines are not reviewed or endorsed.</sub>
 <!-- FRONTIER-SIGNAL:END -->
 
 <a id="public-projects"></a>
